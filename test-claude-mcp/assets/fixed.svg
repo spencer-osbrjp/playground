@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+<style>
+.face-outline{fill:#000;}
+.face-skin{fill:#F4C6A0;}
+.hat-outline{fill:#000;}
+.hat-red{fill:#D84242;}
+.hat-dark-red{fill:#B83333;}
+.emblem-white{fill:#FFF;}
+.emblem-m{fill:#D84242;}
+.eye-outline{fill:#000;}
+.eye-white{fill:#FFF;}
+.pupil-blue{fill:#4A9FD8;}
+.pupil-black{fill:#000;}
+.highlight{fill:#FFF;}
+.nose-outline{fill:#000;}
+.nose-skin{fill:#F4C6A0;}
+.nose-shadow{fill:#E5B890;}
+.mouth-outline{fill:#000;}
+.mustache-outline{fill:#000;}
+</style>
+</defs>
+<!-- Hat drawn FIRST so it appears in the background -->
+<g id="hat" class="hat-layer">
+<ellipse class="hat-outline" cx="100" cy="80" rx="56" ry="48"/>
+<ellipse class="hat-red" cx="100" cy="80" rx="52" ry="44"/>
+<ellipse class="hat-dark-red" cx="100" cy="96" rx="52" ry="12"/>
+<rect class="hat-outline" x="48" y="96" width="104" height="18" rx="4"/>
+<rect class="hat-red" x="50" y="98" width="100" height="14" rx="3"/>
+<circle class="hat-outline" cx="100" cy="60" r="17"/>
+<circle class="emblem-white" cx="100" cy="60" r="14"/>
+<path class="emblem-m" d="M 88 68 L 88 52 L 94 58 L 100 52 L 106 58 L 112 52 L 112 68 L 106 68 L 106 60 L 100 66 L 94 60 L 94 68 Z"/>
+</g>
+<!-- Face and features drawn AFTER hat so they appear on top -->
+<g id="face" class="face-layer">
+<ellipse class="face-outline" cx="100" cy="110" rx="52" ry="58"/>
+<ellipse class="face-skin" cx="100" cy="110" rx="48" ry="54"/>
+<ellipse class="face-outline" cx="55" cy="105" rx="9" ry="13"/>
+<ellipse class="face-skin" cx="55" cy="105" rx="6" ry="10"/>
+<ellipse class="face-outline" cx="145" cy="105" rx="9" ry="13"/>
+<ellipse class="face-skin" cx="145" cy="105" rx="6" ry="10"/>
+</g>
+<g id="eyes" class="eyes-layer">
+<g id="left-eye">
+<ellipse class="eye-outline" cx="75" cy="100" rx="18" ry="20"/>
+<ellipse class="eye-white" cx="75" cy="100" rx="15" ry="17"/>
+<circle class="pupil-blue" cx="78" cy="100" r="8"/>
+<circle class="pupil-black" cx="80" cy="100" r="5"/>
+<circle class="highlight" cx="77" cy="97" r="3"/>
+<path class="eye-outline" d="M 57 88 Q 65 82 75 82 Q 85 82 93 88" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="right-eye">
+<ellipse class="eye-outline" cx="125" cy="100" rx="18" ry="20"/>
+<ellipse class="eye-white" cx="125" cy="100" rx="15" ry="17"/>
+<circle class="pupil-blue" cx="122" cy="100" r="8"/>
+<circle class="pupil-black" cx="120" cy="100" r="5"/>
+<circle class="highlight" cx="123" cy="97" r="3"/>
+<path class="eye-outline" d="M 107 88 Q 115 82 125 82 Q 135 82 143 88" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+</g>
+</g>
+<g id="nose" class="nose-layer">
+<ellipse class="nose-outline" cx="100" cy="115" rx="20" ry="22"/>
+<ellipse class="nose-skin" cx="100" cy="115" rx="18" ry="20"/>
+<ellipse class="nose-shadow" cx="100" cy="122" rx="15" ry="8" opacity="0.3"/>
+</g>
+<g id="mustache" class="mustache-layer">
+<path class="mustache-outline" d="M 100 120 Q 85 125 70 128 Q 60 130 55 125 Q 52 122 54 118 Q 58 112 68 110 Q 80 108 90 112 Q 95 114 100 120 Z"/>
+<path class="mustache-outline" d="M 100 120 Q 115 125 130 128 Q 140 130 145 125 Q 148 122 146 118 Q 142 112 132 110 Q 120 108 110 112 Q 105 114 100 120 Z"/>
+<ellipse class="mustache-outline" cx="72" cy="122" rx="18" ry="12" transform="rotate(-10 72 122)"/>
+<ellipse class="mustache-outline" cx="128" cy="122" rx="18" ry="12" transform="rotate(10 128 122)"/>
+</g>
+<g id="mouth" class="mouth-layer">
+<path class="mouth-outline" d="M 75 145 Q 100 152 125 145" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+<path class="mouth-outline" d="M 85 152 Q 100 155 115 152" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "name": "test-claude-mcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "exec": "tsx main.ts",
+    "dev": "npm run style -- --watch & serve",
+    "style": "npx @tailwindcss/cli -i ./css/tailwind.css -o ./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.67.0",
+    "@tailwindcss/cli": "^4.1.16",
+    "dotenv": "^17.2.3",
+    "serve": "^14.2.5",
+    "tailwindcss": "^4.1.16",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1"
+  }
+}

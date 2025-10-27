@@ -1,0 +1,26 @@
+{
+  "name": "test-gpt-gif",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8080",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "sharp": "^0.34.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.67.0",
+    "dotenv": "^17.2.3",
+    "openai": "^6.4.0",
+    "zod": "^3.25.76"
+  }
+}
