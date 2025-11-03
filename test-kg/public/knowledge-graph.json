@@ -1,0 +1,180 @@
+{
+  "triplets": [
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "Jawi script",
+      "object": "ناسي لمق‎",
+      "object_type": "SCRIPT"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "Malay pronunciation",
+      "object": "[ˌnasi ləˈmaʔ]",
+      "object_type": "PRONUNCIATION"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "originates from",
+      "object": "Malay cuisine",
+      "object_type": "CUISINE"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "consists of",
+      "object": "rice",
+      "object_type": "INGREDIENT"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "cooked in",
+      "object": "coconut milk",
+      "object_type": "INGREDIENT"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "cooked with",
+      "object": "pandan leaf",
+      "object_type": "INGREDIENT"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "commonly found in",
+      "object": "Malaysia",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "national dish of",
+      "object": "Malaysia",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "native to",
+      "object": "Singapore",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "native to",
+      "object": "Southern Thailand",
+      "object_type": "REGION"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Indonesia",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Sumatra",
+      "object_type": "ISLAND"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Riau",
+      "object_type": "PROVINCE"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Riau Islands",
+      "object_type": "PROVINCE"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Medan",
+      "object_type": "CITY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "essential dish for",
+      "object": "Malay-style breakfast",
+      "object_type": "MEAL"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Bangsamoro",
+      "object_type": "REGION"
+    },
+    {
+      "subject": "Bangsamoro",
+      "subject_type": "REGION",
+      "relation": "located in",
+      "object": "Mindanao",
+      "object_type": "ISLAND"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "prepared by",
+      "object": "Filipino Moros",
+      "object_type": "ETHNIC GROUP"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Christmas Island",
+      "object_type": "TERRITORY"
+    },
+    {
+      "subject": "Nasi lemak",
+      "subject_type": "DISH",
+      "relation": "found in",
+      "object": "Cocos (Keeling) Islands",
+      "object_type": "TERRITORY"
+    },
+    {
+      "subject": "Christmas Island",
+      "subject_type": "TERRITORY",
+      "relation": "external territory of",
+      "object": "Australia",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Cocos (Keeling) Islands",
+      "subject_type": "TERRITORY",
+      "relation": "external territory of",
+      "object": "Australia",
+      "object_type": "COUNTRY"
+    }
+  ],
+  "entity_types": [
+    "DISH",
+    "SCRIPT",
+    "PRONUNCIATION",
+    "CUISINE",
+    "INGREDIENT",
+    "COUNTRY",
+    "REGION",
+    "ISLAND",
+    "PROVINCE",
+    "CITY",
+    "MEAL",
+    "ETHNIC GROUP",
+    "TERRITORY"
+  ]
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Graph Visualization</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .controls {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      font-weight: 600;
+    }
+
+    .btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .info {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .info-row {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .info-item {
+      color: #333;
+    }
+
+    .info-item strong {
+      color: #667eea;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #666;
+    }
+
+    #network {
+      width: 100%;
+      height: 70vh;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .instructions {
+      background: rgba(255,255,255,0.95);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .instructions h2 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+
+    .instructions ol {
+      margin-left: 20px;
+      color: #333;
+    }
+
+    .instructions li {
+      margin: 8px 0;
+    }
+
+    .instructions code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .query-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .query-section h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .query-controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .query-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .query-group label {
+      font-weight: 600;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .query-input {
+      padding: 10px;
+      border: 2px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    .query-input:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    select.query-input {
+      cursor: pointer;
+    }
+
+    .query-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: #5a6268;
+    }
+
+    .btn-clear {
+      background: #dc3545;
+    }
+
+    .btn-clear:hover:not(:disabled) {
+      background: #c82333;
+    }
+
+    .results-section {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .results-section h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .results-list {
+      max-height: 300px;
+      overflow-y: auto;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .result-item {
+      padding: 10px;
+      margin-bottom: 8px;
+      background: white;
+      border-radius: 5px;
+      border-left: 4px solid #667eea;
+      font-size: 14px;
+    }
+
+    .result-item strong {
+      color: #667eea;
+    }
+
+    .no-results {
+      text-align: center;
+      color: #6c757d;
+      padding: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🕸️ Knowledge Graph Visualization</h1>
+
+    <div class="instructions">
+      <h2>How to use:</h2>
+      <ol>
+        <li>First, run the extraction script: <code>npm run extract</code></li>
+        <li>Then click the button below to load and visualize the graph</li>
+        <li>Interact with the graph: drag nodes, zoom, and hover for details</li>
+      </ol>
+    </div>
+
+    <div class="controls">
+      <button id="loadGraph" class="btn">Load & Visualize Graph</button>
+    </div>
+
+    <div id="querySection" class="query-section">
+      <h2>🔍 Query Knowledge Graph</h2>
+
+      <div class="query-controls">
+        <div class="query-group">
+          <label for="searchEntity">Search Entity</label>
+          <input type="text" id="searchEntity" class="query-input" placeholder="e.g., Tesla, Elon Musk">
+        </div>
+
+        <div class="query-group">
+          <label for="filterType">Filter by Entity Type</label>
+          <select id="filterType" class="query-input">
+            <option value="">All Types</option>
+          </select>
+        </div>
+
+        <div class="query-group">
+          <label for="searchRelation">Search Relation</label>
+          <input type="text" id="searchRelation" class="query-input" placeholder="e.g., CEO of, located in">
+        </div>
+
+        <div class="query-group">
+          <label for="pathQuery">Find Path Between Entities</label>
+          <input type="text" id="pathQuery" class="query-input" placeholder="e.g., Entity1 -> Entity2">
+        </div>
+      </div>
+
+      <div class="query-buttons">
+        <button id="executeQuery" class="btn">Search</button>
+        <button id="findNeighbors" class="btn btn-secondary">Find Connected Entities</button>
+        <button id="clearFilters" class="btn btn-clear">Clear All</button>
+      </div>
+
+      <div id="resultsSection" class="results-section" style="display: none;">
+        <h3>Results: <span id="resultCount">0</span> found</h3>
+        <div id="resultsList" class="results-list"></div>
+      </div>
+    </div>
+
+    <div id="networkSection" class="info">
+      <div class="info-row">
+        <div class="info-item">
+          <strong>Total Entities:</strong> <span id="entityCount">0</span>
+        </div>
+        <div class="info-item">
+          <strong>Total Relations:</strong> <span id="relationCount">0</span>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div id="network"></div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
