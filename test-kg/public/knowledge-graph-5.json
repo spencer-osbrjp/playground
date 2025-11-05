@@ -1,0 +1,861 @@
+{
+  "triplets": [
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "is CEO of",
+      "object": "OpenAI",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "The Verge",
+      "subject_type": "MEDIA",
+      "relation": "published",
+      "object": "report",
+      "object_type": "REPORT",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI market in bubble",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "compared to",
+      "object": "dot-com bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "lost",
+      "object": "nearly 80%",
+      "object_type": "PERCENTAGE",
+      "inferred": false
+    },
+    {
+      "subject": "Joe Tsai",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "Alibaba",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "Bridgewater Associates",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "Apollo Global Management",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "title",
+      "object": "Chief Economist",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Joe Tsai",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "stated",
+      "object": "AI bubble bigger than internet bubble",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "stated",
+      "object": "S&P 500 top 10 more overvalued than 1990s",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "Futurum Group",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "title",
+      "object": "Research Director",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Altman comments valid",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "risks company-dependent",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "no AI bubble",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "supply chain fundamentals strong",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI trend supports investment",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "speculative capital rising",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "overvaluation pockets possible",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "country",
+      "object": "China",
+      "object_type": "COUNTRY",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "released",
+      "object": "reasoning model",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "claimed",
+      "object": "training cost < $6M",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "claims met",
+      "object": "skepticism",
+      "object_type": "REACTION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "told",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "OpenAI ARR > $20B",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "OpenAI unprofitable",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "released",
+      "object": "GPT-5",
+      "object_type": "MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "GPT-5",
+      "subject_type": "MODEL",
+      "relation": "release",
+      "object": "rocky",
+      "object_type": "STATUS",
+      "inferred": false
+    },
+    {
+      "subject": "critics",
+      "subject_type": "GROUP",
+      "relation": "complained",
+      "object": "less intuitive",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "restored access to",
+      "object": "GPT-4",
+      "object_type": "MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "GPT-4",
+      "subject_type": "MODEL",
+      "relation": "access for",
+      "object": "paying customers",
+      "object_type": "CUSTOMER",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "signaled",
+      "object": "caution",
+      "object_type": "STANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AGI losing relevance",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment share",
+      "subject_type": "METRIC",
+      "relation": "greater than",
+      "object": "internet investment share",
+      "object_type": "METRIC",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment share",
+      "subject_type": "METRIC",
+      "relation": "greater by",
+      "object": "nearly one third",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "internet investment share",
+      "subject_type": "METRIC",
+      "relation": "during",
+      "object": "dot-com bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "interviewed on",
+      "object": "Squawk Box",
+      "object_type": "SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Squawk Box",
+      "subject_type": "SHOW",
+      "relation": "network",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": false
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "predicts",
+      "object": "AI bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "pointed to",
+      "object": "OpenAI",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "AI deals",
+      "object": "$1 trillion",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "project",
+      "object": "data center buildout",
+      "object_type": "PROJECT",
+      "inferred": false
+    },
+    {
+      "subject": "data center buildout",
+      "subject_type": "PROJECT",
+      "relation": "cost",
+      "object": "$500 billion",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "revenue forecast",
+      "object": "$13 billion",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "spending on",
+      "object": "AI",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "advertisements",
+      "object_type": "SECTOR",
+      "inferred": false
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "cloud services",
+      "object_type": "SECTOR",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "interviewed on",
+      "object": "Squawk on the Street",
+      "object_type": "SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Squawk on the Street",
+      "subject_type": "SHOW",
+      "relation": "network",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "BlackRock CEO",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "no AI bubble",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "necessary for",
+      "object": "United States AI leadership",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "GPUs",
+      "object_type": "TECH",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "chips",
+      "object_type": "TECH",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "HVAC",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "IT",
+      "object_type": "SECTOR",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power grids",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power supplies",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Meta",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Microsoft",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Alphabet",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY",
+      "inferred": false
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Squawk Box",
+      "object_type": "SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "former CEO of",
+      "object": "Intel",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "AI market",
+      "subject_type": "MARKET",
+      "relation": "is in",
+      "object": "AI bubble",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "AI efficiency",
+      "subject_type": "METRIC",
+      "relation": "improved in",
+      "object": "this year",
+      "object_type": "TIME",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Money Movers",
+      "object_type": "SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Money Movers",
+      "subject_type": "SHOW",
+      "relation": "network",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "takes stakes in",
+      "object": "firms",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "lacks",
+      "object": "cash flow",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "xAI",
+      "subject_type": "COMPANY",
+      "relation": "lacks",
+      "object": "cash flow",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "COMPANY",
+      "relation": "issues",
+      "object": "debt",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "operating loss",
+      "object": "$5B",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "revenue",
+      "object": "$3.7B",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "amount",
+      "object": "$100B",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "purpose",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "backed by",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "deals with",
+      "object": "AMD",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": true
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": true
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": true
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": true
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "funds",
+      "object": "data center buildout",
+      "object_type": "PROJECT",
+      "inferred": true
+    },
+    {
+      "subject": "data center buildout",
+      "subject_type": "PROJECT",
+      "relation": "uses",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT",
+      "inferred": true
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "involves",
+      "object": "Nvidia",
+      "object_type": "COMPANY",
+      "inferred": true
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "involves",
+      "object": "OpenAI",
+      "object_type": "COMPANY",
+      "inferred": true
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY",
+      "inferred": true
+    },
+    {
+      "subject": "data center buildout",
+      "subject_type": "PROJECT",
+      "relation": "part of",
+      "object": "AI investment",
+      "object_type": "CONCEPT",
+      "inferred": true
+    },
+    {
+      "subject": "GPUs",
+      "subject_type": "TECH",
+      "relation": "necessary for",
+      "object": "United States AI leadership",
+      "object_type": "CONCEPT",
+      "inferred": true
+    },
+    {
+      "subject": "chips",
+      "subject_type": "TECH",
+      "relation": "necessary for",
+      "object": "United States AI leadership",
+      "object_type": "CONCEPT",
+      "inferred": true
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "financed by",
+      "object": "debt",
+      "object_type": "FINANCE",
+      "inferred": true
+    },
+    {
+      "subject": "internet bubble",
+      "subject_type": "EVENT",
+      "relation": "related to",
+      "object": "dot-com bubble",
+      "object_type": "EVENT",
+      "inferred": true
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "BlackRock",
+      "object_type": "COMPANY",
+      "inferred": true
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "worked at",
+      "object": "Intel",
+      "object_type": "COMPANY",
+      "inferred": true
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "CNBC",
+      "object_type": "MEDIA",
+      "inferred": true
+    },
+    {
+      "subject": "critics",
+      "subject_type": "GROUP",
+      "relation": "complained about",
+      "object": "GPT-5",
+      "object_type": "MODEL",
+      "inferred": true
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "COMPANY",
+    "MEDIA",
+    "REPORT",
+    "CLAIM",
+    "EVENT",
+    "INDEX",
+    "PERCENTAGE",
+    "TITLE",
+    "GROUP",
+    "COUNTRY",
+    "PRODUCT",
+    "REACTION",
+    "MODEL",
+    "STATUS",
+    "CUSTOMER",
+    "STANCE",
+    "METRIC",
+    "AMOUNT",
+    "SHOW",
+    "CONCEPT",
+    "PROJECT",
+    "CATEGORY",
+    "MARKET",
+    "TIME",
+    "FINANCE",
+    "TECH",
+    "SECTOR",
+    "INFRASTRUCTURE",
+    "INVESTMENT",
+    "ATTRIBUTE"
+  ]
+}

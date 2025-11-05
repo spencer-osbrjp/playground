@@ -1,0 +1,245 @@
+{
+  "triplets": [
+    {
+      "subject": "AI investment share",
+      "subject_type": "METRIC",
+      "relation": "greater than",
+      "object": "internet investment share",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "AI investment share",
+      "subject_type": "METRIC",
+      "relation": "greater by",
+      "object": "nearly one third",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "internet investment share",
+      "subject_type": "METRIC",
+      "relation": "during",
+      "object": "dotcom bubble",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "interviewed on",
+      "object": "Squawk Box",
+      "object_type": "SHOW"
+    },
+    {
+      "subject": "Squawk Box",
+      "subject_type": "SHOW",
+      "relation": "network",
+      "object": "CNBC",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "predicts",
+      "object": "AI bubble",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "pointed to",
+      "object": "OpenAI",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "AI deals",
+      "object": "$1 trillion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "project",
+      "object": "data center buildout",
+      "object_type": "PROJECT"
+    },
+    {
+      "subject": "data center buildout",
+      "subject_type": "PROJECT",
+      "relation": "cost",
+      "object": "$500 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "revenue forecast",
+      "object": "$13 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "spending on",
+      "object": "AI",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "advertisements",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "cloud services",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "interviewed on",
+      "object": "Squawk on the Street",
+      "object_type": "SHOW"
+    },
+    {
+      "subject": "Squawk on the Street",
+      "subject_type": "SHOW",
+      "relation": "network",
+      "object": "CNBC",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "BlackRock CEO",
+      "object_type": "TITLE"
+    },
+    {
+      "subject": "BlackRock",
+      "subject_type": "COMPANY",
+      "relation": "CEO",
+      "object": "Fink",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI not a bubble",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "necessary for",
+      "object": "United States AI leadership",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "GPUs",
+      "object_type": "TECH"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "chips",
+      "object_type": "TECH"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "HVAC",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "IT",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power grids",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power supplies",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Meta",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Microsoft",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Alphabet",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    }
+  ],
+  "entity_types": [
+    "AMOUNT",
+    "CATEGORY",
+    "COMPANY",
+    "CONCEPT",
+    "EVENT",
+    "GROUP",
+    "INFRASTRUCTURE",
+    "MEDIA",
+    "METRIC",
+    "PERSON",
+    "PROJECT",
+    "SECTOR",
+    "SHOW",
+    "TECH",
+    "TITLE"
+  ]
+}

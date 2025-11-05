@@ -1,0 +1,210 @@
+{
+  "triplets": [
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "centerpiece of",
+      "object": "global innovation",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Economists",
+      "subject_type": "GROUP",
+      "relation": "argue that",
+      "object": "AI overhyped bubble",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Startups",
+      "subject_type": "GROUP",
+      "relation": "valued at",
+      "object": "billions",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Startups",
+      "subject_type": "GROUP",
+      "relation": "have",
+      "object": "minimal proprietary tech",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Economists",
+      "subject_type": "GROUP",
+      "relation": "compare to",
+      "object": "dot-com crash",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Companies",
+      "subject_type": "GROUP",
+      "relation": "depend on",
+      "object": "large models",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Large models",
+      "subject_type": "TECHNOLOGY",
+      "relation": "from",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Large models",
+      "subject_type": "TECHNOLOGY",
+      "relation": "from",
+      "object": "Anthropic",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Economists",
+      "subject_type": "GROUP",
+      "relation": "say",
+      "object": "companies offer little differentiation",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Economists",
+      "subject_type": "GROUP",
+      "relation": "expect",
+      "object": "market correction",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "insist",
+      "object": "AI revolution",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "highlight",
+      "object": "natural language understanding",
+      "object_type": "FIELD"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "highlight",
+      "object": "multimodal reasoning",
+      "object_type": "FIELD"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "say",
+      "object": "breakthroughs transform healthcare",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "say",
+      "object": "breakthroughs transform law",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "say",
+      "object": "breakthroughs transform software engineering",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Advocates",
+      "subject_type": "GROUP",
+      "relation": "compare",
+      "object": "AI surge",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "AI surge",
+      "subject_type": "EVENT",
+      "relation": "compared to",
+      "object": "electricity",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI surge",
+      "subject_type": "EVENT",
+      "relation": "compared to",
+      "object": "internet",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Advocates",
+      "subject_type": "GROUP",
+      "relation": "claim",
+      "object": "productivity multiplies",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Advocates",
+      "subject_type": "GROUP",
+      "relation": "claim",
+      "object": "new human-machine collaboration",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Advocates",
+      "subject_type": "GROUP",
+      "relation": "say",
+      "object": "investments justified",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Advocates",
+      "subject_type": "GROUP",
+      "relation": "claim",
+      "object": "investments fuel industrial shift",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Economists",
+      "subject_type": "GROUP",
+      "relation": "agree on",
+      "object": "AI reshapes society",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Technologists",
+      "subject_type": "GROUP",
+      "relation": "agree on",
+      "object": "AI reshapes society",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reshapes",
+      "object": "views on intelligence",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reshapes",
+      "object": "views on labor",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reshapes",
+      "object": "views on creativity",
+      "object_type": "CONCEPT"
+    }
+  ],
+  "entity_types": [
+    "TECHNOLOGY",
+    "CONCEPT",
+    "GROUP",
+    "CLAIM",
+    "AMOUNT",
+    "EVENT",
+    "ORGANIZATION",
+    "FIELD"
+  ]
+}

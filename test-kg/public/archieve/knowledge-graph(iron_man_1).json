@@ -1,0 +1,623 @@
+{
+  "triplets": [
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "is a",
+      "object": "superhero",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "appearing in",
+      "object": "American comic books",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "American comic books",
+      "subject_type": "MEDIA",
+      "relation": "published by",
+      "object": "Marvel Comics",
+      "object_type": "PUBLISHER"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "co-created by",
+      "object": "Stan Lee",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Stan Lee",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "writer",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Stan Lee",
+      "subject_type": "PERSON",
+      "relation": "is an",
+      "object": "editor",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "developed by",
+      "object": "Larry Lieber",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Larry Lieber",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "scripter",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "designed by",
+      "object": "Don Heck",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Don Heck",
+      "subject_type": "PERSON",
+      "relation": "is an",
+      "object": "artist",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "designed by",
+      "object": "Jack Kirby",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Jack Kirby",
+      "subject_type": "PERSON",
+      "relation": "is an",
+      "object": "artist",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "first appeared in",
+      "object": "Tales of Suspense #39",
+      "object_type": "COMIC_ISSUE"
+    },
+    {
+      "subject": "Tales of Suspense #39",
+      "subject_type": "COMIC_ISSUE",
+      "relation": "publication year",
+      "object": "1962",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Tales of Suspense #39",
+      "subject_type": "COMIC_ISSUE",
+      "relation": "cover date",
+      "object": "March 1963",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "received his own title with",
+      "object": "Iron Man #1",
+      "object_type": "COMIC_ISSUE"
+    },
+    {
+      "subject": "Iron Man #1",
+      "subject_type": "COMIC_ISSUE",
+      "relation": "publication year",
+      "object": "1968",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "became a founding member of",
+      "object": "Avengers",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Thor",
+      "subject_type": "CHARACTER",
+      "relation": "founding member of",
+      "object": "Avengers",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Ant-Man",
+      "subject_type": "CHARACTER",
+      "relation": "founding member of",
+      "object": "Avengers",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Wasp",
+      "subject_type": "CHARACTER",
+      "relation": "founding member of",
+      "object": "Avengers",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Hulk",
+      "subject_type": "CHARACTER",
+      "relation": "founding member of",
+      "object": "Avengers",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Avengers",
+      "subject_type": "TEAM",
+      "relation": "is a",
+      "object": "superhero team",
+      "object_type": "TEAM"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "is the superhero persona of",
+      "object": "Tony Stark",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "full name",
+      "object": "Anthony Edward Stark",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "businessman",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "is an",
+      "object": "engineer",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "runs",
+      "object": "Stark Industries",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Stark Industries",
+      "subject_type": "COMPANY",
+      "relation": "is a",
+      "object": "weapons manufacturing company",
+      "object_type": "ORG_TYPE"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "captured in",
+      "object": "war zone",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "sustained",
+      "object": "severe heart wound",
+      "object_type": "INJURY"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "built",
+      "object": "Iron Man armor",
+      "object_type": "TECH"
+    },
+    {
+      "subject": "Tony Stark",
+      "subject_type": "PERSON",
+      "relation": "escaped",
+      "object": "captors",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Iron Man armor",
+      "subject_type": "TECH",
+      "relation": "grants",
+      "object": "superhuman strength",
+      "object_type": "ABILITY"
+    },
+    {
+      "subject": "Iron Man armor",
+      "subject_type": "TECH",
+      "relation": "grants",
+      "object": "flight",
+      "object_type": "ABILITY"
+    },
+    {
+      "subject": "Iron Man armor",
+      "subject_type": "TECH",
+      "relation": "grants",
+      "object": "energy projection",
+      "object_type": "ABILITY"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "created in response to",
+      "object": "Vietnam War",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Stan Lee",
+      "subject_type": "PERSON",
+      "relation": "attempted to create",
+      "object": "likeable pro-war character",
+      "object_type": "CHARACTER"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "used to explore",
+      "object": "political themes",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "set in",
+      "object": "Cold War",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Marvel Comics",
+      "subject_type": "PUBLISHER",
+      "relation": "moved away from",
+      "object": "geopolitics",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Marvel Comics",
+      "subject_type": "PUBLISHER",
+      "relation": "moved away by",
+      "object": "1970s",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "began exploring",
+      "object": "civil unrest",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "began exploring",
+      "object": "technological advancement",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "began exploring",
+      "object": "corporate espionage",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "began exploring",
+      "object": "alcoholism",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man stories",
+      "subject_type": "MEDIA",
+      "relation": "began exploring",
+      "object": "governmental authority",
+      "object_type": "THEME"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "major stories include",
+      "object": "Demon in a Bottle",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Demon in a Bottle",
+      "subject_type": "STORY",
+      "relation": "publication year",
+      "object": "1979",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "major stories include",
+      "object": "Armor Wars",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Armor Wars",
+      "subject_type": "STORY",
+      "relation": "publication years",
+      "object": "1987–1988",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "major stories include",
+      "object": "Extremis",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Extremis",
+      "subject_type": "STORY",
+      "relation": "publication year",
+      "object": "2005",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "major stories include",
+      "object": "Iron Man 2020",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Iron Man 2020",
+      "subject_type": "STORY",
+      "relation": "publication year",
+      "object": "2020",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "leading character in",
+      "object": "Civil War",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Civil War",
+      "subject_type": "STORY",
+      "relation": "publication years",
+      "object": "2006–2007",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "leading character in",
+      "object": "Dark Reign",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Dark Reign",
+      "subject_type": "STORY",
+      "relation": "publication years",
+      "object": "2008–2009",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "leading character in",
+      "object": "Civil War II",
+      "object_type": "STORY"
+    },
+    {
+      "subject": "Civil War II",
+      "subject_type": "STORY",
+      "relation": "publication year",
+      "object": "2016",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "James Rhodes",
+      "subject_type": "PERSON",
+      "relation": "emerged from",
+      "object": "Iron Man supporting cast",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "James Rhodes",
+      "subject_type": "PERSON",
+      "relation": "as",
+      "object": "War Machine",
+      "object_type": "ALIAS"
+    },
+    {
+      "subject": "James Rhodes",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "superhero",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Riri Williams",
+      "subject_type": "PERSON",
+      "relation": "emerged from",
+      "object": "Iron Man supporting cast",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Riri Williams",
+      "subject_type": "PERSON",
+      "relation": "as",
+      "object": "Ironheart",
+      "object_type": "ALIAS"
+    },
+    {
+      "subject": "Riri Williams",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "superhero",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Natasha Romanova",
+      "subject_type": "PERSON",
+      "relation": "emerged from",
+      "object": "Iron Man supporting cast",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Natasha Romanova",
+      "subject_type": "PERSON",
+      "relation": "as",
+      "object": "Black Widow",
+      "object_type": "ALIAS"
+    },
+    {
+      "subject": "Natasha Romanova",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "reformed villain",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Clint Barton",
+      "subject_type": "PERSON",
+      "relation": "emerged from",
+      "object": "Iron Man supporting cast",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Clint Barton",
+      "subject_type": "PERSON",
+      "relation": "as",
+      "object": "Hawkeye",
+      "object_type": "ALIAS"
+    },
+    {
+      "subject": "Clint Barton",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "reformed villain",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "archenemy",
+      "object": "Mandarin",
+      "object_type": "CHARACTER"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "enemies include",
+      "object": "supervillains of communist origin",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "enemies include",
+      "object": "Stark's business rivals",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Robert Downey Jr.",
+      "subject_type": "PERSON",
+      "relation": "portrayed",
+      "object": "Tony Stark",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Robert Downey Jr.",
+      "subject_type": "PERSON",
+      "relation": "portrayed Tony Stark in",
+      "object": "Iron Man (2008)",
+      "object_type": "FILM"
+    },
+    {
+      "subject": "Iron Man (2008)",
+      "subject_type": "FILM",
+      "relation": "is the first film of",
+      "object": "Marvel Cinematic Universe",
+      "object_type": "FRANCHISE"
+    },
+    {
+      "subject": "Robert Downey Jr.",
+      "subject_type": "PERSON",
+      "relation": "continued to portray",
+      "object": "Tony Stark",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Robert Downey Jr.",
+      "subject_type": "PERSON",
+      "relation": "final live-action appearance as Tony Stark in",
+      "object": "Avengers: Endgame (2019)",
+      "object_type": "FILM"
+    },
+    {
+      "subject": "Robert Downey Jr.",
+      "subject_type": "PERSON",
+      "relation": "portrayal popularized",
+      "object": "Iron Man",
+      "object_type": "CHARACTER"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "adaptations appear in",
+      "object": "animated direct-to-video films",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "adaptations appear in",
+      "object": "television series",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "Iron Man",
+      "subject_type": "CHARACTER",
+      "relation": "adaptations appear in",
+      "object": "video games",
+      "object_type": "MEDIA"
+    }
+  ],
+  "entity_types": [
+    "CHARACTER",
+    "ROLE",
+    "MEDIA",
+    "PUBLISHER",
+    "PERSON",
+    "COMIC_ISSUE",
+    "TEAM",
+    "COMPANY",
+    "ORG_TYPE",
+    "LOCATION",
+    "INJURY",
+    "TECH",
+    "ABILITY",
+    "EVENT",
+    "DATE",
+    "YEAR",
+    "DATE_RANGE",
+    "STORY",
+    "FRANCHISE",
+    "FILM",
+    "GROUP",
+    "ALIAS"
+  ]
+}

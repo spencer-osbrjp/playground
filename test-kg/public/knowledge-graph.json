@@ -1,180 +1,296 @@
 {
   "triplets": [
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "Jawi script",
-      "object": "ناسي لمق‎",
-      "object_type": "SCRIPT"
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reshapes",
+      "object": "career ladder",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "Malay pronunciation",
-      "object": "[ˌnasi ləˈmaʔ]",
-      "object_type": "PRONUNCIATION"
+      "subject": "Entry-level roles",
+      "subject_type": "OCCUPATION_LEVEL",
+      "relation": "provide",
+      "object": "training grounds",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "originates from",
-      "object": "Malay cuisine",
-      "object_type": "CUISINE"
+      "subject": "Junior staff",
+      "subject_type": "OCCUPATION_LEVEL",
+      "relation": "handle",
+      "object": "grunt work",
+      "object_type": "TASK"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "consists of",
-      "object": "rice",
-      "object_type": "INGREDIENT"
+      "subject": "International Workers' Day",
+      "subject_type": "HOLIDAY",
+      "relation": "date",
+      "object": "1 May",
+      "object_type": "DATE"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "cooked in",
-      "object": "coconut milk",
-      "object_type": "INGREDIENT"
+      "subject": "International Workers' Day",
+      "subject_type": "HOLIDAY",
+      "relation": "signifies",
+      "object": "labour rights struggle",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "cooked with",
-      "object": "pandan leaf",
-      "object_type": "INGREDIENT"
+      "subject": "AI-powered tools",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could automate",
+      "object": "entry-level roles",
+      "object_type": "OCCUPATION_LEVEL"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "commonly found in",
-      "object": "Malaysia",
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "53% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "53% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "market research analysts",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "67% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "67% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "sales representatives",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "9% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "9% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "managers of market research analysts",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "21% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "21% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "managers of sales representatives",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could impact",
+      "object": "50 million US jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "The Forum",
+      "subject_type": "ORGANIZATION",
+      "relation": "published",
+      "object": "Future of Jobs Report 2025",
+      "object_type": "REPORT"
+    },
+    {
+      "subject": "Future of Jobs Report 2025",
+      "subject_type": "REPORT",
+      "relation": "finds",
+      "object": "40% of employers",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "40% of employers",
+      "subject_type": "GROUP",
+      "relation": "expect to reduce",
+      "object": "workforce",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Workforce reduction",
+      "subject_type": "CONCEPT",
+      "relation": "when",
+      "object": "AI task automation",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Technology",
+      "subject_type": "TECHNOLOGY",
+      "relation": "most disruptive in",
+      "object": "labour market",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI and information processing tech",
+      "subject_type": "TECHNOLOGY",
+      "relation": "create",
+      "object": "11 million jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "AI and information processing tech",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displace",
+      "object": "9 million jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "Remaining hires",
+      "subject_type": "GROUP",
+      "relation": "expected to take",
+      "object": "AI-supported roles",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "AI-supported roles",
+      "subject_type": "OCCUPATION",
+      "relation": "pay",
+      "object": "less money",
+      "object_type": "MONETARY"
+    },
+    {
+      "subject": "Recent survey",
+      "subject_type": "SURVEY",
+      "relation": "finds",
+      "object": "49% of US Gen Z job hunters",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "49% of US Gen Z job hunters",
+      "subject_type": "GROUP",
+      "relation": "believe",
+      "object": "AI reduced college education value",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "US firms",
+      "subject_type": "ORGANIZATION",
+      "relation": "expand operations in",
+      "object": "India",
       "object_type": "COUNTRY"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "national dish of",
-      "object": "Malaysia",
-      "object_type": "COUNTRY"
+      "subject": "Skilled professionals in India",
+      "subject_type": "GROUP",
+      "relation": "employed at",
+      "object": "lower cost",
+      "object_type": "MONETARY"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "native to",
-      "object": "Singapore",
-      "object_type": "COUNTRY"
+      "subject": "US firms expansion in India",
+      "subject_type": "EVENT",
+      "relation": "intensifies",
+      "object": "competition for white-collar roles",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "native to",
-      "object": "Southern Thailand",
-      "object_type": "REGION"
+      "subject": "Bloomberg",
+      "subject_type": "ORGANIZATION",
+      "relation": "says",
+      "object": "talent pipeline problem",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Indonesia",
-      "object_type": "COUNTRY"
+      "subject": "Talent pipeline problem",
+      "subject_type": "CONCEPT",
+      "relation": "impacts",
+      "object": "social mobility",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Sumatra",
-      "object_type": "ISLAND"
+      "subject": "Talent pipeline problem",
+      "subject_type": "CONCEPT",
+      "relation": "impacts",
+      "object": "equal representation",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Riau",
-      "object_type": "PROVINCE"
+      "subject": "Charter",
+      "subject_type": "ORGANIZATION",
+      "relation": "says",
+      "object": "Generative AI could democratize job access",
+      "object_type": "CLAIM"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Riau Islands",
-      "object_type": "PROVINCE"
+      "subject": "Generative AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could democratize",
+      "object": "job access",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Medan",
-      "object_type": "CITY"
+      "subject": "Companies",
+      "subject_type": "ORGANIZATION",
+      "relation": "could use",
+      "object": "Artificial intelligence",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "essential dish for",
-      "object": "Malay-style breakfast",
-      "object_type": "MEAL"
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could train",
+      "object": "senior professionals",
+      "object_type": "GROUP"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Bangsamoro",
-      "object_type": "REGION"
+      "subject": "Generative AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "embedded in",
+      "object": "workplace",
+      "object_type": "LOCATION"
     },
     {
-      "subject": "Bangsamoro",
-      "subject_type": "REGION",
-      "relation": "located in",
-      "object": "Mindanao",
-      "object_type": "ISLAND"
+      "subject": "Companies",
+      "subject_type": "ORGANIZATION",
+      "relation": "need to invest",
+      "object": "upskilling",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "prepared by",
-      "object": "Filipino Moros",
-      "object_type": "ETHNIC GROUP"
-    },
-    {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Christmas Island",
-      "object_type": "TERRITORY"
-    },
-    {
-      "subject": "Nasi lemak",
-      "subject_type": "DISH",
-      "relation": "found in",
-      "object": "Cocos (Keeling) Islands",
-      "object_type": "TERRITORY"
-    },
-    {
-      "subject": "Christmas Island",
-      "subject_type": "TERRITORY",
-      "relation": "external territory of",
-      "object": "Australia",
-      "object_type": "COUNTRY"
-    },
-    {
-      "subject": "Cocos (Keeling) Islands",
-      "subject_type": "TERRITORY",
-      "relation": "external territory of",
-      "object": "Australia",
-      "object_type": "COUNTRY"
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "puts at risk",
+      "object": "entry-level jobs",
+      "object_type": "OCCUPATION_LEVEL"
     }
   ],
   "entity_types": [
-    "DISH",
-    "SCRIPT",
-    "PRONUNCIATION",
-    "CUISINE",
-    "INGREDIENT",
+    "TECHNOLOGY",
+    "CONCEPT",
+    "OCCUPATION_LEVEL",
+    "TASK",
+    "HOLIDAY",
+    "DATE",
+    "STATISTIC",
+    "OCCUPATION",
+    "GROUP",
+    "ORGANIZATION",
+    "REPORT",
     "COUNTRY",
-    "REGION",
-    "ISLAND",
-    "PROVINCE",
-    "CITY",
-    "MEAL",
-    "ETHNIC GROUP",
-    "TERRITORY"
+    "SURVEY",
+    "MONETARY",
+    "EVENT",
+    "LOCATION",
+    "CLAIM"
   ]
 }

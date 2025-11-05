@@ -258,6 +258,70 @@
       padding: 20px;
       font-style: italic;
     }
+
+    .merge-section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .merge-section h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .merge-controls {
+      display: flex;
+      gap: 15px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .merge-group {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .merge-group label {
+      font-weight: 600;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .merge-status {
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .merge-status.success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      display: block;
+    }
+
+    .merge-status.error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      display: block;
+    }
+
+    .merge-status.loading {
+      background: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+      display: block;
+    }
   </style>
 </head>
 
@@ -276,6 +340,15 @@
 
     <div class="controls">
       <button id="loadGraph" class="btn">Load & Visualize Graph</button>
+      <button id="loadMergedGraph" class="btn btn-secondary">Load Merged Graph</button>
+    </div>
+
+    <div class="merge-section">
+      <h2>🔗 Merge Knowledge Graphs</h2>
+      <p style="color: #666; margin-bottom: 15px;">
+        Run <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;path-to-file&gt;</code>
+        to merge with current graph. Example: <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge public/archieve/knowledge-graph(iron_man_1).json</code>
+      </p>
     </div>
 
     <div id="querySection" class="query-section">

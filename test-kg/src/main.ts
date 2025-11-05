@@ -8,6 +8,7 @@ type Triplet = {
   relation: string
   object: string
   object_type: string
+  inferred?: boolean
 }
 
 type KnowledgeGraph = {
@@ -25,7 +26,14 @@ const generateColor = (index: number): string => {
   const colors = [
     '#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8',
     '#F7DC6F', '#BB8FCE', '#85C1E2', '#F8B739', '#52BE80',
-    '#EC7063', '#5DADE2', '#F39C12', '#AF7AC5', '#48C9B0'
+    '#EC7063', '#5DADE2', '#F39C12', '#AF7AC5', '#48C9B0',
+    '#E74C3C', '#3498DB', '#9B59B6', '#1ABC9C', '#F39C12',
+    '#E67E22', '#2ECC71', '#34495E', '#16A085', '#27AE60',
+    '#2980B9', '#8E44AD', '#D35400', '#C0392B', '#BDC3C7',
+    '#7F8C8D', '#E84393', '#00B894', '#0984E3', '#6C5CE7',
+    '#FDCB6E', '#00CEC9', '#FF7675', '#A29BFE', '#FD79A8',
+    '#74B9FF', '#81ECEC', '#FAB1A0', '#DFE6E9', '#636E72',
+    '#55EFC4', '#FE9795', '#6C5CE7', '#FFEAA7', '#FAD390'
   ]
   return colors[index % colors.length]
 }
@@ -82,7 +90,8 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
       label: triplet.relation,
       arrows: 'to',
       font: { size: 11, align: 'middle' },
-      color: { color: '#848484' }
+      color: { color: '#848484' },
+      dashes: triplet.inferred ? true : false
     })
   })
 
@@ -169,31 +178,42 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
 
 // Load and visualize button handler
 const loadButton = document.getElementById('loadGraph') as HTMLButtonElement
+const loadMergedButton = document.getElementById('loadMergedGraph') as HTMLButtonElement
+
+const loadGraphFromFile = async (filePath: string, buttonElement: HTMLButtonElement, buttonOriginalText: string) => {
+  try {
+    buttonElement.disabled = true
+    buttonElement.textContent = 'Loading...'
+
+    const response = await fetch(filePath)
+
+    if (!response.ok) {
+      throw new Error(`File not found: ${filePath}`)
+    }
+
+    const knowledgeGraph: KnowledgeGraph = await response.json()
+    visualizeKnowledgeGraph(knowledgeGraph)
+    setupQueryHandlers()
+
+    buttonElement.textContent = buttonOriginalText.replace('Load', 'Reload')
+    buttonElement.disabled = false
+  } catch (error) {
+    console.error('Error loading knowledge graph:', error)
+    alert(`Error: ${error instanceof Error ? error.message : 'Failed to load graph'}`)
+    buttonElement.textContent = buttonOriginalText
+    buttonElement.disabled = false
+  }
+}
 
 if (loadButton) {
   loadButton.addEventListener('click', async () => {
-    try {
-      loadButton.disabled = true
-      loadButton.textContent = 'Loading...'
+    await loadGraphFromFile('/knowledge-graph.json', loadButton, 'Load & Visualize Graph')
+  })
+}
 
-      const response = await fetch('/knowledge-graph.json')
-
-      if (!response.ok) {
-        throw new Error('Knowledge graph file not found. Please run the extraction first: npm run extract')
-      }
-
-      const knowledgeGraph: KnowledgeGraph = await response.json()
-      visualizeKnowledgeGraph(knowledgeGraph)
-      setupQueryHandlers()
-
-      loadButton.textContent = 'Reload Graph'
-      loadButton.disabled = false
-    } catch (error) {
-      console.error('Error loading knowledge graph:', error)
-      alert(`Error: ${error instanceof Error ? error.message : 'Failed to load graph'}`)
-      loadButton.textContent = 'Load & Visualize Graph'
-      loadButton.disabled = false
-    }
+if (loadMergedButton) {
+  loadMergedButton.addEventListener('click', async () => {
+    await loadGraphFromFile('/knowledge-graph-merged.json', loadMergedButton, 'Load Merged Graph')
   })
 }
 
@@ -384,7 +404,8 @@ const highlightNodes = (triplets: Triplet[]) => {
         color: isHighlighted ? '#000' : '#CCC'
       },
       color: { color: isHighlighted ? '#667eea' : '#DDDDDD' },
-      width: isHighlighted ? 2 : 1
+      width: isHighlighted ? 2 : 1,
+      dashes: triplet.inferred ? true : false
     })
   })
 

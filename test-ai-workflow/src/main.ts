@@ -184,6 +184,7 @@ If the user's request is ambiguous or lacks specific details:
 - Proceed with implementation using your best judgment
 - Do NOT ask for clarification - make the most logical assumption and continue
 - If you make assumptions about the workflow structure, you may briefly note them after the JSON output
+- You are allowed to use multiple processors and switchers if it is necessary
 </handling_ambiguity>
 
 <persistence>
