@@ -1,0 +1,30 @@
+---
+We point out that the share of the economy devoted to AI investment is nearly a third greater than the share of the economy devoted to internet related investments back during the dotcom bubble. So, we think there are enough analogies there to make the call.
+
+Bernstein told CNBC’S “Squawk Box” last week that surging asset prices and extreme valuations indicate that an AI bubble is the “likely outcome.”
+
+He said that bubbles are defined by a vast gap between investment levels and the actual “credible expectations” for future profits.
+
+Bernstein pointed to OpenAI, which has already made around $1 trillion in AI deals, including a $500 billion data center buildout project, despite being set to generate only $13 billion in revenue.
+
+“You’ve got to account for future earnings,” Bernstein said. “But to us and many others, that divergence between credibly, plausible, expected future earnings and this level of investment certainly looks bubbly.”
+
+Despite the Magnificent Seven’s spending spree on AI, Bernstein said that their profits are mostly coming from other areas like advertisements and cloud services.
+
+“If you actually look at the AI investments, they tend to be a small share of [the profits],” Bernstein said. “So that actually contributes to the bubble hypothesis.”
+---
+
+---
+I think some of the investments that we’ve seen so far is not on AI, it’s more on cloud and the power of cloud. So I don’t believe this is a bubble, but I believe this is capital that in most cases is going to be well spent.
+
+Fink said on CNBC’s “Squawk on the Street” last week that there is definitely a “skyrocketing amount of capital” being funneled into AI, which he believes is not a sign of a bubble but rather a necessary investment for the U.S. to remain a global leader in AI technology.
+
+“Investing in AI does not just mean investing in GPUs and chips, it means investing in HVAC and IT, investing in power grids and power supplies,” Fink said.
+
+The BlackRock CEO said that these massive stakes will ultimately lead to some failures, but he is confident that major hyperscalers like Meta
+, Microsoft
+, and Alphabet
+ are in a “really good position” to be winners.
+
+“That is capitalism,” Fink said. “We’re going to have some big winners and we’re going to have some big losers ... but if you have a diversified portfolio, you’re going to be fine.”
+---

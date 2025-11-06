@@ -1,5 +1,7 @@
-import { Network } from "vis-network"
-import "vis-network/styles/vis-network.css"
+import Graph from "graphology";
+import Sigma from "sigma";
+import forceAtlas2 from "graphology-layout-forceatlas2";
+import { circular } from "graphology-layout";
 
 // Type definitions
 type Triplet = {
@@ -18,8 +20,10 @@ type KnowledgeGraph = {
 
 // Global state
 let currentKnowledgeGraph: KnowledgeGraph | null = null
-let currentNetwork: Network | null = null
+let currentSigma: Sigma | null = null
+let currentGraph: Graph | null = null
 let currentColorMap: Record<string, string> = {}
+let hoveredNode: string | null = null
 
 // Function to generate color for entity type dynamically
 const generateColor = (index: number): string => {
@@ -46,6 +50,12 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
     return
   }
 
+  // Clear existing graph
+  if (currentSigma) {
+    currentSigma.kill()
+    currentSigma = null
+  }
+
   // Store current graph globally
   currentKnowledgeGraph = knowledgeGraph
 
@@ -56,52 +66,133 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
   })
   const colorMap = currentColorMap
 
-  // Create nodes and edges from knowledge graph
-  const nodes = new Map()
-  const edges: any[] = []
+  // Create graph using graphology
+  const graph = new Graph({ multi: true })
+  currentGraph = graph
 
+  // Track entity types for positioning
+  const entityTypeGroups: Record<string, string[]> = {}
+  knowledgeGraph.entity_types.forEach(type => {
+    entityTypeGroups[type] = []
+  })
+
+  // Add nodes
+  const nodeSet = new Set<string>()
   knowledgeGraph.triplets.forEach((triplet) => {
-    // Add subject node
-    if (!nodes.has(triplet.subject)) {
-      nodes.set(triplet.subject, {
-        id: triplet.subject,
+    if (!nodeSet.has(triplet.subject)) {
+      nodeSet.add(triplet.subject)
+      graph.addNode(triplet.subject, {
         label: triplet.subject,
-        title: `Type: ${triplet.subject_type}`,
+        entityType: triplet.subject_type,
         color: colorMap[triplet.subject_type] || '#95A5A6',
-        font: { size: 14 }
+        size: 10,
+        x: 0,
+        y: 0
       })
+      // Initialize array if it doesn't exist
+      if (!entityTypeGroups[triplet.subject_type]) {
+        entityTypeGroups[triplet.subject_type] = []
+      }
+      entityTypeGroups[triplet.subject_type].push(triplet.subject)
     }
 
-    // Add object node
-    if (!nodes.has(triplet.object)) {
-      nodes.set(triplet.object, {
-        id: triplet.object,
+    if (!nodeSet.has(triplet.object)) {
+      nodeSet.add(triplet.object)
+      graph.addNode(triplet.object, {
         label: triplet.object,
-        title: `Type: ${triplet.object_type}`,
+        entityType: triplet.object_type,
         color: colorMap[triplet.object_type] || '#95A5A6',
-        font: { size: 14 }
+        size: 10,
+        x: 0,
+        y: 0
       })
+      // Initialize array if it doesn't exist
+      if (!entityTypeGroups[triplet.object_type]) {
+        entityTypeGroups[triplet.object_type] = []
+      }
+      entityTypeGroups[triplet.object_type].push(triplet.object)
+    }
+  })
+
+  // Position nodes by entity type in circular clusters
+  const allEntityTypes = Object.keys(entityTypeGroups)
+  const numTypes = allEntityTypes.length
+  const clusterRadius = 300
+  allEntityTypes.forEach((type, typeIndex) => {
+    const angle = (2 * Math.PI * typeIndex) / numTypes
+    const centerX = Math.cos(angle) * clusterRadius
+    const centerY = Math.sin(angle) * clusterRadius
+
+    const nodesInType = entityTypeGroups[type]
+    if (!nodesInType || nodesInType.length === 0) return
+
+    const typeClusterRadius = Math.min(150, 50 + nodesInType.length * 5)
+
+    nodesInType.forEach((nodeId, nodeIndex) => {
+      const nodeAngle = (2 * Math.PI * nodeIndex) / nodesInType.length
+      const x = centerX + Math.cos(nodeAngle) * typeClusterRadius
+      const y = centerY + Math.sin(nodeAngle) * typeClusterRadius
+
+      graph.setNodeAttribute(nodeId, 'x', x)
+      graph.setNodeAttribute(nodeId, 'y', y)
+    })
+  })
+
+  // Add edges with visual distinction for inferred edges
+  // Track parallel edges to add different curvatures
+  const edgesBetweenNodes: Record<string, number> = {}
+
+  knowledgeGraph.triplets.forEach((triplet, index) => {
+    const edgeId = `edge-${index}`
+    const nodeKey = `${triplet.subject}->${triplet.object}`
+    const reverseKey = `${triplet.object}->${triplet.subject}`
+
+    // Track how many edges exist between these nodes
+    if (!edgesBetweenNodes[nodeKey]) edgesBetweenNodes[nodeKey] = 0
+    edgesBetweenNodes[nodeKey]++
+
+    // Calculate curvature based on parallel edges
+    let curvature = 0.2
+    if (edgesBetweenNodes[reverseKey]) {
+      // If there's an edge in the opposite direction, increase curvature
+      curvature = 0.3 + (edgesBetweenNodes[nodeKey] * 0.1)
+    } else if (edgesBetweenNodes[nodeKey] > 1) {
+      // Multiple edges in same direction
+      curvature = 0.2 + ((edgesBetweenNodes[nodeKey] - 1) * 0.15)
     }
 
-    // Add edge
-    edges.push({
-      from: triplet.subject,
-      to: triplet.object,
+    graph.addEdge(triplet.subject, triplet.object, {
+      id: edgeId,
       label: triplet.relation,
-      arrows: 'to',
-      font: { size: 11, align: 'middle' },
-      color: { color: '#848484' },
-      dashes: triplet.inferred ? true : false
+      size: triplet.inferred ? 2 : 2.5,
+      color: triplet.inferred ? '#9B59B6' : '#2C3E50', // Purple for inferred, dark blue-gray for regular
+      inferred: triplet.inferred || false,
+      relationLabel: triplet.relation,
+      type: 'arrow', // Use arrow type to show direction
+      curvature: curvature // Add curvature to avoid edge overlap
     })
+  })
+
+  // Apply ForceAtlas2 layout for better positioning
+  forceAtlas2.assign(graph, {
+    iterations: 500,
+    settings: {
+      gravity: 1,
+      scalingRatio: 10,
+      strongGravityMode: true,
+      barnesHutOptimize: true,
+      slowDown: 5,
+      linLogMode: false
+    }
   })
 
   // Update stats
   const entityCountEl = document.getElementById('entityCount')
   const relationCountEl = document.getElementById('relationCount')
-  if (entityCountEl) entityCountEl.textContent = nodes.size.toString()
-  if (relationCountEl) relationCountEl.textContent = edges.length.toString()
+  if (entityCountEl) entityCountEl.textContent = nodeSet.size.toString()
+  if (relationCountEl) relationCountEl.textContent = knowledgeGraph.triplets.length.toString()
 
-  // Create legend with dynamic entity types
+  // Create legend
   const legend = document.getElementById('legend')
   if (legend) {
     legend.innerHTML = ''
@@ -116,43 +207,69 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
     })
   }
 
-  // Create network visualization
-  const data = {
-    nodes: Array.from(nodes.values()),
-    edges: edges
-  }
+  // Initialize Sigma with arrow heads and curved edges
+  currentSigma = new Sigma(graph, container, {
+    renderEdgeLabels: true,
+    defaultNodeColor: '#999',
+    defaultEdgeColor: '#ccc',
+    defaultEdgeType: 'arrow', // Show arrows on all edges
+    labelSize: 12,
+    labelWeight: 'normal',
+    edgeLabelSize: 10,
+    edgeLabelWeight: 'normal',
+    enableEdgeEvents: true
+  })
 
-  const options = {
-    nodes: {
-      shape: 'dot',
-      size: 25,
-      borderWidth: 2,
-      borderWidthSelected: 3
-    },
-    edges: {
-      smooth: {
-        type: 'continuous'
+  // Click interaction to show node info panel
+  currentSigma.on('clickNode', ({ node }) => {
+    showNodeInfo(node)
+  })
+
+  // Hover interactions
+  currentSigma.on('enterNode', ({ node }) => {
+    hoveredNode = node
+    const nodeData = graph.getNodeAttributes(node)
+    container.style.cursor = 'pointer'
+
+    // Highlight connected nodes and edges
+    graph.forEachNode((n) => {
+      if (n !== node) {
+        graph.setNodeAttribute(n, 'highlighted', false)
+      } else {
+        graph.setNodeAttribute(n, 'highlighted', true)
       }
-    },
-    physics: {
-      stabilization: {
-        iterations: 200
-      },
-      barnesHut: {
-        gravitationalConstant: -8000,
-        springConstant: 0.04,
-        springLength: 150
+    })
+
+    graph.forEachEdge((edge) => {
+      const source = graph.source(edge)
+      const target = graph.target(edge)
+      if (source === node || target === node) {
+        graph.setEdgeAttribute(edge, 'size', 5)
+      } else {
+        graph.setEdgeAttribute(edge, 'size', 1)
       }
-    },
-    interaction: {
-      hover: true,
-      tooltipDelay: 100
-    }
-  }
+    })
 
-  currentNetwork = new Network(container, data, options)
+    currentSigma?.refresh()
+  })
 
-  // Show the network container and query section
+  currentSigma.on('leaveNode', () => {
+    hoveredNode = null
+    container.style.cursor = 'default'
+
+    // Reset highlighting
+    graph.forEachNode((n) => {
+      graph.setNodeAttribute(n, 'highlighted', false)
+    })
+
+    graph.forEachEdge((edge, attributes) => {
+      graph.setEdgeAttribute(edge, 'size', attributes.inferred ? 2 : 2.5)
+    })
+
+    currentSigma?.refresh()
+  })
+
+  // Show sections
   const networkSection = document.getElementById('networkSection')
   if (networkSection) {
     networkSection.style.display = 'block'
@@ -176,9 +293,10 @@ const visualizeKnowledgeGraph = (knowledgeGraph: KnowledgeGraph) => {
   }
 }
 
-// Load and visualize button handler
+// Load and visualize button handlers
 const loadButton = document.getElementById('loadGraph') as HTMLButtonElement
 const loadMergedButton = document.getElementById('loadMergedGraph') as HTMLButtonElement
+const loadInferredButton = document.getElementById('loadInferredGraph') as HTMLButtonElement
 
 const loadGraphFromFile = async (filePath: string, buttonElement: HTMLButtonElement, buttonOriginalText: string) => {
   try {
@@ -217,21 +335,175 @@ if (loadMergedButton) {
   })
 }
 
+if (loadInferredButton) {
+  loadInferredButton.addEventListener('click', async () => {
+    await loadGraphFromFile('/knowledge-graph-inferred.json', loadInferredButton, 'Load Inferred Graph')
+  })
+}
+
+// Node Info Panel Functions
+const showNodeInfo = (nodeId: string) => {
+  if (!currentGraph || !currentKnowledgeGraph) return
+
+  const nodeData = currentGraph.getNodeAttributes(nodeId)
+  const panel = document.getElementById('nodeInfoPanel')
+  const title = document.getElementById('nodeInfoTitle')
+  const type = document.getElementById('nodeInfoType')
+  const stats = document.getElementById('nodeStats')
+  const outgoing = document.getElementById('outgoingRelationships')
+  const incoming = document.getElementById('incomingRelationships')
+
+  if (!panel || !title || !type || !stats || !outgoing || !incoming) return
+
+  // Set node title and type
+  title.textContent = nodeData.label
+  type.textContent = nodeData.entityType
+  type.style.backgroundColor = nodeData.color
+
+  // Find all relationships for this node
+  const outgoingRels: Triplet[] = []
+  const incomingRels: Triplet[] = []
+
+  currentKnowledgeGraph.triplets.forEach(triplet => {
+    if (triplet.subject === nodeId) {
+      outgoingRels.push(triplet)
+    }
+    if (triplet.object === nodeId) {
+      incomingRels.push(triplet)
+    }
+  })
+
+  // Update stats
+  stats.innerHTML = `
+    <div class="stat-box">
+      <span class="stat-number">${outgoingRels.length}</span>
+      <span class="stat-label">Outgoing</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">${incomingRels.length}</span>
+      <span class="stat-label">Incoming</span>
+    </div>
+  `
+
+  // Render outgoing relationships
+  if (outgoingRels.length > 0) {
+    outgoing.innerHTML = outgoingRels.map(rel => `
+      <div class="relationship-item ${rel.inferred ? 'inferred' : ''}" onclick="highlightRelationship('${rel.subject}', '${rel.object}')">
+        <div class="relationship-arrow">
+          <span class="relationship-entity">${nodeData.label}</span>
+          <span class="relationship-direction">→</span>
+          <span class="relationship-relation">${rel.relation}</span>
+          <span class="relationship-direction">→</span>
+          <span class="relationship-entity">${rel.object}</span>
+          ${rel.inferred ? '<span class="relationship-badge">INFERRED</span>' : ''}
+        </div>
+      </div>
+    `).join('')
+  } else {
+    outgoing.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">→</div>
+        <div class="empty-state-text">No outgoing relationships</div>
+      </div>
+    `
+  }
+
+  // Render incoming relationships
+  if (incomingRels.length > 0) {
+    incoming.innerHTML = incomingRels.map(rel => `
+      <div class="relationship-item ${rel.inferred ? 'inferred' : ''}" onclick="highlightRelationship('${rel.subject}', '${rel.object}')">
+        <div class="relationship-arrow">
+          <span class="relationship-entity">${rel.subject}</span>
+          <span class="relationship-direction">→</span>
+          <span class="relationship-relation">${rel.relation}</span>
+          <span class="relationship-direction">→</span>
+          <span class="relationship-entity">${nodeData.label}</span>
+          ${rel.inferred ? '<span class="relationship-badge">INFERRED</span>' : ''}
+        </div>
+      </div>
+    `).join('')
+  } else {
+    incoming.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">←</div>
+        <div class="empty-state-text">No incoming relationships</div>
+      </div>
+    `
+  }
+
+  // Show panel
+  panel.classList.add('visible')
+}
+
+const hideNodeInfo = () => {
+  const panel = document.getElementById('nodeInfoPanel')
+  if (panel) {
+    panel.classList.remove('visible')
+  }
+}
+
+// Make highlightRelationship globally accessible
+(window as any).highlightRelationship = (source: string, target: string) => {
+  if (!currentGraph || !currentSigma) return
+
+  // Highlight the specific relationship
+  currentGraph.forEachNode((node) => {
+    if (node === source || node === target) {
+      currentGraph!.setNodeAttribute(node, 'size', 15)
+    } else {
+      currentGraph!.setNodeAttribute(node, 'size', 5)
+      currentGraph!.setNodeAttribute(node, 'color', '#CCCCCC')
+    }
+  })
+
+  currentGraph.forEachEdge((edge) => {
+    const edgeSource = currentGraph!.source(edge)
+    const edgeTarget = currentGraph!.target(edge)
+    if (edgeSource === source && edgeTarget === target) {
+      currentGraph!.setEdgeAttribute(edge, 'size', 6)
+      currentGraph!.setEdgeAttribute(edge, 'color', '#667eea')
+    } else {
+      currentGraph!.setEdgeAttribute(edge, 'size', 1)
+      currentGraph!.setEdgeAttribute(edge, 'color', '#DDDDDD')
+    }
+  })
+
+  currentSigma.refresh()
+
+  // Auto-reset after 2 seconds
+  setTimeout(() => {
+    if (currentGraph && currentSigma) {
+      currentGraph.forEachNode((node) => {
+        currentGraph!.setNodeAttribute(node, 'size', 10)
+        const nodeData = currentGraph!.getNodeAttributes(node)
+        currentGraph!.setNodeAttribute(node, 'color', currentColorMap[nodeData.entityType])
+      })
+
+      currentGraph.forEachEdge((edge, attributes) => {
+        currentGraph!.setEdgeAttribute(edge, 'size', attributes.inferred ? 2 : 2.5)
+        currentGraph!.setEdgeAttribute(edge, 'color', attributes.inferred ? '#9B59B6' : '#2C3E50')
+      })
+
+      currentSigma.refresh()
+    }
+  }, 2000)
+}
+
+// Setup close button handler
+document.getElementById('closeNodeInfo')?.addEventListener('click', hideNodeInfo)
+
 // Query Functions
 const setupQueryHandlers = () => {
-  // Execute query button
   const executeQueryBtn = document.getElementById('executeQuery')
   if (executeQueryBtn) {
     executeQueryBtn.addEventListener('click', executeQuery)
   }
 
-  // Find neighbors button
   const findNeighborsBtn = document.getElementById('findNeighbors')
   if (findNeighborsBtn) {
     findNeighborsBtn.addEventListener('click', findConnectedEntities)
   }
 
-  // Clear filters button
   const clearFiltersBtn = document.getElementById('clearFilters')
   if (clearFiltersBtn) {
     clearFiltersBtn.addEventListener('click', clearFilters)
@@ -247,7 +519,6 @@ const executeQuery = () => {
 
   let results = currentKnowledgeGraph.triplets
 
-  // Filter by entity
   if (searchEntity) {
     results = results.filter(t =>
       t.subject.toLowerCase().includes(searchEntity) ||
@@ -255,7 +526,6 @@ const executeQuery = () => {
     )
   }
 
-  // Filter by type
   if (filterType) {
     results = results.filter(t =>
       t.subject_type === filterType ||
@@ -263,7 +533,6 @@ const executeQuery = () => {
     )
   }
 
-  // Filter by relation
   if (searchRelation) {
     results = results.filter(t =>
       t.relation.toLowerCase().includes(searchRelation)
@@ -284,7 +553,6 @@ const findConnectedEntities = () => {
     return
   }
 
-  // Find all triplets where the entity appears
   const connectedTriplets = currentKnowledgeGraph.triplets.filter(t =>
     t.subject.toLowerCase().includes(searchEntity.toLowerCase()) ||
     t.object.toLowerCase().includes(searchEntity.toLowerCase())
@@ -295,21 +563,30 @@ const findConnectedEntities = () => {
 }
 
 const clearFilters = () => {
-  // Clear input fields
   (document.getElementById('searchEntity') as HTMLInputElement).value = ''
   (document.getElementById('filterType') as HTMLSelectElement).value = ''
   (document.getElementById('searchRelation') as HTMLInputElement).value = ''
   (document.getElementById('pathQuery') as HTMLInputElement).value = ''
 
-  // Hide results
   const resultsSection = document.getElementById('resultsSection')
   if (resultsSection) {
     resultsSection.style.display = 'none'
   }
 
-  // Reset visualization
-  if (currentKnowledgeGraph) {
-    visualizeKnowledgeGraph(currentKnowledgeGraph)
+  if (currentGraph) {
+    currentGraph.forEachNode((node) => {
+      currentGraph!.setNodeAttribute(node, 'hidden', false)
+      const originalColor = currentColorMap[currentGraph!.getNodeAttribute(node, 'entityType')]
+      currentGraph!.setNodeAttribute(node, 'color', originalColor)
+      currentGraph!.setNodeAttribute(node, 'size', 10)
+    })
+
+    currentGraph.forEachEdge((edge, attributes) => {
+      currentGraph!.setEdgeAttribute(edge, 'hidden', false)
+      currentGraph!.setEdgeAttribute(edge, 'size', attributes.inferred ? 2 : 3)
+    })
+
+    currentSigma?.refresh()
   }
 }
 
@@ -333,114 +610,49 @@ const displayResults = (results: Triplet[]) => {
       <strong>${triplet.subject}</strong> (${triplet.subject_type})
       → <em>${triplet.relation}</em> →
       <strong>${triplet.object}</strong> (${triplet.object_type})
+      ${triplet.inferred ? '<span style="color: #999; font-style: italic;"> [INFERRED]</span>' : ''}
     </div>
   `).join('')
 }
 
 const highlightNodes = (triplets: Triplet[]) => {
-  if (!currentNetwork || !currentKnowledgeGraph) return
+  if (!currentGraph || !currentSigma) return
 
-  // Get all entities from filtered triplets
   const highlightedEntities = new Set<string>()
-  triplets.forEach(t => {
+  const highlightedEdges = new Set<string>()
+
+  triplets.forEach((t, index) => {
     highlightedEntities.add(t.subject)
     highlightedEntities.add(t.object)
+    highlightedEdges.add(`edge-${currentKnowledgeGraph!.triplets.indexOf(t)}`)
   })
 
-  // Create new visualization with highlighted nodes
-  const container = document.getElementById('network')
-  if (!container) return
+  if (highlightedEntities.size === 0) return
 
-  const nodes = new Map()
-  const edges: any[] = []
-
-  currentKnowledgeGraph.triplets.forEach((triplet) => {
-    const isHighlighted = triplets.some(t =>
-      (t.subject === triplet.subject && t.object === triplet.object) ||
-      (t.subject === triplet.object && t.object === triplet.subject)
-    )
-
-    // Add subject node
-    if (!nodes.has(triplet.subject)) {
-      const isSubjectHighlighted = highlightedEntities.has(triplet.subject)
-      nodes.set(triplet.subject, {
-        id: triplet.subject,
-        label: triplet.subject,
-        title: `Type: ${triplet.subject_type}`,
-        color: isSubjectHighlighted ? currentColorMap[triplet.subject_type] : '#CCCCCC',
-        font: {
-          size: isSubjectHighlighted ? 16 : 12,
-          color: isSubjectHighlighted ? '#000' : '#999'
-        },
-        opacity: isSubjectHighlighted ? 1 : 0.3
-      })
+  // Update node visibility and styling
+  currentGraph.forEachNode((node) => {
+    if (highlightedEntities.has(node)) {
+      currentGraph!.setNodeAttribute(node, 'hidden', false)
+      currentGraph!.setNodeAttribute(node, 'size', 15)
+      const originalColor = currentColorMap[currentGraph!.getNodeAttribute(node, 'entityType')]
+      currentGraph!.setNodeAttribute(node, 'color', originalColor)
+    } else {
+      currentGraph!.setNodeAttribute(node, 'color', '#CCCCCC')
+      currentGraph!.setNodeAttribute(node, 'size', 5)
     }
-
-    // Add object node
-    if (!nodes.has(triplet.object)) {
-      const isObjectHighlighted = highlightedEntities.has(triplet.object)
-      nodes.set(triplet.object, {
-        id: triplet.object,
-        label: triplet.object,
-        title: `Type: ${triplet.object_type}`,
-        color: isObjectHighlighted ? currentColorMap[triplet.object_type] : '#CCCCCC',
-        font: {
-          size: isObjectHighlighted ? 16 : 12,
-          color: isObjectHighlighted ? '#000' : '#999'
-        },
-        opacity: isObjectHighlighted ? 1 : 0.3
-      })
-    }
-
-    // Add edge
-    edges.push({
-      from: triplet.subject,
-      to: triplet.object,
-      label: triplet.relation,
-      arrows: 'to',
-      font: {
-        size: isHighlighted ? 12 : 10,
-        align: 'middle',
-        color: isHighlighted ? '#000' : '#CCC'
-      },
-      color: { color: isHighlighted ? '#667eea' : '#DDDDDD' },
-      width: isHighlighted ? 2 : 1,
-      dashes: triplet.inferred ? true : false
-    })
   })
 
-  const data = {
-    nodes: Array.from(nodes.values()),
-    edges: edges
-  }
-
-  const options = {
-    nodes: {
-      shape: 'dot',
-      size: 25,
-      borderWidth: 2,
-      borderWidthSelected: 3
-    },
-    edges: {
-      smooth: {
-        type: 'continuous'
-      }
-    },
-    physics: {
-      stabilization: {
-        iterations: 200
-      },
-      barnesHut: {
-        gravitationalConstant: -8000,
-        springConstant: 0.04,
-        springLength: 150
-      }
-    },
-    interaction: {
-      hover: true,
-      tooltipDelay: 100
+  // Update edge visibility and styling
+  currentGraph.forEachEdge((edge) => {
+    if (highlightedEdges.has(currentGraph!.getEdgeAttribute(edge, 'id'))) {
+      currentGraph!.setEdgeAttribute(edge, 'hidden', false)
+      currentGraph!.setEdgeAttribute(edge, 'color', '#667eea')
+      currentGraph!.setEdgeAttribute(edge, 'size', 5)
+    } else {
+      currentGraph!.setEdgeAttribute(edge, 'color', '#DDDDDD')
+      currentGraph!.setEdgeAttribute(edge, 'size', 1)
     }
-  }
+  })
 
-  currentNetwork = new Network(container, data, options)
+  currentSigma.refresh()
 }

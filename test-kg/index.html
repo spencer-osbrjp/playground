@@ -6,323 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Knowledge Graph Visualization</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      color: white;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .controls {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      font-weight: 600;
-    }
-
-    .btn:hover:not(:disabled) {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    .btn:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-
-    .info {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      display: none;
-    }
-
-    .info-row {
-      display: flex;
-      gap: 30px;
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    .info-item {
-      color: #333;
-    }
-
-    .info-item strong {
-      color: #667eea;
-    }
-
-    .legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 15px;
-      padding-top: 15px;
-      border-top: 1px solid #e0e0e0;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .legend-color {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 2px solid #666;
-    }
-
-    #network {
-      width: 100%;
-      height: 70vh;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .instructions {
-      background: rgba(255,255,255,0.95);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .instructions h2 {
-      color: #667eea;
-      margin-bottom: 10px;
-    }
-
-    .instructions ol {
-      margin-left: 20px;
-      color: #333;
-    }
-
-    .instructions li {
-      margin: 8px 0;
-    }
-
-    .instructions code {
-      background: #f5f5f5;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: 'Courier New', monospace;
-    }
-
-    .query-section {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      display: none;
-    }
-
-    .query-section h2 {
-      color: #667eea;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-
-    .query-controls {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-
-    .query-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .query-group label {
-      font-weight: 600;
-      color: #333;
-      font-size: 14px;
-    }
-
-    .query-input {
-      padding: 10px;
-      border: 2px solid #e0e0e0;
-      border-radius: 5px;
-      font-size: 14px;
-      transition: border-color 0.3s;
-    }
-
-    .query-input:focus {
-      outline: none;
-      border-color: #667eea;
-    }
-
-    select.query-input {
-      cursor: pointer;
-    }
-
-    .query-buttons {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .btn-secondary {
-      background: #6c757d;
-    }
-
-    .btn-secondary:hover:not(:disabled) {
-      background: #5a6268;
-    }
-
-    .btn-clear {
-      background: #dc3545;
-    }
-
-    .btn-clear:hover:not(:disabled) {
-      background: #c82333;
-    }
-
-    .results-section {
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 2px solid #e0e0e0;
-    }
-
-    .results-section h3 {
-      color: #667eea;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-
-    .results-list {
-      max-height: 300px;
-      overflow-y: auto;
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: 5px;
-    }
-
-    .result-item {
-      padding: 10px;
-      margin-bottom: 8px;
-      background: white;
-      border-radius: 5px;
-      border-left: 4px solid #667eea;
-      font-size: 14px;
-    }
-
-    .result-item strong {
-      color: #667eea;
-    }
-
-    .no-results {
-      text-align: center;
-      color: #6c757d;
-      padding: 20px;
-      font-style: italic;
-    }
-
-    .merge-section {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    .merge-section h2 {
-      color: #667eea;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-
-    .merge-controls {
-      display: flex;
-      gap: 15px;
-      align-items: flex-end;
-      flex-wrap: wrap;
-    }
-
-    .merge-group {
-      flex: 1;
-      min-width: 250px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .merge-group label {
-      font-weight: 600;
-      color: #333;
-      font-size: 14px;
-    }
-
-    .merge-status {
-      margin-top: 15px;
-      padding: 12px;
-      border-radius: 5px;
-      font-size: 14px;
-      display: none;
-    }
-
-    .merge-status.success {
-      background: #d4edda;
-      color: #155724;
-      border: 1px solid #c3e6cb;
-      display: block;
-    }
-
-    .merge-status.error {
-      background: #f8d7da;
-      color: #721c24;
-      border: 1px solid #f5c6cb;
-      display: block;
-    }
-
-    .merge-status.loading {
-      background: #d1ecf1;
-      color: #0c5460;
-      border: 1px solid #bee5eb;
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="/src/style.css">
+    
 </head>
 
 <body>
@@ -332,22 +17,33 @@
     <div class="instructions">
       <h2>How to use:</h2>
       <ol>
-        <li>First, run the extraction script: <code>npm run extract</code></li>
-        <li>Then click the button below to load and visualize the graph</li>
-        <li>Interact with the graph: drag nodes, zoom, and hover for details</li>
+        <li>Run extraction: <code>npm run extract &lt;source-file&gt;</code> to create knowledge-graph.json</li>
+        <li>(Optional) Merge graphs: <code>npm run merge &lt;path&gt;</code></li>
+        <li>(Optional) Add inferences: <code>npm run infer &lt;path&gt;</code> - inferred relationships shown with purple color</li>
+        <li>Click a button below to load and visualize the graph</li>
+        <li>Interact with the graph: drag nodes, zoom, click nodes for details</li>
       </ol>
     </div>
 
     <div class="controls">
       <button id="loadGraph" class="btn">Load & Visualize Graph</button>
       <button id="loadMergedGraph" class="btn btn-secondary">Load Merged Graph</button>
+      <button id="loadInferredGraph" class="btn btn-secondary">Load Inferred Graph</button>
     </div>
 
     <div class="merge-section">
-      <h2>🔗 Merge Knowledge Graphs</h2>
-      <p style="color: #666; margin-bottom: 15px;">
-        Run <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;path-to-file&gt;</code>
-        to merge with current graph. Example: <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge public/archieve/knowledge-graph(iron_man_1).json</code>
+      <h2>🔗 Advanced Features</h2>
+      <p style="color: #666; margin-bottom: 10px;">
+        <strong>Extract knowledge graph:</strong><br/>
+        <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run extract &lt;source-file&gt;</code> - extracts from text file (txt, md, etc.)
+      </p>
+      <p style="color: #666; margin-bottom: 10px;">
+        <strong>Merge graphs:</strong><br/>
+        <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;file&gt;</code> - merges with knowledge-graph.json<br/>
+        <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;file1&gt; &lt;file2&gt;</code> - merges two files
+      </p>
+      <p style="color: #666; margin-bottom: 0px;">
+        <strong>Add inferences:</strong> <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run infer &lt;path-to-file&gt;</code> (creates *-inferred.json with purple-colored inferred relationships)
       </p>
     </div>
 
@@ -399,10 +95,44 @@
           <strong>Total Relations:</strong> <span id="relationCount">0</span>
         </div>
       </div>
-      <div class="legend" id="legend"></div>
+      <div class="legend">
+        <strong style="margin-right: 15px;">Entity Types:</strong>
+        <div id="legend" style="display: inline-flex; flex-wrap: wrap; gap: 15px;"></div>
+      </div>
+      <div class="legend" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #e0e0e0;">
+        <strong style="margin-right: 15px;">Edge Types:</strong>
+        <div class="legend-item">
+          <div class="legend-line" style="background-color: #2C3E50;"></div>
+          <span>Regular Relationship</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-line" style="background-color: #9B59B6;"></div>
+          <span>Inferred Relationship</span>
+        </div>
+      </div>
     </div>
 
     <div id="network"></div>
+  </div>
+
+  <!-- Node Info Panel -->
+  <div id="nodeInfoPanel">
+    <div class="node-info-header">
+      <button class="node-info-close" id="closeNodeInfo">×</button>
+      <div class="node-info-title" id="nodeInfoTitle">Select a node</div>
+      <div class="node-info-type" id="nodeInfoType"></div>
+    </div>
+    <div class="node-info-content">
+      <div class="node-stats" id="nodeStats"></div>
+      <div class="node-info-section">
+        <div class="node-info-section-title">Outgoing Relationships</div>
+        <div id="outgoingRelationships"></div>
+      </div>
+      <div class="node-info-section">
+        <div class="node-info-section-title">Incoming Relationships</div>
+        <div id="incomingRelationships"></div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="/src/main.ts"></script>

@@ -1,0 +1,224 @@
+{
+  "triplets": [
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "CEO of",
+      "object": "OpenAI",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "believes",
+      "object": "AI bubble",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "compared to",
+      "object": "dot-com bubble",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "lost",
+      "object": "nearly 80%",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "Joe Tsai",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI investment",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI investment",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "warned about",
+      "object": "AI investment",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI bubble bigger",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "AI bubble",
+      "subject_type": "CONCEPT",
+      "relation": "larger than",
+      "object": "internet bubble",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "S&P 500 top 10",
+      "subject_type": "INDEX",
+      "relation": "more overvalued than",
+      "object": "1990s",
+      "object_type": "TIME"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "not a bubble",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "fundamentals strong",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "released",
+      "object": "reasoning model",
+      "object_type": "MODEL"
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "claimed",
+      "object": "training cost under $6M",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "DeepSeek claims",
+      "subject_type": "CLAIM",
+      "relation": "met with",
+      "object": "skepticism",
+      "object_type": "OPINION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "ARR to exceed",
+      "object": "$20B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "unprofitable",
+      "object_type": "STATUS"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "released",
+      "object": "GPT-5",
+      "object_type": "MODEL"
+    },
+    {
+      "subject": "Critics",
+      "subject_type": "GROUP",
+      "relation": "complained",
+      "object": "GPT-5 less intuitive",
+      "object_type": "OPINION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "restored access to",
+      "object": "GPT-4",
+      "object_type": "MODEL"
+    },
+    {
+      "subject": "GPT-4",
+      "subject_type": "MODEL",
+      "relation": "available to",
+      "object": "paying customers",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AGI losing relevance",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Joe Tsai",
+      "subject_type": "PERSON",
+      "relation": "co-founder of",
+      "object": "Alibaba",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "affiliated with",
+      "object": "Bridgewater Associates",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "chief economist of",
+      "object": "Apollo Global Management",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "Futurum Group",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "emailed",
+      "object": "CNBC",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "told",
+      "object": "CNBC",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "The Verge",
+      "subject_type": "MEDIA",
+      "relation": "published",
+      "object": "report",
+      "object_type": "WORK"
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "COMPANY",
+    "MEDIA",
+    "INDEX",
+    "EVENT",
+    "CONCEPT",
+    "METRIC",
+    "TIME",
+    "CLAIM",
+    "GROUP",
+    "MONEY",
+    "STATUS",
+    "MODEL",
+    "OPINION",
+    "WORK"
+  ]
+}

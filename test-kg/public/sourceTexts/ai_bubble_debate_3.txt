@@ -1,0 +1,29 @@
+# OpenAI’s Sam Altman sees AI bubble forming as industry spending surges
+
+OpenAI CEO Sam Altman thinks the artificial intelligence market is in a bubble, according to a report from The Verge published Friday. 
+
+“When bubbles happen, smart people get overexcited about a kernel of truth,” Altman told a small group of reporters last week.
+
+“Are we in a phase where investors as a whole are overexcited about AI? My opinion is yes. Is AI the most important thing to happen in a very long time? My opinion is also yes,” he was quoted as saying. 
+
+Altman appeared to compare this dynamic to the infamous dot-com bubble, a stock market crash centered on internet-based companies that led to massive investor enthusiasm during the late 1990s. Between March 2000 and October 2002, the Nasdaq lost nearly 80% of its value after many of these companies failed to generate revenue or profits. 
+
+His comments add to growing concern among experts and analysts that investment in AI is moving too fast. Alibaba co-founder Joe Tsai, Bridgewater Associates’ Ray Dalio and Apollo Global Management chief economist Torsten Slok have all raised similar warnings.
+
+Last month, Slok stated in a report that he believed the AI bubble of today was, in fact, bigger than the internet bubble, with the top 10 companies in the S&P 500 more overvalued than they were in the 1990s. 
+
+In a Monday email to CNBC, Ray Wang, research director for semiconductors, supply chain and emerging technology at Futurum Group, said that he thought Altman’s comments carry some validity, but that the risks are company-dependent.
+
+“From the perspective of broader investment in AI and semiconductors... I don’t see it as a bubble. The fundamentals across the supply chain remain strong, and the long-term trajectory of the AI trend supports continued investment,” he said. 
+
+However, he added that there is an increasing amount of speculative capital chasing companies with weaker fundamentals and only perceived potential, which could create pockets of overvaluation. 
+
+Many Fears of an AI bubble had hit a fever pitch at the start of this year when Chinese start-up DeepSeek released a competitive reasoning model. The company claimed one version of its advanced large language models had been trained for under $6 million, a fraction of the billions being spent by U.S. AI market leaders like OpenAI, though these claims were also been met with some skepticism.
+
+Earlier this month, Altman told CNBC that OpenAI’s annual recurring revenue is on track to pass $20 billion this year, but that despite that, it remains unprofitable. 
+
+The release of OpenAI’s latest GPT-5 AI model earlier this month had also been rocky, with some critics complaining that it had a less intuitive feel. This resulted in the company restoring access to legacy GPT-4 models for paying customers.
+
+Following the release of the model, Altman has also signaled more caution about some of the AI industry’s more bullish predictions.
+
+Speaking to CNBC, he said that he thought the term artificial general intelligence, or “AGI,” is losing relevance, when asked whether the GPT-5 model moves the world any closer to achieving AGI.

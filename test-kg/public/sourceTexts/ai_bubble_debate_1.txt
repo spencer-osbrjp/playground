@@ -1,0 +1,22 @@
+---
+Are we in an AI bubble? Of course! ... Of course we are. I mean, we’re hyped, we’re accelerating, we’re putting enormous leverage into the system.
+Gelsinger said that although the AI-driven market is already in a bubble, it would be “several years” before he sees it ending.
+
+“We’re displacing all of the internet and the service provider industries as we think about it today,” Gelsinger said on “Squawk Box” last week. “We have a long way to go.”
+
+The ex-Intel CEO believes that major disruptive technologies will develop in the latter end of this decade, when companies might begin to materially benefit from them, giving the bubble plenty of time before it pops.
+
+“That being said, it will change,” Gelsinger said. “These are radical improvements in AI efficiency that occurred this year.”
+---
+
+---
+We’re certainly seeing lots of evidence of bubble-like behavior in the AI space. We see the kind of circular revenue deals, we see a lot of very aggressive price behavior.
+
+Inker said on CNBC’s “Money Movers” last week that firm investments are shifting from being financed by free cash flow to relying on debts and massive stakes from Nvidia.
+
+“It’s one thing if Microsoft or Meta wants to invest a whole bunch of money in data centers where they’ve got the cash flow for it,” Inker said. “OpenAI doesn’t, xAI doesn’t, even Oracle is issuing a lot of debt to be doing this.”
+
+Last year, OpenAI expected about $5 billion in operating losses on $3.7 billion in revenue, and is still losing money. Inker said this makes Nvidia’s $100 billion investment in OpenAI — for building data centers backed by Nvidia chips — concerning.
+
+“It is that this entire ecosystem has kind of run out of the capital from the cash flow of the hyperscalers, who have been funding things so far, and now needs to be funded by debt and these very strange deals between Nvidia and AMD and some of these money-losing firms that have huge capital needs,” Inker said.
+---

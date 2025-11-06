@@ -1,0 +1,158 @@
+{
+  "triplets": [
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Squawk Box",
+      "object_type": "SHOW"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "former CEO of",
+      "object": "Intel",
+      "object_type": "ORG"
+    },
+    {
+      "subject": "AI market",
+      "subject_type": "MARKET",
+      "relation": "is in",
+      "object": "bubble",
+      "object_type": "PHENOMENON"
+    },
+    {
+      "subject": "AI efficiency",
+      "subject_type": "METRIC",
+      "relation": "improved in",
+      "object": "this year",
+      "object_type": "TIME"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Money Movers",
+      "object_type": "SHOW"
+    },
+    {
+      "subject": "Money Movers",
+      "subject_type": "SHOW",
+      "relation": "airs on",
+      "object": "CNBC",
+      "object_type": "ORG"
+    },
+    {
+      "subject": "AI market",
+      "subject_type": "MARKET",
+      "relation": "shows",
+      "object": "bubble-like behavior",
+      "object_type": "PHENOMENON"
+    },
+    {
+      "subject": "investments",
+      "subject_type": "FINANCE",
+      "relation": "financed by",
+      "object": "debt",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORG",
+      "relation": "takes stakes in",
+      "object": "firms",
+      "object_type": "ORG"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORG",
+      "relation": "lacks",
+      "object": "cash flow",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "xAI",
+      "subject_type": "ORG",
+      "relation": "lacks",
+      "object": "cash flow",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "ORG",
+      "relation": "issues",
+      "object": "debt",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORG",
+      "relation": "operating loss",
+      "object": "$5B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORG",
+      "relation": "revenue",
+      "object": "$3.7B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORG",
+      "relation": "losing",
+      "object": "money",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORG",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORG"
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "amount",
+      "object": "$100B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "purpose",
+      "object": "data centers",
+      "object_type": "INDUSTRY"
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "INVESTMENT",
+      "relation": "backed by",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORG",
+      "relation": "deals with",
+      "object": "AMD",
+      "object_type": "ORG"
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "ORG",
+    "SHOW",
+    "MARKET",
+    "PHENOMENON",
+    "TIME",
+    "MONEY",
+    "METRIC",
+    "FINANCE",
+    "INVESTMENT",
+    "INDUSTRY",
+    "PRODUCT"
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "triplets": [
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reshapes",
+      "object": "career ladder",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Entry-level roles",
+      "subject_type": "OCCUPATION_LEVEL",
+      "relation": "provide",
+      "object": "training grounds",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Junior staff",
+      "subject_type": "OCCUPATION_LEVEL",
+      "relation": "handle",
+      "object": "grunt work",
+      "object_type": "TASK"
+    },
+    {
+      "subject": "International Workers' Day",
+      "subject_type": "HOLIDAY",
+      "relation": "date",
+      "object": "1 May",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "International Workers' Day",
+      "subject_type": "HOLIDAY",
+      "relation": "signifies",
+      "object": "labour rights struggle",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI-powered tools",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could automate",
+      "object": "entry-level roles",
+      "object_type": "OCCUPATION_LEVEL"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "53% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "53% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "market research analysts",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "67% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "67% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "sales representatives",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "9% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "9% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "managers of market research analysts",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could replace",
+      "object": "21% of tasks",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "21% of tasks",
+      "subject_type": "STATISTIC",
+      "relation": "of",
+      "object": "managers of sales representatives",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could impact",
+      "object": "50 million US jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "The Forum",
+      "subject_type": "ORGANIZATION",
+      "relation": "published",
+      "object": "Future of Jobs Report 2025",
+      "object_type": "REPORT"
+    },
+    {
+      "subject": "Future of Jobs Report 2025",
+      "subject_type": "REPORT",
+      "relation": "finds",
+      "object": "40% of employers",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "40% of employers",
+      "subject_type": "GROUP",
+      "relation": "expect to reduce",
+      "object": "workforce",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Workforce reduction",
+      "subject_type": "CONCEPT",
+      "relation": "when",
+      "object": "AI task automation",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Technology",
+      "subject_type": "TECHNOLOGY",
+      "relation": "most disruptive in",
+      "object": "labour market",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "AI and information processing tech",
+      "subject_type": "TECHNOLOGY",
+      "relation": "create",
+      "object": "11 million jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "AI and information processing tech",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displace",
+      "object": "9 million jobs",
+      "object_type": "STATISTIC"
+    },
+    {
+      "subject": "Remaining hires",
+      "subject_type": "GROUP",
+      "relation": "expected to take",
+      "object": "AI-supported roles",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "AI-supported roles",
+      "subject_type": "OCCUPATION",
+      "relation": "pay",
+      "object": "less money",
+      "object_type": "MONETARY"
+    },
+    {
+      "subject": "Recent survey",
+      "subject_type": "SURVEY",
+      "relation": "finds",
+      "object": "49% of US Gen Z job hunters",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "49% of US Gen Z job hunters",
+      "subject_type": "GROUP",
+      "relation": "believe",
+      "object": "AI reduced college education value",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "US firms",
+      "subject_type": "ORGANIZATION",
+      "relation": "expand operations in",
+      "object": "India",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "Skilled professionals in India",
+      "subject_type": "GROUP",
+      "relation": "employed at",
+      "object": "lower cost",
+      "object_type": "MONETARY"
+    },
+    {
+      "subject": "US firms expansion in India",
+      "subject_type": "EVENT",
+      "relation": "intensifies",
+      "object": "competition for white-collar roles",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Bloomberg",
+      "subject_type": "ORGANIZATION",
+      "relation": "says",
+      "object": "talent pipeline problem",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Talent pipeline problem",
+      "subject_type": "CONCEPT",
+      "relation": "impacts",
+      "object": "social mobility",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Talent pipeline problem",
+      "subject_type": "CONCEPT",
+      "relation": "impacts",
+      "object": "equal representation",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Charter",
+      "subject_type": "ORGANIZATION",
+      "relation": "says",
+      "object": "Generative AI could democratize job access",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Generative AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could democratize",
+      "object": "job access",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Companies",
+      "subject_type": "ORGANIZATION",
+      "relation": "could use",
+      "object": "Artificial intelligence",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "could train",
+      "object": "senior professionals",
+      "object_type": "GROUP"
+    },
+    {
+      "subject": "Generative AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "embedded in",
+      "object": "workplace",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Companies",
+      "subject_type": "ORGANIZATION",
+      "relation": "need to invest",
+      "object": "upskilling",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Artificial intelligence",
+      "subject_type": "TECHNOLOGY",
+      "relation": "puts at risk",
+      "object": "entry-level jobs",
+      "object_type": "OCCUPATION_LEVEL"
+    }
+  ],
+  "entity_types": [
+    "TECHNOLOGY",
+    "CONCEPT",
+    "OCCUPATION_LEVEL",
+    "TASK",
+    "HOLIDAY",
+    "DATE",
+    "STATISTIC",
+    "OCCUPATION",
+    "GROUP",
+    "ORGANIZATION",
+    "REPORT",
+    "COUNTRY",
+    "SURVEY",
+    "MONETARY",
+    "EVENT",
+    "LOCATION",
+    "CLAIM"
+  ]
+}

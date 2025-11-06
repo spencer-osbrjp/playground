@@ -28,102 +28,108 @@ const KnowledgeGraphSchema = z.object({
 
 type KnowledgeGraph = z.infer<typeof KnowledgeGraphSchema>;
 
-// Define the schema for a triplet with inferred flag
-const TripletSchemaWithInferred = z.object({
-  subject: z.string().describe("The subject entity"),
-  subject_type: z.string().describe("The type/category of the subject entity"),
-  relation: z.string().describe("The relationship between subject and object"),
-  object: z.string().describe("The object entity"),
-  object_type: z.string().describe("The type/category of the object entity"),
-  inferred: z.boolean().describe("Is this an inferred connections")
-});
+// Merged graph uses the same schema as regular knowledge graph
+type MergedKnowledgeGraph = KnowledgeGraph;
 
-const MergedKnowledgeGraphSchema = z.object({
-  triplets: z
-    .array(TripletSchemaWithInferred)
-    .describe("Array of extracted knowledge triplets"),
-  entity_types: z
-    .array(z.string())
-    .describe("List of entity types found in the graph"),
-});
-
-type MergedKnowledgedGraph = z.infer<typeof MergedKnowledgeGraphSchema>
-
-const createMergePrompt = (set1: KnowledgeGraph, set2: KnowledgeGraph) => {
+const createMergePrompt = (merged: KnowledgeGraph) => {
   return `
-You are a data scientist expert in Entity Resolution in Knowledge Graph. You are tasked to merge 2 given knowledge graph into 1.
+You are a data scientist expert in Entity Resolution in Knowledge Graph. You are tasked to identify duplicated triplets and nodes.
 
-<knowledge_graph_dataset_1>
-${JSON.stringify(set1.triplets)}
+<entity_types>
+${JSON.stringify(merged.entity_types)}
+</entity_types>
+
+<knowledge_graph_dataset>
+${JSON.stringify(merged.triplets)}
 </knowledge_graph_dataset_1>
 
-<knowledge_graph_dataset_2>
-${JSON.stringify(set2.triplets)}
-</knowledge_graph_dataset_2>
-
 <instructions>
-1. Merge the given data <knowledge_graph_dataset_1> and <knowledge_graph_dataset_2>.
+1. Merge duplicated triplets
 2. DO NOT produce duplicate triplets
 3. If the subject OR object is duplicated, merge them into 1 if possible
-4. Create new triplets if it is a "Transitive Relationship" or "Lexical Similarity" for inferring hidden connections to enrich graph, refer to <inferred_insctructions> for more details
-5. Standardize entities across the data. For example, "AI", "A.I", "Artificial Intelligence" can be standardized as "AI" to avoid fragment or duplicated nodes.
-6. If the relation of 2 triplets is difference, choose only 1 of them where the 1 that is easiest to understand.
+4. Standardize nodes name across the data. For example, "AI", "A.I", "Artificial Intelligence" can be standardized as "AI" to avoid fragment or duplicated nodes.
+4. Standardize entities name across the data. For example, "ORG", "ORGANISATION" can be standardized as "ORGANISATION"
+5. If the relation of 2 triplets is different, choose only 1 of them where the 1 that is easiest to understand.
+6. DO NOT create new inferred relationships.
 </instructions>
-
-<inferred_insctructions>
-Create a new triplets if there is any hidden connections between each node
-
-# Rule-Based Inference:
-- Transitive Relationships: If A enables B, and B drives C, the system can infer A influences C.
-- Lexical Similarity: Entities with similar names might be linked with a generic “related to” relationship.
-
-Mark \`inferred\` to \`true\` when it is inferred
-</inferred_insctructions>
-`
-}
+`;
+};
 
 const merge = async () => {
   const args = process.argv.slice(2);
 
-  if (args.length !== 1) {
-    console.error("Usage: npm run merge <path-to-archive-file>");
-    console.error("Example: npm run merge public/archieve/knowledge-graph(iron_man_1).json");
+  if (args.length < 1 || args.length > 2) {
+    console.error("Usage: npm run merge <path-to-file>");
+    console.error("   or: npm run merge <path-to-file-1> <path-to-file-2>");
+    console.error("");
+    console.error("Examples:");
+    console.error(
+      "  npm run merge public/archieve/knowledge-graph(iron_man_1).json",
+    );
+    console.error("  npm run merge public/graph1.json public/graph2.json");
     process.exit(1);
   }
 
-  const archiveFilePath = args[0];
-  const currentGraphPath = path.join("public", "knowledge-graph.json");
+  let firstGraphPath: string;
+  let secondGraphPath: string;
 
-  // Check if archive file exists
-  if (!fs.existsSync(archiveFilePath)) {
-    console.error(`Error: Archive file not found at ${archiveFilePath}`);
+  // Determine which files to merge
+  if (args.length === 1) {
+    // Merge knowledge-graph.json with provided file
+    firstGraphPath = path.join("public", "knowledge-graph.json");
+    secondGraphPath = args[0];
+
+    // Check if current graph exists
+    if (!fs.existsSync(firstGraphPath)) {
+      console.error(`Error: Knowledge graph not found at ${firstGraphPath}`);
+      console.error(
+        "Please run 'npm run extract' first to generate the knowledge graph.",
+      );
+      process.exit(1);
+    }
+  } else {
+    // Merge two provided files
+    firstGraphPath = args[0];
+    secondGraphPath = args[1];
+  }
+
+  // Check if both files exist
+  if (!fs.existsSync(firstGraphPath)) {
+    console.error(`Error: First file not found at ${firstGraphPath}`);
     process.exit(1);
   }
 
-  // Check if current graph exists
-  if (!fs.existsSync(currentGraphPath)) {
-    console.error(`Error: Current knowledge graph not found at ${currentGraphPath}`);
-    console.error("Please run 'npm run extract' first to generate the current graph.");
+  if (!fs.existsSync(secondGraphPath)) {
+    console.error(`Error: Second file not found at ${secondGraphPath}`);
     process.exit(1);
   }
 
   try {
-    console.log(`Loading current knowledge graph from: ${currentGraphPath}`);
-    const currentGraph: KnowledgeGraph = JSON.parse(
-      fs.readFileSync(currentGraphPath, "utf-8")
+    console.log(`Loading first knowledge graph from: ${firstGraphPath}`);
+    const firstGraph: KnowledgeGraph = JSON.parse(
+      fs.readFileSync(firstGraphPath, "utf-8"),
     );
-    console.log(`  - Triplets: ${currentGraph.triplets.length}`);
-    console.log(`  - Entity types: ${currentGraph.entity_types.join(", ")}`);
+    console.log(`  - Triplets: ${firstGraph.triplets.length}`);
+    console.log(`  - Entity types: ${firstGraph.entity_types.join(", ")}`);
 
-    console.log(`\nLoading archive file from: ${archiveFilePath}`);
-    const archiveGraph: KnowledgeGraph = JSON.parse(
-      fs.readFileSync(archiveFilePath, "utf-8")
+    console.log(`\nLoading second knowledge graph from: ${secondGraphPath}`);
+    const secondGraph: KnowledgeGraph = JSON.parse(
+      fs.readFileSync(secondGraphPath, "utf-8"),
     );
-    console.log(`  - Triplets: ${archiveGraph.triplets.length}`);
-    console.log(`  - Entity types: ${archiveGraph.entity_types.join(", ")}`);
+    console.log(`  - Triplets: ${secondGraph.triplets.length}`);
+    console.log(`  - Entity types: ${secondGraph.entity_types.join(", ")}`);
 
+    const mergedKnowledgeGraph: KnowledgeGraph = {
+      triplets: [...firstGraph.triplets, ...secondGraph.triplets],
+      entity_types: [...firstGraph.entity_types, ...secondGraph.entity_types],
+    };
+
+
+    console.log(`\n Merged Knowledge Graph:\n`);
+    console.log(`  - Triplets: ${mergedKnowledgeGraph.triplets.length}`);
+    console.log(`  - Entity types: ${mergedKnowledgeGraph.entity_types.join(", ")}`);
     // Merge the graphs
-    console.log("\nMerging knowledge graphs using AI...\n");
+    console.log("\nClean up merged knowledge graphs using AI...\n");
 
     const client = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
@@ -131,7 +137,7 @@ const merge = async () => {
 
     const response = await client.responses.create({
       model: "gpt-5",
-      instructions: createMergePrompt(currentGraph, archiveGraph),
+      instructions: createMergePrompt(mergedKnowledgeGraph),
       input: [
         {
           role: "user",
@@ -144,21 +150,22 @@ const merge = async () => {
         },
       ],
       text: {
-        format: zodTextFormat(MergedKnowledgeGraphSchema, "mergedKnowledgeGraph"),
+        format: zodTextFormat(KnowledgeGraphSchema, "mergedKnowledgeGraph"),
       },
     });
 
-    const mergedKnowledgeGraph: MergedKnowledgedGraph = JSON.parse(response.output_text);
+    const mergedKnowledgeGraphResult: MergedKnowledgeGraph = JSON.parse(
+      response.output_text,
+    );
 
-    if (mergedKnowledgeGraph) {
+    if (mergedKnowledgeGraphResult) {
       console.log("Merged Knowledge Graph:");
       console.log("Entity Types Found:", mergedKnowledgeGraph.entity_types);
       console.log(`\nTriplets (${mergedKnowledgeGraph.triplets.length}):\n`);
 
-      mergedKnowledgeGraph.triplets.forEach((triplet, idx) => {
-        const inferredMark = triplet.inferred ? " [INFERRED]" : "";
+      mergedKnowledgeGraphResult.triplets.forEach((triplet, idx) => {
         console.log(
-          `${idx + 1}. (${triplet.subject}: ${triplet.subject_type}) → ${triplet.relation} → (${triplet.object}: ${triplet.object_type})${inferredMark}`,
+          `${idx + 1}. (${triplet.subject}: ${triplet.subject_type}) → ${triplet.relation} → (${triplet.object}: ${triplet.object_type})`,
         );
       });
 
@@ -169,9 +176,14 @@ const merge = async () => {
       }
 
       const filePath = path.join(outputDir, "knowledge-graph-merged.json");
-      fs.writeFileSync(filePath, JSON.stringify(mergedKnowledgeGraph, null, 2));
+      fs.writeFileSync(
+        filePath,
+        JSON.stringify(mergedKnowledgeGraphResult, null, 2),
+      );
       console.log(`\n✓ Merged knowledge graph saved to: ${filePath}`);
-      console.log("✓ Run 'npm run dev:vite' to visualize the merged graph in browser");
+      console.log(
+        "✓ Run 'npm run dev' to visualize the merged graph in browser",
+      );
     } else {
       console.error("\n✗ Merge failed!");
       process.exit(1);
