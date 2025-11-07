@@ -1,0 +1,784 @@
+{
+  "triplets": [
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "ex-CEO of",
+      "object": "Intel",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Squawk Box",
+      "object_type": "TV_SHOW"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI bubble ends in several years",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "displacing internet",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "displacing service provider industries",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI efficiency improved this year",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Money Movers",
+      "object_type": "TV_SHOW"
+    },
+    {
+      "subject": "Money Movers",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
+      "object": "CNBC",
+      "object_type": "NETWORK"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI space shows bubble-like behavior",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "circular revenue deals",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "aggressive price behavior",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments shifting from free cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments shifting to debt",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments rely on Nvidia stakes",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Microsoft has cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Meta Platforms has cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "OpenAI lacks cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "xAI lacks cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Oracle issuing debt",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "expected loss",
+      "object": "$5B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "expected revenue",
+      "object": "$3.7B",
+      "object_type": "MONEY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "still losing",
+      "object": "money",
+      "object_type": "STATUS"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Nvidia investment in OpenAI $100B",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investment for data centers",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "data centers backed by Nvidia chips",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "ecosystem ran out of hyperscaler cash flow",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "hyperscalers funded ecosystem",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "ecosystem needs debt funding",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Nvidia deals with money-losing firms",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AMD deals with money-losing firms",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "money-losing firms have huge capital needs",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "Bernstein",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI bubble likely",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "made deals",
+      "object": "$1 trillion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "includes",
+      "object": "OpenAI data center project",
+      "object_type": "PROJECT"
+    },
+    {
+      "subject": "OpenAI data center project",
+      "subject_type": "PROJECT",
+      "relation": "value",
+      "object": "$500 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "set to generate",
+      "object": "$13 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "spending on",
+      "object": "AI",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "advertisements",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Magnificent Seven",
+      "subject_type": "GROUP",
+      "relation": "profits from",
+      "object": "cloud services",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Squawk on the Street",
+      "object_type": "TV_SHOW"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "claimed",
+      "object": "some failures likely",
+      "object_type": "CLAIM"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "GPUs",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "chips",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "HVAC",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "IT",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power grids",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "AI investment",
+      "subject_type": "CONCEPT",
+      "relation": "includes",
+      "object": "power supplies",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "hyperscaler",
+      "object_type": "CATEGORY"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Meta",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Microsoft",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "confident in",
+      "object": "Alphabet",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "founder of",
+      "object": "Antler",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "based in",
+      "object": "Singapore",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "venture capital firm",
+      "object_type": "ORGANIZATION_TYPE"
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "spoke on",
+      "object": "Beyond the Valley",
+      "object_type": "PODCAST"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "behind",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "reached ARR",
+      "object": "$10 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "enables",
+      "object": "app building",
+      "object_type": "ACTIVITY"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "enables",
+      "object": "website building",
+      "object_type": "ACTIVITY"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "uses",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "passed ARR",
+      "object": "$100 million",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "time to ARR",
+      "object": "8 months",
+      "object_type": "DURATION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "ChatGPT Atlas",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "type",
+      "object": "browser",
+      "object_type": "PRODUCT_TYPE"
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "for",
+      "object": "Mac OS",
+      "object_type": "OPERATING_SYSTEM"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "ORGANIZATION",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "ORGANIZATION",
+      "relation": "produced",
+      "object": "AI models",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "DeepSeek models",
+      "subject_type": "PRODUCT",
+      "relation": "comparable to",
+      "object": "OpenAI models",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Tencent",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Baidu",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "dotcom bubble",
+      "subject_type": "EVENT",
+      "relation": "period",
+      "object": "late 1990s–early 2000s",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "lost",
+      "object": "almost 80%",
+      "object_type": "PERCENT"
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "period",
+      "object": "Mar 2000–Oct 2002",
+      "object_type": "DATE_RANGE"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "boss of",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Bank of England",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "International Monetary Fund",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "boss of",
+      "object": "JPMorgan",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Jerry Kaplan",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "early AI entrepreneur",
+      "object_type": "TITLE"
+    },
+    {
+      "subject": "Jerry Kaplan",
+      "subject_type": "PERSON",
+      "relation": "lived through",
+      "object": "four bubbles",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Anat Admati",
+      "subject_type": "PERSON",
+      "relation": "at",
+      "object": "Stanford Graduate School of Business",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "AI-related enterprises",
+      "subject_type": "ORGANIZATION",
+      "relation": "accounted for",
+      "object": "80%",
+      "object_type": "PERCENT"
+    },
+    {
+      "subject": "80%",
+      "subject_type": "PERCENT",
+      "relation": "of",
+      "object": "US stock market gains this year",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "Gartner",
+      "subject_type": "ORGANIZATION",
+      "relation": "estimated",
+      "object": "AI global spending",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "AI global spending",
+      "subject_type": "METRIC",
+      "relation": "will reach",
+      "object": "$1.5 trillion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "entered into",
+      "object": "$100 billion deal with Nvidia",
+      "object_type": "DEAL"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "had investment in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "will build",
+      "object": "data centers",
+      "object_type": "FACILITY"
+    },
+    {
+      "subject": "data centers",
+      "subject_type": "FACILITY",
+      "relation": "powered with",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "plans to purchase",
+      "object": "equipment",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "equipment",
+      "subject_type": "PRODUCT",
+      "relation": "from",
+      "object": "AMD",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "AMD",
+      "subject_type": "ORGANIZATION",
+      "relation": "rival of",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "could become",
+      "object": "AMD shareholder",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "private company",
+      "object_type": "ORGANIZATION_TYPE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "valued at",
+      "object": "$0.5 trillion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "ORGANIZATION",
+      "relation": "deal with",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "in",
+      "object": "Abilene, Texas",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "funded with",
+      "object": "Oracle",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "funded with",
+      "object": "SoftBank",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "defended",
+      "object": "deal with OpenAI",
+      "object_type": "DEAL"
+    },
+    {
+      "subject": "Jeff Boudier",
+      "subject_type": "PERSON",
+      "relation": "builds products at",
+      "object": "Hugging Face",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Rihard Jarc",
+      "subject_type": "PERSON",
+      "relation": "founded",
+      "object": "UncoverAlpha",
+      "object_type": "PUBLICATION"
+    },
+    {
+      "subject": "UncoverAlpha",
+      "subject_type": "PUBLICATION",
+      "relation": "is",
+      "object": "newsletter",
+      "object_type": "TITLE"
+    },
+    {
+      "subject": "Computer History Museum",
+      "subject_type": "ORGANIZATION",
+      "relation": "in",
+      "object": "Silicon Valley",
+      "object_type": "LOCATION"
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "COMPANY",
+    "TV_SHOW",
+    "NETWORK",
+    "CONCEPT",
+    "CLAIM",
+    "STATUS",
+    "MONEY",
+    "PROGRAM",
+    "ORGANIZATION",
+    "AMOUNT",
+    "PROJECT",
+    "GROUP",
+    "TECHNOLOGY",
+    "INFRASTRUCTURE",
+    "CATEGORY",
+    "TITLE",
+    "SECTOR",
+    "LOCATION",
+    "PODCAST",
+    "PRODUCT",
+    "DATE",
+    "ACTIVITY",
+    "DURATION",
+    "OPERATING_SYSTEM",
+    "PRODUCT_TYPE",
+    "EVENT",
+    "INDEX",
+    "PERCENT",
+    "DATE_RANGE",
+    "METRIC",
+    "DEAL",
+    "FACILITY",
+    "ROLE",
+    "TIME",
+    "PUBLICATION"
+  ]
+}

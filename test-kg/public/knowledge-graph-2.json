@@ -1,0 +1,516 @@
+{
+  "triplets": [
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "nationality",
+      "object": "American",
+      "object_type": "NATIONALITY",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "Investor",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "Hedge fund manager",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "Author",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "Philanthropist",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "founded",
+      "object": "Bridgewater Associates",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "co-CIO",
+      "object": "Bridgewater Associates",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "co-chairman",
+      "object": "Bridgewater Associates",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "Hedge fund",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "developed",
+      "object": "All Weather strategy",
+      "object_type": "STRATEGY",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "authored",
+      "object": "Principles: Life and Work",
+      "object_type": "BOOK",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "advocated",
+      "object": "radical truth",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "advocated",
+      "object": "radical transparency",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "net worth",
+      "object": "over $19B",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "net worth as of",
+      "object": "early 2024",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "started investing at",
+      "object": "age 12",
+      "object_type": "AGE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "bought shares of",
+      "object": "Northeast Airlines",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "degree",
+      "object": "B.S. in finance",
+      "object_type": "DEGREE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "alma mater",
+      "object": "Long Island University",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "degree",
+      "object": "MBA",
+      "object_type": "DEGREE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "alma mater",
+      "object": "Harvard Business School",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "founded year",
+      "object": "1975",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "founded in",
+      "object": "New York City",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "began as",
+      "object": "consulting firm",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "introduced",
+      "object": "All Weather strategy",
+      "object_type": "STRATEGY",
+      "inferred": false
+    },
+    {
+      "subject": "All Weather strategy",
+      "subject_type": "STRATEGY",
+      "relation": "introduced year",
+      "object": "1991",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "AUM",
+      "object": "hundreds of billions USD",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "performed well in",
+      "object": "2008 financial crisis",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Principles: Life and Work",
+      "subject_type": "BOOK",
+      "relation": "publication year",
+      "object": "2017",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "bubble indicator relatively high",
+      "object_type": "STATEMENT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "owner",
+      "object": "Ray Dalio",
+      "object_type": "PERSON",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "developer",
+      "object": "Ray Dalio",
+      "object_type": "PERSON",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "level",
+      "object": "relatively high",
+      "object_type": "LEVEL",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "prices vs value measures",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "unsustainable conditions",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "new buyers entering",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "broad bullish sentiment",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "high leverage",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "includes",
+      "object": "speculative purchases",
+      "object_type": "CRITERION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "stepped down as",
+      "object": "co-CIO",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "step down date",
+      "object": "October 2022",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "birth date",
+      "object": "August 8, 1949",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "birthplace",
+      "object": "New York City",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "authored",
+      "object": "Principles for Dealing with the Changing World Order",
+      "object_type": "BOOK",
+      "inferred": false
+    },
+    {
+      "subject": "Principles for Dealing with the Changing World Order",
+      "subject_type": "BOOK",
+      "relation": "publication year",
+      "object": "2021",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "Dalio Foundation",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Barbara Dalio",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "Dalio Foundation",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "spouse",
+      "object": "Barbara Dalio",
+      "object_type": "PERSON",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "signatory of",
+      "object": "The Giving Pledge",
+      "object_type": "INITIATIVE",
+      "inferred": false
+    },
+    {
+      "subject": "Dalio Foundation",
+      "subject_type": "ORGANIZATION",
+      "relation": "focus",
+      "object": "ocean exploration",
+      "object_type": "CAUSE",
+      "inferred": false
+    },
+    {
+      "subject": "Dalio Foundation",
+      "subject_type": "ORGANIZATION",
+      "relation": "focus",
+      "object": "education",
+      "object_type": "CAUSE",
+      "inferred": false
+    },
+    {
+      "subject": "Dalio Foundation",
+      "subject_type": "ORGANIZATION",
+      "relation": "focus",
+      "object": "mental health",
+      "object_type": "CAUSE",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "predicted",
+      "object": "2008 financial crisis",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "profited from",
+      "object": "2008 financial crisis",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "developed",
+      "object": "Economic Machine framework",
+      "object_type": "FRAMEWORK",
+      "inferred": true
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "culture",
+      "object": "radical transparency",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "culture",
+      "object": "radical truth",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "uses",
+      "object": "All Weather strategy",
+      "object_type": "STRATEGY",
+      "inferred": true
+    },
+    {
+      "subject": "All Weather strategy",
+      "subject_type": "STRATEGY",
+      "relation": "designed for",
+      "object": "all economic environments",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "is a",
+      "object": "billionaire investor",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "Bridgewater Associates",
+      "subject_type": "ORGANIZATION",
+      "relation": "largest",
+      "object": "hedge fund",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "NATIONALITY",
+    "OCCUPATION",
+    "ORGANIZATION",
+    "ORGANIZATION_TYPE",
+    "STRATEGY",
+    "BOOK",
+    "CONCEPT",
+    "AMOUNT",
+    "DATE",
+    "AGE",
+    "COMPANY",
+    "DEGREE",
+    "METRIC",
+    "LEVEL",
+    "CRITERION",
+    "ROLE",
+    "INITIATIVE",
+    "CAUSE",
+    "EVENT",
+    "FRAMEWORK",
+    "LOCATION"
+  ]
+}

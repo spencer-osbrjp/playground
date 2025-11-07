@@ -1,0 +1,456 @@
+{
+  "triplets": [
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "nationality",
+      "object": "American",
+      "object_type": "NATIONALITY",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "entrepreneur",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "investor",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "programmer",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "holds role",
+      "object": "CEO, OpenAI",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "CEO, OpenAI",
+      "subject_type": "ROLE",
+      "relation": "start",
+      "object": "2019",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "CEO, OpenAI",
+      "subject_type": "ROLE",
+      "relation": "interrupted",
+      "object": "Nov 2023",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "CEO, OpenAI",
+      "subject_type": "ROLE",
+      "relation": "reinstated",
+      "object": "Nov 2023",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "held role",
+      "object": "President, Y Combinator",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "President, Y Combinator",
+      "subject_type": "ROLE",
+      "relation": "start",
+      "object": "2014",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "President, Y Combinator",
+      "subject_type": "ROLE",
+      "relation": "end",
+      "object": "2019",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "held role",
+      "object": "Partner, Y Combinator",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "Partner, Y Combinator",
+      "subject_type": "ROLE",
+      "relation": "start",
+      "object": "2011",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "dropped out of",
+      "object": "Stanford University",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "Loopt",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Loopt",
+      "subject_type": "COMPANY",
+      "relation": "founded in",
+      "object": "2005",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Loopt",
+      "subject_type": "COMPANY",
+      "relation": "type",
+      "object": "location-based social network",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Loopt",
+      "subject_type": "COMPANY",
+      "relation": "acquired in",
+      "object": "2012",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Loopt",
+      "subject_type": "COMPANY",
+      "relation": "participated in",
+      "object": "Y Combinator first batch",
+      "object_type": "EVENT",
+      "inferred": false
+    },
+    {
+      "subject": "Y Combinator first batch",
+      "subject_type": "EVENT",
+      "relation": "of",
+      "object": "Y Combinator",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Elon Musk",
+      "subject_type": "PERSON",
+      "relation": "co-founded",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "founded in",
+      "object": "2015",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "founded as",
+      "object": "nonprofit",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "adopted",
+      "object": "capped-profit model",
+      "object_type": "STRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "transitioned to",
+      "object": "product-focused organization",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "transitioned from",
+      "object": "research lab",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "developed",
+      "object": "GPT-3",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "developed",
+      "object": "DALL-E",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "developed",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "AI company",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Y Combinator",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "startup accelerator",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "interviewed by",
+      "object": "Ben Thompson",
+      "object_type": "PERSON",
+      "inferred": false
+    },
+    {
+      "subject": "Ben Thompson",
+      "subject_type": "PERSON",
+      "relation": "author of",
+      "object": "Stratechery",
+      "object_type": "PUBLICATION",
+      "inferred": false
+    },
+    {
+      "subject": "Ben Thompson",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "analyst",
+      "object_type": "OCCUPATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stratechery",
+      "subject_type": "PUBLICATION",
+      "relation": "type",
+      "object": "newsletter",
+      "object_type": "PUBLICATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "noted",
+      "object": "infrastructure shortage",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "dismissed",
+      "object": "unsustainable AI investments",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "advocates",
+      "object": "AI safety",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "advocates",
+      "object": "AI regulation",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "focuses on",
+      "object": "AGI",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "advocates",
+      "object": "UBI",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "ran",
+      "object": "UBI experiment",
+      "object_type": "PROJECT",
+      "inferred": false
+    },
+    {
+      "subject": "Y Combinator",
+      "subject_type": "ORGANIZATION",
+      "relation": "ran",
+      "object": "UBI experiment",
+      "object_type": "PROJECT",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "concerned with",
+      "object": "existential AI risk",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "dedicates to",
+      "object": "AI safety",
+      "object_type": "TOPIC",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "engages with",
+      "object": "governments",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "engages with",
+      "object": "policymakers",
+      "object_type": "GROUP",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "dismissed by",
+      "object": "OpenAI board",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "dismissed in",
+      "object": "Nov 2023",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "reinstated in",
+      "object": "Nov 2023",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "leads",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "mission",
+      "object": "AGI benefits humanity",
+      "object_type": "TOPIC",
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "ORGANIZATION",
+    "COMPANY",
+    "ROLE",
+    "DATE",
+    "SERVICE",
+    "EVENT",
+    "ORGANIZATION_TYPE",
+    "STRUCTURE",
+    "ATTRIBUTE",
+    "PRODUCT",
+    "PUBLICATION",
+    "OCCUPATION",
+    "NATIONALITY",
+    "TOPIC",
+    "GROUP",
+    "PUBLICATION_TYPE",
+    "PROJECT"
+  ]
+}

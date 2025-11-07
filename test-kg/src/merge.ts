@@ -44,13 +44,13 @@ ${JSON.stringify(merged.triplets)}
 </knowledge_graph_dataset_1>
 
 <instructions>
-1. Merge duplicated triplets
-2. DO NOT produce duplicate triplets
-3. If the subject OR object is duplicated, merge them into 1 if possible
-4. Standardize nodes name across the data. For example, "AI", "A.I", "Artificial Intelligence" can be standardized as "AI" to avoid fragment or duplicated nodes.
-4. Standardize entities name across the data. For example, "ORG", "ORGANISATION" can be standardized as "ORGANISATION"
-5. If the relation of 2 triplets is different, choose only 1 of them where the 1 that is easiest to understand.
-6. DO NOT create new inferred relationships.
+1. Standardize nodes name across the data. For example, "AI", "A.I", "Artificial Intelligence" can be standardized as "AI" to avoid fragment or duplicated nodes.
+2. Standardize entities name across the data. For example, "ORG", "ORGANISATION" can be standardized as "ORGANISATION"
+3. Merge duplicated triplets
+4. If the subject OR object is duplicated, merge them into 1 if possible
+5. DO NOT create new inferred relationships.
+6. If the triplets has similar meaning, merge them. Use the one that is more detailed
+7. If the node has similar meaning, merge them. Use the one that is more detailed
 </instructions>
 `;
 };
@@ -137,6 +137,9 @@ const merge = async () => {
 
     const response = await client.responses.create({
       model: "gpt-5",
+      reasoning: {
+        effort: "medium"
+      },
       instructions: createMergePrompt(mergedKnowledgeGraph),
       input: [
         {
@@ -144,7 +147,7 @@ const merge = async () => {
           content: [
             {
               type: "input_text",
-              text: "Merge the two knowledge graphs as described in the instructions.",
+              text: "Merge the triplets from the knowledge graphs as described in the instructions.",
             },
           ],
         },

@@ -1,0 +1,598 @@
+{
+  "triplets": [
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "cloud infrastructure",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "IaaS",
+      "object_type": "SERVICE_MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "PaaS",
+      "object_type": "SERVICE_MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "SaaS",
+      "object_type": "SERVICE_MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "operate",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "operate",
+      "object": "servers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "low latency",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "high availability",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "dominate",
+      "object": "public cloud market",
+      "object_type": "MARKET",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "R&D",
+      "object_type": "ACTIVITY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "require",
+      "object": "capital expenditure",
+      "object_type": "FINANCE_CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "benefit from",
+      "object": "economies of scale",
+      "object_type": "ECONOMIC_CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Amazon Web Services",
+      "object_type": "CLOUD_PLATFORM",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched",
+      "object": "Amazon S3",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched",
+      "object": "Amazon EC2",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon S3",
+      "subject_type": "SERVICE",
+      "relation": "launched in",
+      "object": "2006",
+      "object_type": "YEAR",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon EC2",
+      "subject_type": "SERVICE",
+      "relation": "launched in",
+      "object": "2006",
+      "object_type": "YEAR",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Microsoft Azure",
+      "object_type": "CLOUD_PLATFORM",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched in",
+      "object": "2010",
+      "object_type": "YEAR",
+      "inferred": false
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Google Cloud Platform",
+      "object_type": "CLOUD_PLATFORM",
+      "inferred": false
+    },
+    {
+      "subject": "Kubernetes",
+      "subject_type": "TECHNOLOGY",
+      "relation": "originated at",
+      "object": "Google",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "funded",
+      "object": "AI industry",
+      "object_type": "INDUSTRY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "GPUs",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "TPUs",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "AI processors",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Amazon SageMaker",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Azure Machine Learning",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Google Cloud AI Platform",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Vertex AI",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Google AI",
+      "subject_type": "ORG",
+      "relation": "part of",
+      "object": "Google",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Meta AI",
+      "subject_type": "ORG",
+      "relation": "part of",
+      "object": "Meta",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORG",
+      "inferred": false
+    },
+    {
+      "subject": "TensorFlow",
+      "subject_type": "FRAMEWORK",
+      "relation": "created by",
+      "object": "Google",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "PyTorch",
+      "subject_type": "FRAMEWORK",
+      "relation": "created by",
+      "object": "Meta",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "TensorFlow",
+      "subject_type": "FRAMEWORK",
+      "relation": "is",
+      "object": "open-source",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "PyTorch",
+      "subject_type": "FRAMEWORK",
+      "relation": "is",
+      "object": "open-source",
+      "object_type": "ATTRIBUTE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "hyperscale infrastructure",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "custom servers",
+      "object_type": "HARDWARE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "networking equipment",
+      "object_type": "HARDWARE",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "competes with",
+      "object": "Amazon Web Services",
+      "object_type": "CLOUD_PLATFORM",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "competes with",
+      "object": "Google Cloud Platform",
+      "object_type": "CLOUD_PLATFORM",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "expand into",
+      "object": "edge computing",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "expand into",
+      "object": "serverless computing",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "research",
+      "object": "quantum computing",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "integrate",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "integrate",
+      "object": "machine learning",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "renewable energy",
+      "object_type": "ENERGY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "energy-efficient data centers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "water conservation",
+      "object_type": "INITIATIVE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "regulatory scrutiny",
+      "object_type": "ISSUE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "data sovereignty",
+      "object_type": "ISSUE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "antitrust concerns",
+      "object_type": "ISSUE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "employ",
+      "object": "AI researchers",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "contribute to",
+      "object": "open-source",
+      "object_type": "ECOSYSTEM",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "enable",
+      "object": "AI development",
+      "object_type": "ACTIVITY",
+      "inferred": false
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "focuses on",
+      "object": "data analytics",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "focuses on",
+      "object": "machine learning",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "formerly",
+      "object": "Facebook",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "network backbones",
+      "object_type": "NETWORK",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "compute",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "storage",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "databases",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "networking",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "analytics",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "machine learning",
+      "object_type": "SERVICE",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "IoT",
+      "object_type": "SERVICE",
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "COMPANY_TYPE",
+    "COMPANY",
+    "CLOUD_PLATFORM",
+    "SERVICE",
+    "SERVICE_MODEL",
+    "INDUSTRY",
+    "YEAR",
+    "TECHNOLOGY",
+    "FRAMEWORK",
+    "ORG",
+    "ATTRIBUTE",
+    "INFRASTRUCTURE",
+    "NETWORK",
+    "FINANCE_CONCEPT",
+    "ECONOMIC_CONCEPT",
+    "ENERGY",
+    "INITIATIVE",
+    "ISSUE",
+    "ROLE",
+    "ECOSYSTEM",
+    "MARKET",
+    "HARDWARE",
+    "ACTIVITY",
+    "RESOURCE"
+  ]
+}

@@ -1,501 +1,522 @@
 {
   "triplets": [
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "reshapes",
-      "object": "career ladder",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Entry-level roles",
-      "subject_type": "OCCUPATION_LEVEL",
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
       "relation": "provide",
-      "object": "training grounds",
-      "object_type": "CONCEPT"
+      "object": "cloud infrastructure",
+      "object_type": "SERVICE"
     },
     {
-      "subject": "Junior staff",
-      "subject_type": "OCCUPATION_LEVEL",
-      "relation": "handle",
-      "object": "grunt work",
-      "object_type": "TASK"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "IaaS",
+      "object_type": "SERVICE_MODEL"
     },
     {
-      "subject": "AI tools",
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "PaaS",
+      "object_type": "SERVICE_MODEL"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "SaaS",
+      "object_type": "SERVICE_MODEL"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "operate",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "operate",
+      "object": "servers",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "low latency",
+      "object_type": "ATTRIBUTE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "high availability",
+      "object_type": "ATTRIBUTE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "dominate",
+      "object": "public cloud market",
+      "object_type": "MARKET"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "R&D",
+      "object_type": "ACTIVITY"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "require",
+      "object": "capital expenditure",
+      "object_type": "FINANCE_CONCEPT"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "benefit from",
+      "object": "economies of scale",
+      "object_type": "ECONOMIC_CONCEPT"
+    },
+    {
+      "subject": "Amazon",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Amazon Web Services",
+      "object_type": "CLOUD_PLATFORM"
+    },
+    {
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched",
+      "object": "Amazon S3",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched",
+      "object": "Amazon EC2",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "Amazon S3",
+      "subject_type": "SERVICE",
+      "relation": "launched in",
+      "object": "2006",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Amazon EC2",
+      "subject_type": "SERVICE",
+      "relation": "launched in",
+      "object": "2006",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Microsoft Azure",
+      "object_type": "CLOUD_PLATFORM"
+    },
+    {
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "launched in",
+      "object": "2010",
+      "object_type": "YEAR"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "Google Cloud Platform",
+      "object_type": "CLOUD_PLATFORM"
+    },
+    {
+      "subject": "Kubernetes",
       "subject_type": "TECHNOLOGY",
-      "relation": "could automate",
-      "object": "Entry-level roles",
-      "object_type": "OCCUPATION_LEVEL"
+      "relation": "originated at",
+      "object": "Google",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "AI tools",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could automate",
-      "object": "grunt work",
-      "object_type": "TASK"
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE"
     },
     {
-      "subject": "Junior staff",
-      "subject_type": "OCCUPATION_LEVEL",
-      "relation": "subset of",
-      "object": "Entry-level roles",
-      "object_type": "OCCUPATION_LEVEL"
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "puts at risk",
-      "object": "Entry-level roles",
-      "object_type": "OCCUPATION_LEVEL"
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "is",
+      "object": "hyperscalers",
+      "object_type": "COMPANY_TYPE"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could reduce",
-      "object": "training grounds",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "funded",
+      "object": "AI industry",
+      "object_type": "INDUSTRY"
     },
     {
-      "subject": "International Workers' Day",
-      "subject_type": "HOLIDAY",
-      "relation": "date",
-      "object": "1 May",
-      "object_type": "DATE"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "GPUs",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "International Workers' Day",
-      "subject_type": "HOLIDAY",
-      "relation": "signifies",
-      "object": "labour rights struggle",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "TPUs",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "International Workers' Day",
-      "subject_type": "HOLIDAY",
-      "relation": "related to",
-      "object": "labour market",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "AI processors",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "Technology",
-      "subject_type": "TECHNOLOGY",
-      "relation": "most disruptive in",
-      "object": "labour market",
-      "object_type": "CONCEPT"
+      "subject": "Amazon Web Services",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Amazon SageMaker",
+      "object_type": "SERVICE"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could replace",
-      "object": "53% of tasks",
-      "object_type": "STATISTIC"
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Azure Machine Learning",
+      "object_type": "SERVICE"
     },
     {
-      "subject": "53% of tasks",
-      "subject_type": "STATISTIC",
-      "relation": "of",
-      "object": "market research analysts",
-      "object_type": "OCCUPATION"
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Google Cloud AI Platform",
+      "object_type": "SERVICE"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could replace",
-      "object": "67% of tasks",
-      "object_type": "STATISTIC"
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "offers",
+      "object": "Vertex AI",
+      "object_type": "SERVICE"
     },
     {
-      "subject": "67% of tasks",
-      "subject_type": "STATISTIC",
-      "relation": "of",
-      "object": "sales representatives",
-      "object_type": "OCCUPATION"
+      "subject": "Google AI",
+      "subject_type": "ORG",
+      "relation": "part of",
+      "object": "Google",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could replace",
-      "object": "9% of tasks",
-      "object_type": "STATISTIC"
+      "subject": "Meta AI",
+      "subject_type": "ORG",
+      "relation": "part of",
+      "object": "Meta",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "9% of tasks",
-      "subject_type": "STATISTIC",
-      "relation": "of",
-      "object": "managers of market research analysts",
-      "object_type": "OCCUPATION"
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORG"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could replace",
-      "object": "21% of tasks",
-      "object_type": "STATISTIC"
+      "subject": "TensorFlow",
+      "subject_type": "FRAMEWORK",
+      "relation": "created by",
+      "object": "Google",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "21% of tasks",
-      "subject_type": "STATISTIC",
-      "relation": "of",
-      "object": "managers of sales representatives",
-      "object_type": "OCCUPATION"
+      "subject": "PyTorch",
+      "subject_type": "FRAMEWORK",
+      "relation": "created by",
+      "object": "Meta",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could impact",
-      "object": "50 million US jobs",
-      "object_type": "STATISTIC"
+      "subject": "TensorFlow",
+      "subject_type": "FRAMEWORK",
+      "relation": "is",
+      "object": "open-source",
+      "object_type": "ATTRIBUTE"
     },
     {
-      "subject": "The Forum",
-      "subject_type": "ORGANIZATION",
-      "relation": "published",
-      "object": "Future of Jobs Report 2025",
-      "object_type": "REPORT"
+      "subject": "PyTorch",
+      "subject_type": "FRAMEWORK",
+      "relation": "is",
+      "object": "open-source",
+      "object_type": "ATTRIBUTE"
     },
     {
-      "subject": "Future of Jobs Report 2025",
-      "subject_type": "REPORT",
-      "relation": "finds",
-      "object": "40% of employers",
-      "object_type": "GROUP"
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "operates",
+      "object": "hyperscale infrastructure",
+      "object_type": "INFRASTRUCTURE"
     },
     {
-      "subject": "40% of employers",
-      "subject_type": "GROUP",
-      "relation": "expect to reduce",
-      "object": "workforce",
-      "object_type": "CONCEPT"
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE"
     },
     {
-      "subject": "AI task automation",
-      "subject_type": "CONCEPT",
-      "relation": "could reduce",
-      "object": "workforce",
-      "object_type": "CONCEPT"
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "custom servers",
+      "object_type": "HARDWARE"
     },
     {
-      "subject": "AI and information processing technology",
-      "subject_type": "TECHNOLOGY",
-      "relation": "create",
-      "object": "11 million jobs",
-      "object_type": "STATISTIC"
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "networking equipment",
+      "object_type": "HARDWARE"
     },
     {
-      "subject": "AI and information processing technology",
-      "subject_type": "TECHNOLOGY",
-      "relation": "displace",
-      "object": "9 million jobs",
-      "object_type": "STATISTIC"
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "competes with",
+      "object": "Amazon Web Services",
+      "object_type": "CLOUD_PLATFORM"
     },
     {
-      "subject": "AI and information processing technology",
-      "subject_type": "TECHNOLOGY",
-      "relation": "result in",
-      "object": "net gain of 2 million jobs",
-      "object_type": "STATISTIC"
+      "subject": "Microsoft Azure",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "competes with",
+      "object": "Google Cloud Platform",
+      "object_type": "CLOUD_PLATFORM"
     },
     {
-      "subject": "AI and information processing technology",
-      "subject_type": "TECHNOLOGY",
-      "relation": "disrupt",
-      "object": "labour market",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "expand into",
+      "object": "edge computing",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "disrupts",
-      "object": "labour market",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "expand into",
+      "object": "serverless computing",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "Generative AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "disrupts",
-      "object": "labour market",
-      "object_type": "CONCEPT"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "research",
+      "object": "quantum computing",
+      "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "Remaining hires",
-      "subject_type": "GROUP",
-      "relation": "expected to take",
-      "object": "AI-supported roles",
-      "object_type": "OCCUPATION"
-    },
-    {
-      "subject": "AI-supported roles",
-      "subject_type": "OCCUPATION",
-      "relation": "pay",
-      "object": "less money",
-      "object_type": "MONETARY"
-    },
-    {
-      "subject": "Remaining hires",
-      "subject_type": "GROUP",
-      "relation": "expected to earn",
-      "object": "less money",
-      "object_type": "MONETARY"
-    },
-    {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "shifts hiring toward",
-      "object": "AI-supported roles",
-      "object_type": "OCCUPATION"
-    },
-    {
-      "subject": "Recent survey",
-      "subject_type": "SURVEY",
-      "relation": "finds",
-      "object": "49% of US Gen Z job hunters",
-      "object_type": "GROUP"
-    },
-    {
-      "subject": "49% of US Gen Z job hunters",
-      "subject_type": "GROUP",
-      "relation": "believe",
-      "object": "AI reduced college education value",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "US firms",
-      "subject_type": "ORGANIZATION",
-      "relation": "expand operations in",
-      "object": "India",
-      "object_type": "COUNTRY"
-    },
-    {
-      "subject": "Skilled professionals in India",
-      "subject_type": "GROUP",
-      "relation": "employed at",
-      "object": "lower cost",
-      "object_type": "MONETARY"
-    },
-    {
-      "subject": "US firms expansion in India",
-      "subject_type": "EVENT",
-      "relation": "intensifies",
-      "object": "competition for white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "US firms expansion in India",
-      "subject_type": "EVENT",
-      "relation": "driven by",
-      "object": "lower cost",
-      "object_type": "MONETARY"
-    },
-    {
-      "subject": "Skilled professionals in India",
-      "subject_type": "GROUP",
-      "relation": "compete for",
-      "object": "white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI task automation",
-      "subject_type": "CONCEPT",
-      "relation": "intensifies",
-      "object": "competition for white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Bloomberg",
-      "subject_type": "ORGANIZATION",
-      "relation": "says",
-      "object": "talent pipeline problem",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Talent pipeline problem",
-      "subject_type": "CONCEPT",
-      "relation": "impacts",
-      "object": "social mobility",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Talent pipeline problem",
-      "subject_type": "CONCEPT",
-      "relation": "impacts",
-      "object": "equal representation",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "contributes to",
-      "object": "talent pipeline problem",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could harm",
-      "object": "social mobility",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could harm",
-      "object": "equal representation",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Charter",
-      "subject_type": "ORGANIZATION",
-      "relation": "says",
-      "object": "Generative AI could democratize job access",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "Generative AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could democratize",
-      "object": "job access",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Companies",
-      "subject_type": "ORGANIZATION",
-      "relation": "could use",
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "integrate",
       "object": "AI",
       "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "could train",
-      "object": "senior professionals",
-      "object_type": "GROUP"
-    },
-    {
-      "subject": "Companies",
-      "subject_type": "ORGANIZATION",
-      "relation": "could train",
-      "object": "senior professionals",
-      "object_type": "GROUP"
-    },
-    {
-      "subject": "Generative AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "embedded in",
-      "object": "workplace",
-      "object_type": "LOCATION"
-    },
-    {
-      "subject": "Companies",
-      "subject_type": "ORGANIZATION",
-      "relation": "need to invest",
-      "object": "upskilling",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "Generative AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "requires",
-      "object": "upskilling",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "requires",
-      "object": "upskilling",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "upskilling",
-      "subject_type": "CONCEPT",
-      "relation": "improves",
-      "object": "job access",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "sales representatives",
-      "subject_type": "OCCUPATION",
-      "relation": "is a",
-      "object": "white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "market research analysts",
-      "subject_type": "OCCUPATION",
-      "relation": "is a",
-      "object": "white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "managers of market research analysts",
-      "subject_type": "OCCUPATION",
-      "relation": "is a",
-      "object": "white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "managers of sales representatives",
-      "subject_type": "OCCUPATION",
-      "relation": "is a",
-      "object": "white-collar roles",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "managers of market research analysts",
-      "subject_type": "OCCUPATION",
-      "relation": "manage",
-      "object": "market research analysts",
-      "object_type": "OCCUPATION"
-    },
-    {
-      "subject": "managers of sales representatives",
-      "subject_type": "OCCUPATION",
-      "relation": "manage",
-      "object": "sales representatives",
-      "object_type": "OCCUPATION"
-    },
-    {
-      "subject": "AI tools",
-      "subject_type": "TECHNOLOGY",
-      "relation": "related to",
-      "object": "AI",
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "integrate",
+      "object": "machine learning",
       "object_type": "TECHNOLOGY"
     },
     {
-      "subject": "Generative AI",
-      "subject_type": "TECHNOLOGY",
-      "relation": "related to",
-      "object": "AI",
-      "object_type": "TECHNOLOGY"
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "renewable energy",
+      "object_type": "ENERGY"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "energy-efficient data centers",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "invest in",
+      "object": "water conservation",
+      "object_type": "INITIATIVE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "regulatory scrutiny",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "data sovereignty",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "face",
+      "object": "antitrust concerns",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "employ",
+      "object": "AI researchers",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "contribute to",
+      "object": "open-source",
+      "object_type": "ECOSYSTEM"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "enable",
+      "object": "AI development",
+      "object_type": "ACTIVITY"
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "focuses on",
+      "object": "data analytics",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "Google Cloud Platform",
+      "subject_type": "CLOUD_PLATFORM",
+      "relation": "focuses on",
+      "object": "machine learning",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "formerly",
+      "object": "Facebook",
+      "object_type": "COMPANY"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "provide",
+      "object": "network backbones",
+      "object_type": "NETWORK"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "compute",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "storage",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "databases",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "networking",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "analytics",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "machine learning",
+      "object_type": "SERVICE"
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY_TYPE",
+      "relation": "offer",
+      "object": "IoT",
+      "object_type": "SERVICE"
     },
     {
       "subject": "Sam Altman",
       "subject_type": "PERSON",
-      "relation": "is CEO of",
+      "relation": "CEO of",
       "object": "OpenAI",
       "object_type": "COMPANY"
     },
     {
-      "subject": "The Verge",
-      "subject_type": "MEDIA",
-      "relation": "published",
-      "object": "report",
-      "object_type": "REPORT"
-    },
-    {
       "subject": "Sam Altman",
       "subject_type": "PERSON",
-      "relation": "said",
-      "object": "AI market in bubble",
-      "object_type": "CLAIM"
+      "relation": "believes",
+      "object": "AI bubble",
+      "object_type": "ECONOMY"
     },
     {
       "subject": "Sam Altman",
       "subject_type": "PERSON",
       "relation": "compared to",
       "object": "dot-com bubble",
-      "object_type": "EVENT"
+      "object_type": "CONCEPT"
     },
     {
       "subject": "Nasdaq",
@@ -507,128 +528,135 @@
     {
       "subject": "Joe Tsai",
       "subject_type": "PERSON",
-      "relation": "co-founded",
+      "relation": "co-founder of",
       "object": "Alibaba",
       "object_type": "COMPANY"
-    },
-    {
-      "subject": "Ray Dalio",
-      "subject_type": "PERSON",
-      "relation": "works at",
-      "object": "Bridgewater Associates",
-      "object_type": "COMPANY"
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "works at",
-      "object": "Apollo Global Management",
-      "object_type": "COMPANY"
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "title",
-      "object": "Chief Economist",
-      "object_type": "TITLE"
     },
     {
       "subject": "Joe Tsai",
       "subject_type": "PERSON",
       "relation": "warned about",
       "object": "AI bubble",
-      "object_type": "EVENT"
+      "object_type": "ECONOMY"
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "at",
+      "object": "Bridgewater Associates",
+      "object_type": "COMPANY"
     },
     {
       "subject": "Ray Dalio",
       "subject_type": "PERSON",
       "relation": "warned about",
       "object": "AI bubble",
-      "object_type": "EVENT"
+      "object_type": "ECONOMY"
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "title",
+      "object": "chief economist",
+      "object_type": "TITLE"
+    },
+    {
+      "subject": "Torsten Slok",
+      "subject_type": "PERSON",
+      "relation": "at",
+      "object": "Apollo Global Management",
+      "object_type": "COMPANY"
     },
     {
       "subject": "Torsten Slok",
       "subject_type": "PERSON",
       "relation": "warned about",
       "object": "AI bubble",
-      "object_type": "EVENT"
+      "object_type": "ECONOMY"
     },
     {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "stated",
-      "object": "AI bubble bigger than internet bubble",
-      "object_type": "CLAIM"
+      "subject": "AI bubble",
+      "subject_type": "ECONOMY",
+      "relation": "bigger than",
+      "object": "dot-com bubble",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "stated",
-      "object": "S&P 500 top 10 more overvalued than 1990s",
-      "object_type": "CLAIM"
+      "subject": "S&P 500 top 10",
+      "subject_type": "GROUP",
+      "relation": "part of",
+      "object": "S&P 500",
+      "object_type": "INDEX"
+    },
+    {
+      "subject": "S&P 500 top 10",
+      "subject_type": "GROUP",
+      "relation": "more overvalued than",
+      "object": "1990s",
+      "object_type": "TIME"
     },
     {
       "subject": "Ray Wang",
       "subject_type": "PERSON",
-      "relation": "works at",
+      "relation": "title",
+      "object": "research director",
+      "object_type": "TITLE"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "at",
       "object": "Futurum Group",
       "object_type": "COMPANY"
     },
     {
       "subject": "Ray Wang",
       "subject_type": "PERSON",
-      "relation": "title",
-      "object": "Research Director",
-      "object_type": "TITLE"
+      "relation": "director for",
+      "object": "semiconductors",
+      "object_type": "FIELD"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "director for",
+      "object": "supply chain",
+      "object_type": "FIELD"
+    },
+    {
+      "subject": "Ray Wang",
+      "subject_type": "PERSON",
+      "relation": "director for",
+      "object": "emerging technology",
+      "object_type": "FIELD"
     },
     {
       "subject": "Ray Wang",
       "subject_type": "PERSON",
       "relation": "said",
-      "object": "Altman comments valid",
-      "object_type": "CLAIM"
+      "object": "not a bubble",
+      "object_type": "CONCEPT"
     },
     {
       "subject": "Ray Wang",
       "subject_type": "PERSON",
       "relation": "said",
       "object": "risks company-dependent",
-      "object_type": "CLAIM"
+      "object_type": "CONCEPT"
     },
     {
       "subject": "Ray Wang",
       "subject_type": "PERSON",
       "relation": "said",
-      "object": "no AI bubble",
-      "object_type": "CLAIM"
+      "object": "increasing speculative capital",
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "supply chain fundamentals strong",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "AI trend supports investment",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "speculative capital rising",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "overvaluation pockets possible",
-      "object_type": "CLAIM"
+      "subject": "speculative capital",
+      "subject_type": "CONCEPT",
+      "relation": "could create",
+      "object": "overvaluation pockets",
+      "object_type": "CONCEPT"
     },
     {
       "subject": "DeepSeek",
@@ -642,91 +670,112 @@
       "subject_type": "COMPANY",
       "relation": "released",
       "object": "reasoning model",
-      "object_type": "PRODUCT"
+      "object_type": "MODEL"
     },
     {
       "subject": "DeepSeek",
       "subject_type": "COMPANY",
       "relation": "claimed",
-      "object": "training cost < $6M",
-      "object_type": "CLAIM"
+      "object": "training under $6M",
+      "object_type": "AMOUNT"
     },
     {
-      "subject": "DeepSeek",
-      "subject_type": "COMPANY",
-      "relation": "claims met",
+      "subject": "DeepSeek training cost claim",
+      "subject_type": "CONCEPT",
+      "relation": "met with",
       "object": "skepticism",
-      "object_type": "REACTION"
+      "object_type": "CONCEPT"
     },
     {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "told",
-      "object": "CNBC",
-      "object_type": "MEDIA"
-    },
-    {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "OpenAI ARR > $20B",
-      "object_type": "CLAIM"
-    },
-    {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "OpenAI unprofitable",
-      "object_type": "CLAIM"
+      "subject": "OpenAI ARR",
+      "subject_type": "CONCEPT",
+      "relation": "to pass",
+      "object": "$20B",
+      "object_type": "AMOUNT"
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "released",
-      "object": "GPT-5",
-      "object_type": "MODEL"
+      "relation": "remains",
+      "object": "unprofitable",
+      "object_type": "STATE"
     },
     {
       "subject": "GPT-5",
       "subject_type": "MODEL",
-      "relation": "release",
-      "object": "rocky",
-      "object_type": "STATUS"
+      "relation": "by",
+      "object": "OpenAI",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "OpenAI",
-      "subject_type": "COMPANY",
-      "relation": "restored access to",
-      "object": "GPT-4",
-      "object_type": "MODEL"
-    },
-    {
-      "subject": "GPT-4",
+      "subject": "GPT-5",
       "subject_type": "MODEL",
-      "relation": "access for",
-      "object": "paying customers",
-      "object_type": "CUSTOMER"
+      "relation": "had",
+      "object": "rocky release",
+      "object_type": "CONCEPT"
     },
     {
       "subject": "critics",
       "subject_type": "GROUP",
-      "relation": "complained about",
-      "object": "GPT-5",
+      "relation": "complained",
+      "object": "less intuitive feel",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "restored",
+      "object": "legacy GPT-4",
       "object_type": "MODEL"
+    },
+    {
+      "subject": "legacy GPT-4",
+      "subject_type": "MODEL",
+      "relation": "for",
+      "object": "paying customers",
+      "object_type": "GROUP"
     },
     {
       "subject": "Sam Altman",
       "subject_type": "PERSON",
       "relation": "signaled",
       "object": "caution",
-      "object_type": "STANCE"
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "caution",
+      "subject_type": "CONCEPT",
+      "relation": "about",
+      "object": "bullish predictions",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "spoke to",
+      "object": "CNBC",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "The Verge",
+      "subject_type": "MEDIA",
+      "relation": "published",
+      "object": "report",
+      "object_type": "PUBLICATION"
+    },
+    {
+      "subject": "report",
+      "subject_type": "PUBLICATION",
+      "relation": "on",
+      "object": "Friday",
+      "object_type": "TIME"
     },
     {
       "subject": "Sam Altman",
       "subject_type": "PERSON",
       "relation": "said",
-      "object": "AGI losing relevance",
-      "object_type": "CLAIM"
+      "object": "AI important",
+      "object_type": "CONCEPT"
     },
     {
       "subject": "AI investment share",
@@ -736,30 +785,23 @@
       "object_type": "METRIC"
     },
     {
-      "subject": "AI investment share",
-      "subject_type": "METRIC",
-      "relation": "greater by",
-      "object": "nearly one third",
-      "object_type": "AMOUNT"
-    },
-    {
       "subject": "internet investment share",
       "subject_type": "METRIC",
       "relation": "during",
-      "object": "dot-com bubble",
-      "object_type": "EVENT"
+      "object": "dot-com era",
+      "object_type": "PERIOD"
     },
     {
       "subject": "Bernstein",
       "subject_type": "PERSON",
-      "relation": "interviewed on",
+      "relation": "appeared on",
       "object": "Squawk Box",
-      "object_type": "SHOW"
+      "object_type": "TV_SHOW"
     },
     {
       "subject": "Squawk Box",
-      "subject_type": "SHOW",
-      "relation": "network",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
       "object": "CNBC",
       "object_type": "MEDIA"
     },
@@ -768,26 +810,26 @@
       "subject_type": "PERSON",
       "relation": "predicts",
       "object": "AI bubble",
-      "object_type": "EVENT"
+      "object_type": "ECONOMY"
     },
     {
       "subject": "Bernstein",
       "subject_type": "PERSON",
-      "relation": "pointed to",
+      "relation": "cited",
       "object": "OpenAI",
       "object_type": "COMPANY"
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "AI deals",
+      "relation": "deals worth",
       "object": "$1 trillion",
-      "object_type": "AMOUNT"
+      "object_type": "MONEY"
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "project",
+      "relation": "includes",
       "object": "data center buildout",
       "object_type": "PROJECT"
     },
@@ -796,27 +838,27 @@
       "subject_type": "PROJECT",
       "relation": "cost",
       "object": "$500 billion",
-      "object_type": "AMOUNT"
+      "object_type": "MONEY"
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "revenue forecast",
-      "object": "$13 billion",
-      "object_type": "AMOUNT"
+      "relation": "revenue",
+      "object": "$3.7B",
+      "object_type": "FINANCIAL_METRIC"
     },
     {
       "subject": "Magnificent Seven",
       "subject_type": "GROUP",
-      "relation": "spending on",
+      "relation": "spend on",
       "object": "AI",
-      "object_type": "CONCEPT"
+      "object_type": "TECHNOLOGY"
     },
     {
       "subject": "Magnificent Seven",
       "subject_type": "GROUP",
       "relation": "profits from",
-      "object": "advertisements",
+      "object": "advertising",
       "object_type": "SECTOR"
     },
     {
@@ -829,21 +871,21 @@
     {
       "subject": "Fink",
       "subject_type": "PERSON",
-      "relation": "interviewed on",
+      "relation": "appeared on",
       "object": "Squawk on the Street",
-      "object_type": "SHOW"
+      "object_type": "TV_SHOW"
     },
     {
       "subject": "Squawk on the Street",
-      "subject_type": "SHOW",
-      "relation": "network",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
       "object": "CNBC",
       "object_type": "MEDIA"
     },
     {
       "subject": "Fink",
       "subject_type": "PERSON",
-      "relation": "is",
+      "relation": "role",
       "object": "BlackRock CEO",
       "object_type": "TITLE"
     },
@@ -851,43 +893,43 @@
       "subject": "Fink",
       "subject_type": "PERSON",
       "relation": "said",
-      "object": "no AI bubble",
-      "object_type": "CLAIM"
+      "object": "AI is not a bubble",
+      "object_type": "OPINION"
     },
     {
-      "subject": "AI investment",
-      "subject_type": "CONCEPT",
-      "relation": "necessary for",
-      "object": "United States AI leadership",
-      "object_type": "CONCEPT"
+      "subject": "Fink",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI capital is skyrocketing",
+      "object_type": "OPINION"
     },
     {
       "subject": "AI investment",
       "subject_type": "CONCEPT",
       "relation": "includes",
       "object": "GPUs",
-      "object_type": "TECH"
+      "object_type": "TECHNOLOGY"
     },
     {
       "subject": "AI investment",
       "subject_type": "CONCEPT",
       "relation": "includes",
       "object": "chips",
-      "object_type": "TECH"
+      "object_type": "TECHNOLOGY"
     },
     {
       "subject": "AI investment",
       "subject_type": "CONCEPT",
       "relation": "includes",
       "object": "HVAC",
-      "object_type": "INFRASTRUCTURE"
+      "object_type": "TECHNOLOGY"
     },
     {
       "subject": "AI investment",
       "subject_type": "CONCEPT",
       "relation": "includes",
       "object": "IT",
-      "object_type": "SECTOR"
+      "object_type": "TECHNOLOGY"
     },
     {
       "subject": "AI investment",
@@ -925,39 +967,32 @@
       "object_type": "COMPANY"
     },
     {
-      "subject": "Meta",
-      "subject_type": "COMPANY",
-      "relation": "type",
-      "object": "hyperscaler",
-      "object_type": "CATEGORY"
-    },
-    {
-      "subject": "Microsoft",
-      "subject_type": "COMPANY",
-      "relation": "type",
-      "object": "hyperscaler",
-      "object_type": "CATEGORY"
-    },
-    {
-      "subject": "Alphabet",
-      "subject_type": "COMPANY",
-      "relation": "type",
-      "object": "hyperscaler",
-      "object_type": "CATEGORY"
-    },
-    {
       "subject": "Fink",
       "subject_type": "PERSON",
-      "relation": "works at",
-      "object": "BlackRock",
-      "object_type": "COMPANY"
+      "relation": "recommends",
+      "object": "diversified portfolio",
+      "object_type": "STRATEGY"
+    },
+    {
+      "subject": "AI market",
+      "subject_type": "MARKET",
+      "relation": "is in",
+      "object": "AI bubble",
+      "object_type": "ECONOMY"
     },
     {
       "subject": "Gelsinger",
       "subject_type": "PERSON",
-      "relation": "appeared on",
-      "object": "Squawk Box",
-      "object_type": "SHOW"
+      "relation": "predicts end of",
+      "object": "AI bubble",
+      "object_type": "ECONOMY"
+    },
+    {
+      "subject": "AI bubble",
+      "subject_type": "ECONOMY",
+      "relation": "ends in",
+      "object": "several years",
+      "object_type": "TIME"
     },
     {
       "subject": "Gelsinger",
@@ -967,11 +1002,25 @@
       "object_type": "COMPANY"
     },
     {
-      "subject": "AI market",
-      "subject_type": "MARKET",
-      "relation": "is in",
-      "object": "AI bubble",
-      "object_type": "EVENT"
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Squawk Box",
+      "object_type": "TV_SHOW"
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displacing",
+      "object": "internet",
+      "object_type": "INDUSTRY"
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displacing",
+      "object": "service provider industries",
+      "object_type": "INDUSTRY"
     },
     {
       "subject": "AI efficiency",
@@ -981,25 +1030,74 @@
       "object_type": "TIME"
     },
     {
+      "subject": "disruptive technologies",
+      "subject_type": "TECHNOLOGY",
+      "relation": "develop in",
+      "object": "late this decade",
+      "object_type": "TIME"
+    },
+    {
       "subject": "Inker",
       "subject_type": "PERSON",
       "relation": "appeared on",
       "object": "Money Movers",
-      "object_type": "SHOW"
+      "object_type": "TV_SHOW"
     },
     {
       "subject": "Money Movers",
-      "subject_type": "SHOW",
-      "relation": "network",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
       "object": "CNBC",
       "object_type": "MEDIA"
     },
     {
-      "subject": "Nvidia",
+      "subject": "AI industry",
+      "subject_type": "INDUSTRY",
+      "relation": "shows",
+      "object": "bubble-like behavior",
+      "object_type": "ECONOMY"
+    },
+    {
+      "subject": "AI industry",
+      "subject_type": "INDUSTRY",
+      "relation": "has",
+      "object": "circular revenue deals",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "AI industry",
+      "subject_type": "INDUSTRY",
+      "relation": "has",
+      "object": "aggressive pricing",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "firm investments",
+      "subject_type": "FINANCE",
+      "relation": "funded by",
+      "object": "debt",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "firm investments",
+      "subject_type": "FINANCE",
+      "relation": "funded by",
+      "object": "Nvidia stakes",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "Microsoft",
       "subject_type": "COMPANY",
-      "relation": "takes stakes in",
-      "object": "firms",
-      "object_type": "COMPANY"
+      "relation": "has",
+      "object": "cash flow",
+      "object_type": "FINANCE"
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "has",
+      "object": "cash flow",
+      "object_type": "FINANCE"
     },
     {
       "subject": "OpenAI",
@@ -1025,16 +1123,16 @@
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "operating loss",
-      "object": "$5B",
-      "object_type": "AMOUNT"
+      "relation": "expected",
+      "object": "$5B operating losses",
+      "object_type": "FINANCIAL_METRIC"
     },
     {
-      "subject": "OpenAI",
+      "subject": "Nvidia",
       "subject_type": "COMPANY",
-      "relation": "revenue",
-      "object": "$3.7B",
-      "object_type": "AMOUNT"
+      "relation": "invested",
+      "object": "$100B",
+      "object_type": "FINANCIAL_METRIC"
     },
     {
       "subject": "Nvidia",
@@ -1044,53 +1142,39 @@
       "object_type": "COMPANY"
     },
     {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "amount",
-      "object": "$100B",
-      "object_type": "AMOUNT"
-    },
-    {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "purpose",
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "funds",
       "object": "data centers",
       "object_type": "INFRASTRUCTURE"
     },
     {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
+      "subject": "data centers",
+      "subject_type": "INFRASTRUCTURE",
       "relation": "backed by",
       "object": "Nvidia chips",
       "object_type": "PRODUCT"
     },
     {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "funds",
-      "object": "data center buildout",
-      "object_type": "PROJECT"
-    },
-    {
-      "subject": "data center buildout",
-      "subject_type": "PROJECT",
-      "relation": "uses",
-      "object": "Nvidia chips",
-      "object_type": "PRODUCT"
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "called",
+      "object": "Nvidia–OpenAI investment",
+      "object_type": "FINANCE"
     },
     {
       "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "involves",
-      "object": "Nvidia",
-      "object_type": "COMPANY"
+      "subject_type": "FINANCE",
+      "relation": "is",
+      "object": "concerning",
+      "object_type": "OPINION"
     },
     {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "involves",
-      "object": "OpenAI",
-      "object_type": "COMPANY"
+      "subject": "AI industry",
+      "subject_type": "INDUSTRY",
+      "relation": "funded by",
+      "object": "debt",
+      "object_type": "FINANCE"
     },
     {
       "subject": "Nvidia",
@@ -1100,82 +1184,68 @@
       "object_type": "COMPANY"
     },
     {
-      "subject": "data center buildout",
-      "subject_type": "PROJECT",
-      "relation": "part of",
-      "object": "AI investment",
-      "object_type": "CONCEPT"
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "deals with",
+      "object": "money-losing firms",
+      "object_type": "COMPANY"
     },
     {
-      "subject": "GPUs",
-      "subject_type": "TECH",
-      "relation": "necessary for",
-      "object": "United States AI leadership",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "chips",
-      "subject_type": "TECH",
-      "relation": "necessary for",
-      "object": "United States AI leadership",
-      "object_type": "CONCEPT"
-    },
-    {
-      "subject": "AI investment",
-      "subject_type": "CONCEPT",
-      "relation": "financed by",
-      "object": "debt",
-      "object_type": "FINANCE"
-    },
-    {
-      "subject": "internet bubble",
-      "subject_type": "EVENT",
-      "relation": "related to",
-      "object": "dot-com bubble",
-      "object_type": "EVENT"
+      "subject": "AMD",
+      "subject_type": "COMPANY",
+      "relation": "deals with",
+      "object": "money-losing firms",
+      "object_type": "COMPANY"
     }
   ],
   "entity_types": [
-    "TECHNOLOGY",
-    "CONCEPT",
-    "OCCUPATION_LEVEL",
-    "TASK",
-    "HOLIDAY",
-    "DATE",
-    "STATISTIC",
-    "OCCUPATION",
-    "ORGANIZATION",
-    "REPORT",
-    "GROUP",
-    "MONETARY",
-    "SURVEY",
-    "COUNTRY",
-    "EVENT",
-    "CLAIM",
-    "LOCATION",
-    "CATEGORY",
-    "MARKET",
-    "TIME",
-    "PERSON",
+    "COMPANY_TYPE",
     "COMPANY",
-    "MEDIA",
-    "INDEX",
-    "TITLE",
-    "PERCENTAGE",
-    "PRODUCT",
-    "REACTION",
-    "MODEL",
-    "STATUS",
-    "CUSTOMER",
-    "STANCE",
-    "METRIC",
-    "AMOUNT",
-    "SHOW",
-    "TECH",
+    "CLOUD_PLATFORM",
+    "SERVICE",
+    "SERVICE_MODEL",
+    "INDUSTRY",
+    "YEAR",
+    "TECHNOLOGY",
+    "FRAMEWORK",
+    "ORG",
+    "ATTRIBUTE",
     "INFRASTRUCTURE",
+    "NETWORK",
+    "FINANCE_CONCEPT",
+    "ECONOMIC_CONCEPT",
+    "ENERGY",
+    "INITIATIVE",
+    "ISSUE",
+    "ROLE",
+    "ECOSYSTEM",
+    "MARKET",
+    "HARDWARE",
+    "ACTIVITY",
+    "RESOURCE",
+    "PERSON",
+    "ECONOMY",
+    "CONCEPT",
+    "INDEX",
+    "PERCENTAGE",
+    "TITLE",
+    "GROUP",
+    "TIME",
+    "FIELD",
+    "COUNTRY",
+    "MODEL",
+    "AMOUNT",
+    "STATE",
+    "MEDIA",
+    "PUBLICATION",
+    "METRIC",
+    "PERIOD",
+    "TV_SHOW",
+    "MONEY",
+    "PROJECT",
+    "FINANCIAL_METRIC",
+    "STRATEGY",
     "SECTOR",
-    "FINANCE",
-    "INVESTMENT",
-    "PROJECT"
+    "OPINION"
   ]
 }

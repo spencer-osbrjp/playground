@@ -24,6 +24,7 @@ let currentSigma: Sigma | null = null
 let currentGraph: Graph | null = null
 let currentColorMap: Record<string, string> = {}
 let hoveredNode: string | null = null
+let currentSelectedNode: string | null = null
 
 // Function to generate color for entity type dynamically
 const generateColor = (index: number): string => {
@@ -345,6 +346,8 @@ if (loadInferredButton) {
 const showNodeInfo = (nodeId: string) => {
   if (!currentGraph || !currentKnowledgeGraph) return
 
+  currentSelectedNode = nodeId
+
   const nodeData = currentGraph.getNodeAttributes(nodeId)
   const panel = document.getElementById('nodeInfoPanel')
   const title = document.getElementById('nodeInfoTitle')
@@ -354,6 +357,12 @@ const showNodeInfo = (nodeId: string) => {
   const incoming = document.getElementById('incomingRelationships')
 
   if (!panel || !title || !type || !stats || !outgoing || !incoming) return
+
+  // Reset research results
+  const researchResults = document.getElementById('researchResults')
+  if (researchResults) {
+    researchResults.style.display = 'none'
+  }
 
   // Set node title and type
   title.textContent = nodeData.label
@@ -491,6 +500,149 @@ const hideNodeInfo = () => {
 
 // Setup close button handler
 document.getElementById('closeNodeInfo')?.addEventListener('click', hideNodeInfo)
+
+// Deep Research with Gemini API
+const performDeepResearch = async () => {
+  if (!currentSelectedNode || !currentGraph || !currentKnowledgeGraph) return
+
+  const nodeData = currentGraph.getNodeAttributes(currentSelectedNode)
+  const researchResults = document.getElementById('researchResults')
+  const researchLoading = document.getElementById('researchLoading')
+  const researchContent = document.getElementById('researchContent')
+  const deepResearchBtn = document.getElementById('deepResearchBtn') as HTMLButtonElement
+
+  if (!researchResults || !researchLoading || !researchContent || !deepResearchBtn) return
+
+  // Show loading state
+  researchResults.style.display = 'block'
+  researchLoading.style.display = 'flex'
+  researchContent.style.display = 'none'
+  deepResearchBtn.disabled = true
+  deepResearchBtn.textContent = 'Researching...'
+
+  // Gather context from relationships
+  const outgoingRels: Triplet[] = []
+  const incomingRels: Triplet[] = []
+
+  currentKnowledgeGraph.triplets.forEach(triplet => {
+    if (triplet.subject === currentSelectedNode) {
+      outgoingRels.push(triplet)
+    }
+    if (triplet.object === currentSelectedNode) {
+      incomingRels.push(triplet)
+    }
+  })
+
+  try {
+    const response = await fetch('http://localhost:3001/api/research', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        entity: nodeData.label,
+        entityType: nodeData.entityType,
+        context: {
+          outgoingRelationships: outgoingRels,
+          incomingRelationships: incomingRels,
+          knowledgeGraph: currentKnowledgeGraph // Pass full graph for level 2 neighbors
+        }
+      })
+    })
+
+    if (!response.ok) {
+      const errorData = await response.json()
+      throw new Error(errorData.error || 'Failed to perform research')
+    }
+
+    const data = await response.json()
+
+    // Convert markdown to HTML (simple conversion)
+    const htmlContent = markdownToHtml(data.research)
+
+    // Add save notification if file was saved
+    let saveNotification = ''
+    if (data.savedTo) {
+      saveNotification = `
+        <div style="background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-size: 0.85rem;">
+          ✓ Research saved to: <code style="background: #fff; padding: 2px 6px; border-radius: 3px;">${data.savedTo}</code>
+          <br/><small>You can now run: <code style="background: #fff; padding: 2px 6px; border-radius: 3px;">npm run extract ${data.savedTo}</code></small>
+        </div>
+      `
+    }
+
+    // Show results
+    researchLoading.style.display = 'none'
+    researchContent.innerHTML = saveNotification + htmlContent
+    researchContent.style.display = 'block'
+    deepResearchBtn.textContent = '🔍 Deep Research with AI'
+    deepResearchBtn.disabled = false
+
+  } catch (error) {
+    console.error('Deep research error:', error)
+    researchLoading.style.display = 'none'
+    researchContent.innerHTML = `
+      <div style="color: #dc3545; padding: 20px; text-align: center;">
+        <strong>Error:</strong> ${error instanceof Error ? error.message : 'Failed to perform research'}
+        <br/><br/>
+        <small>Make sure the API server is running: <code>npm run api</code></small>
+      </div>
+    `
+    researchContent.style.display = 'block'
+    deepResearchBtn.textContent = '🔍 Deep Research with AI'
+    deepResearchBtn.disabled = false
+  }
+}
+
+// Simple markdown to HTML converter
+const markdownToHtml = (markdown: string): string => {
+  let html = markdown
+
+  // Headers
+  html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>')
+  html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>')
+  html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>')
+
+  // Bold
+  html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+
+  // Italic
+  html = html.replace(/\*(.*?)\*/g, '<em>$1</em>')
+
+  // Code blocks
+  html = html.replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>')
+
+  // Inline code
+  html = html.replace(/`(.*?)`/g, '<code>$1</code>')
+
+  // Links
+  html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>')
+
+  // Unordered lists
+  html = html.replace(/^\* (.*$)/gim, '<li>$1</li>')
+  html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+
+  // Ordered lists
+  html = html.replace(/^\d+\. (.*$)/gim, '<li>$1</li>')
+
+  // Line breaks
+  html = html.replace(/\n\n/g, '</p><p>')
+  html = '<p>' + html + '</p>'
+
+  // Clean up empty paragraphs
+  html = html.replace(/<p><\/p>/g, '')
+  html = html.replace(/<p>(<h[1-3]>)/g, '$1')
+  html = html.replace(/(<\/h[1-3]>)<\/p>/g, '$1')
+  html = html.replace(/<p>(<ul>)/g, '$1')
+  html = html.replace(/(<\/ul>)<\/p>/g, '$1')
+  html = html.replace(/<p>(<pre>)/g, '$1')
+  html = html.replace(/(<\/pre>)<\/p>/g, '$1')
+
+  return html
+}
+
+// Setup deep research button handler
+document.getElementById('deepResearchBtn')?.addEventListener('click', performDeepResearch)
 
 // Query Functions
 const setupQueryHandlers = () => {

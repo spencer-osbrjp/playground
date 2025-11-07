@@ -1,158 +1,301 @@
 {
   "triplets": [
     {
+      "subject": "AI market",
+      "subject_type": "MARKET",
+      "relation": "is in",
+      "object": "AI bubble",
+      "object_type": "ECONOMY",
+      "inferred": false
+    },
+    {
       "subject": "Gelsinger",
       "subject_type": "PERSON",
-      "relation": "appeared on",
-      "object": "Squawk Box",
-      "object_type": "SHOW"
+      "relation": "predicts end of",
+      "object": "AI bubble",
+      "object_type": "ECONOMY",
+      "inferred": false
+    },
+    {
+      "subject": "AI bubble",
+      "subject_type": "ECONOMY",
+      "relation": "ends in",
+      "object": "several years",
+      "object_type": "TIME",
+      "inferred": false
     },
     {
       "subject": "Gelsinger",
       "subject_type": "PERSON",
       "relation": "former CEO of",
       "object": "Intel",
-      "object_type": "ORG"
+      "object_type": "COMPANY",
+      "inferred": false
     },
     {
-      "subject": "AI market",
-      "subject_type": "MARKET",
-      "relation": "is in",
-      "object": "bubble",
-      "object_type": "PHENOMENON"
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Squawk Box",
+      "object_type": "TV_SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displacing",
+      "object": "internet",
+      "object_type": "INDUSTRY",
+      "inferred": false
+    },
+    {
+      "subject": "AI",
+      "subject_type": "TECHNOLOGY",
+      "relation": "displacing",
+      "object": "service provider industries",
+      "object_type": "INDUSTRY",
+      "inferred": false
     },
     {
       "subject": "AI efficiency",
       "subject_type": "METRIC",
       "relation": "improved in",
       "object": "this year",
-      "object_type": "TIME"
+      "object_type": "TIME",
+      "inferred": false
+    },
+    {
+      "subject": "disruptive technologies",
+      "subject_type": "TECHNOLOGY",
+      "relation": "develop in",
+      "object": "late this decade",
+      "object_type": "TIME",
+      "inferred": false
     },
     {
       "subject": "Inker",
       "subject_type": "PERSON",
-      "relation": "appeared on",
+      "relation": "said on",
       "object": "Money Movers",
-      "object_type": "SHOW"
+      "object_type": "TV_SHOW",
+      "inferred": false
     },
     {
       "subject": "Money Movers",
-      "subject_type": "SHOW",
-      "relation": "airs on",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
       "object": "CNBC",
-      "object_type": "ORG"
+      "object_type": "MEDIA",
+      "inferred": false
     },
     {
-      "subject": "AI market",
-      "subject_type": "MARKET",
+      "subject": "AI space",
+      "subject_type": "INDUSTRY",
       "relation": "shows",
       "object": "bubble-like behavior",
-      "object_type": "PHENOMENON"
+      "object_type": "ECONOMY",
+      "inferred": false
     },
     {
-      "subject": "investments",
+      "subject": "AI space",
+      "subject_type": "INDUSTRY",
+      "relation": "has",
+      "object": "circular revenue deals",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "AI space",
+      "subject_type": "INDUSTRY",
+      "relation": "has",
+      "object": "aggressive pricing",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "firm investments",
       "subject_type": "FINANCE",
-      "relation": "financed by",
+      "relation": "funded by",
       "object": "debt",
-      "object_type": "FINANCE"
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
-      "subject": "Nvidia",
-      "subject_type": "ORG",
-      "relation": "takes stakes in",
-      "object": "firms",
-      "object_type": "ORG"
+      "subject": "firm investments",
+      "subject_type": "FINANCE",
+      "relation": "funded by",
+      "object": "Nvidia stakes",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "COMPANY",
+      "relation": "has",
+      "object": "cash flow",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Meta",
+      "subject_type": "COMPANY",
+      "relation": "has",
+      "object": "cash flow",
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
       "subject": "OpenAI",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
       "relation": "lacks",
       "object": "cash flow",
-      "object_type": "FINANCE"
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
       "subject": "xAI",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
       "relation": "lacks",
       "object": "cash flow",
-      "object_type": "FINANCE"
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
       "subject": "Oracle",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
       "relation": "issues",
       "object": "debt",
-      "object_type": "FINANCE"
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
       "subject": "OpenAI",
-      "subject_type": "ORG",
-      "relation": "operating loss",
-      "object": "$5B",
-      "object_type": "MONEY"
+      "subject_type": "COMPANY",
+      "relation": "expected",
+      "object": "$5B operating losses",
+      "object_type": "FINANCIAL_METRIC",
+      "inferred": false
     },
     {
       "subject": "OpenAI",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
       "relation": "revenue",
       "object": "$3.7B",
-      "object_type": "MONEY"
+      "object_type": "FINANCIAL_METRIC",
+      "inferred": false
     },
     {
       "subject": "OpenAI",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
       "relation": "losing",
       "object": "money",
-      "object_type": "FINANCE"
+      "object_type": "FINANCE",
+      "inferred": false
     },
     {
       "subject": "Nvidia",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
+      "relation": "invested",
+      "object": "$100B",
+      "object_type": "FINANCIAL_METRIC",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
       "relation": "invested in",
       "object": "OpenAI",
-      "object_type": "ORG"
-    },
-    {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "amount",
-      "object": "$100B",
-      "object_type": "MONEY"
-    },
-    {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "purpose",
-      "object": "data centers",
-      "object_type": "INDUSTRY"
-    },
-    {
-      "subject": "Nvidia–OpenAI investment",
-      "subject_type": "INVESTMENT",
-      "relation": "backed by",
-      "object": "Nvidia chips",
-      "object_type": "PRODUCT"
+      "object_type": "COMPANY",
+      "inferred": false
     },
     {
       "subject": "Nvidia",
-      "subject_type": "ORG",
+      "subject_type": "COMPANY",
+      "relation": "funds",
+      "object": "data centers",
+      "object_type": "INFRASTRUCTURE",
+      "inferred": false
+    },
+    {
+      "subject": "data centers",
+      "subject_type": "INFRASTRUCTURE",
+      "relation": "backed by",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "called",
+      "object": "Nvidia–OpenAI investment",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia–OpenAI investment",
+      "subject_type": "FINANCE",
+      "relation": "is",
+      "object": "concerning",
+      "object_type": "OPINION",
+      "inferred": false
+    },
+    {
+      "subject": "AI ecosystem",
+      "subject_type": "INDUSTRY",
+      "relation": "funded by",
+      "object": "debt",
+      "object_type": "FINANCE",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
       "relation": "deals with",
       "object": "AMD",
-      "object_type": "ORG"
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "COMPANY",
+      "relation": "deals with",
+      "object": "money-losing firms",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "AMD",
+      "subject_type": "COMPANY",
+      "relation": "deals with",
+      "object": "money-losing firms",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "hyperscalers",
+      "subject_type": "COMPANY",
+      "relation": "funded",
+      "object": "AI ecosystem",
+      "object_type": "INDUSTRY",
+      "inferred": false
     }
   ],
   "entity_types": [
-    "PERSON",
-    "ORG",
-    "SHOW",
     "MARKET",
-    "PHENOMENON",
-    "TIME",
-    "MONEY",
-    "METRIC",
-    "FINANCE",
-    "INVESTMENT",
+    "ECONOMY",
+    "PERSON",
+    "COMPANY",
+    "TV_SHOW",
     "INDUSTRY",
-    "PRODUCT"
+    "TECHNOLOGY",
+    "TIME",
+    "METRIC",
+    "MEDIA",
+    "FINANCE",
+    "FINANCIAL_METRIC",
+    "PRODUCT",
+    "OPINION",
+    "INFRASTRUCTURE"
   ]
 }

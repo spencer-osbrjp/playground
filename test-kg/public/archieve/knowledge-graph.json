@@ -1,0 +1,270 @@
+{
+  "triplets": [
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "ex-CEO of",
+      "object": "Intel",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Squawk Box",
+      "object_type": "TV_SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI bubble",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI bubble ends in several years",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "displacing internet",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "displacing service provider industries",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Gelsinger",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI efficiency improved this year",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said on",
+      "object": "Money Movers",
+      "object_type": "TV_SHOW",
+      "inferred": false
+    },
+    {
+      "subject": "Money Movers",
+      "subject_type": "TV_SHOW",
+      "relation": "on",
+      "object": "CNBC",
+      "object_type": "NETWORK",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI space shows bubble-like behavior",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "circular revenue deals",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "aggressive price behavior",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments shifting from free cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments shifting to debt",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investments rely on Nvidia stakes",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Microsoft has cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Meta Platforms has cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "OpenAI lacks cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "xAI lacks cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Oracle issuing debt",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "expected loss",
+      "object": "$5B",
+      "object_type": "MONEY",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "expected revenue",
+      "object": "$3.7B",
+      "object_type": "MONEY",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "COMPANY",
+      "relation": "still losing",
+      "object": "money",
+      "object_type": "STATUS",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Nvidia investment in OpenAI $100B",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "investment for data centers",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "data centers backed by Nvidia chips",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "ecosystem ran out of hyperscaler cash flow",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "hyperscalers funded ecosystem",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "ecosystem needs debt funding",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "Nvidia deals with money-losing firms",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AMD deals with money-losing firms",
+      "object_type": "CLAIM",
+      "inferred": false
+    },
+    {
+      "subject": "Inker",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "money-losing firms have huge capital needs",
+      "object_type": "CLAIM",
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "COMPANY",
+    "TV_SHOW",
+    "NETWORK",
+    "CONCEPT",
+    "CLAIM",
+    "STATUS",
+    "MONEY"
+  ]
+}

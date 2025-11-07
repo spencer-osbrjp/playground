@@ -1,0 +1,728 @@
+{
+  "triplets": [
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "founder of",
+      "object": "Antler",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "based in",
+      "object": "Singapore",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "venture capital firm",
+      "object_type": "ORG_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "spoke on",
+      "object": "Beyond the Valley",
+      "object_type": "PODCAST",
+      "inferred": false
+    },
+    {
+      "subject": "Beyond the Valley",
+      "subject_type": "PODCAST",
+      "relation": "by",
+      "object": "CNBC",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "behind",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "reached ARR",
+      "object": "$10B",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "reached in",
+      "object": "June",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "investor in",
+      "object": "Lovable",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "enables",
+      "object": "app building",
+      "object_type": "ACTIVITY",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "enables",
+      "object": "website building",
+      "object_type": "ACTIVITY",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "uses",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "passed ARR",
+      "object": "$100M",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "reached in",
+      "object": "July",
+      "object_type": "DATE",
+      "inferred": false
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "time to ARR",
+      "object": "8 months",
+      "object_type": "DURATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "ChatGPT Atlas",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "type",
+      "object": "browser",
+      "object_type": "PRODUCT_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "for",
+      "object": "Mac OS",
+      "object_type": "OPERATING_SYSTEM",
+      "inferred": false
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "ORGANIZATION",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "ORGANIZATION",
+      "relation": "produced",
+      "object": "AI models",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek models",
+      "subject_type": "PRODUCT",
+      "relation": "comparable to",
+      "object": "OpenAI models",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "Tencent",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "Baidu",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "dotcom bubble",
+      "subject_type": "EVENT",
+      "relation": "period",
+      "object": "late 1990s–early 2000s",
+      "object_type": "DATE_RANGE",
+      "inferred": false
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "lost",
+      "object": "almost 80%",
+      "object_type": "PERCENT",
+      "inferred": false
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "period",
+      "object": "Mar 2000–Oct 2002",
+      "object_type": "DATE_RANGE",
+      "inferred": false
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "boss of",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Bank of England",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "International Monetary Fund",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "boss of",
+      "object": "JPMorgan",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "told",
+      "object": "BBC",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Jerry Kaplan",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "early AI entrepreneur",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Jerry Kaplan",
+      "subject_type": "PERSON",
+      "relation": "lived through",
+      "object": "four bubbles",
+      "object_type": "CONCEPT",
+      "inferred": false
+    },
+    {
+      "subject": "Anat Admati",
+      "subject_type": "PERSON",
+      "relation": "at",
+      "object": "Stanford Graduate School of Business",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "AI-related enterprises",
+      "subject_type": "ORGANIZATION",
+      "relation": "accounted for",
+      "object": "80%",
+      "object_type": "PERCENT",
+      "inferred": false
+    },
+    {
+      "subject": "80%",
+      "subject_type": "PERCENT",
+      "relation": "of",
+      "object": "US stock market gains this year",
+      "object_type": "METRIC",
+      "inferred": false
+    },
+    {
+      "subject": "Gartner",
+      "subject_type": "ORGANIZATION",
+      "relation": "estimated",
+      "object": "AI global spending",
+      "object_type": "METRIC",
+      "inferred": false
+    },
+    {
+      "subject": "AI global spending",
+      "subject_type": "METRIC",
+      "relation": "will reach",
+      "object": "$1.5tn",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "entered into",
+      "object": "$100bn deal with Nvidia",
+      "object_type": "DEAL",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "had investment in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "will build",
+      "object": "data centres",
+      "object_type": "FACILITY",
+      "inferred": false
+    },
+    {
+      "subject": "data centres",
+      "subject_type": "FACILITY",
+      "relation": "powered with",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "plans to purchase",
+      "object": "equipment",
+      "object_type": "PRODUCT",
+      "inferred": false
+    },
+    {
+      "subject": "equipment",
+      "subject_type": "PRODUCT",
+      "relation": "from",
+      "object": "AMD",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "AMD",
+      "subject_type": "ORGANIZATION",
+      "relation": "rival of",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "could become",
+      "object": "AMD shareholder",
+      "object_type": "ROLE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "private company",
+      "object_type": "ORGANIZATION_TYPE",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "valued at",
+      "object": "$0.5tn",
+      "object_type": "AMOUNT",
+      "inferred": false
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "ORGANIZATION",
+      "relation": "deal with",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "of",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "in",
+      "object": "Abilene, Texas",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "funded with",
+      "object": "Oracle",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "funded with",
+      "object": "SoftBank",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "announced at",
+      "object": "White House",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Stargate",
+      "subject_type": "PROJECT",
+      "relation": "announced during",
+      "object": "Donald Trump's first week",
+      "object_type": "TIME",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "has stake in",
+      "object": "CoreWeave",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "CoreWeave",
+      "subject_type": "ORGANIZATION",
+      "relation": "supplies",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "never turned",
+      "object": "profit",
+      "object_type": "METRIC",
+      "inferred": false
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "defended",
+      "object": "deal with OpenAI",
+      "object_type": "DEAL",
+      "inferred": false
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "on",
+      "object": "CNBC",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Jeff Boudier",
+      "subject_type": "PERSON",
+      "relation": "builds products at",
+      "object": "Hugging Face",
+      "object_type": "ORGANIZATION",
+      "inferred": false
+    },
+    {
+      "subject": "Hugging Face",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "AI community hub",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Rihard Jarc",
+      "subject_type": "PERSON",
+      "relation": "founded",
+      "object": "UncoverAlpha",
+      "object_type": "PUBLICATION",
+      "inferred": false
+    },
+    {
+      "subject": "UncoverAlpha",
+      "subject_type": "PUBLICATION",
+      "relation": "is",
+      "object": "newsletter",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "Computer History Museum",
+      "subject_type": "ORGANIZATION",
+      "relation": "in",
+      "object": "Silicon Valley",
+      "object_type": "LOCATION",
+      "inferred": false
+    },
+    {
+      "subject": "Silicon Valley",
+      "subject_type": "LOCATION",
+      "relation": "considered",
+      "object": "tech capital of the world",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "AMD",
+      "subject_type": "ORGANIZATION",
+      "relation": "stock surged",
+      "object": "this week",
+      "object_type": "TIME",
+      "inferred": false
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "most valuable publicly traded company",
+      "object_type": "TITLE",
+      "inferred": false
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "by",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "DeepSeek models",
+      "subject_type": "PRODUCT",
+      "relation": "by",
+      "object": "DeepSeek",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "ChatGPT",
+      "subject_type": "PRODUCT",
+      "relation": "related to",
+      "object": "ChatGPT Atlas",
+      "object_type": "PRODUCT",
+      "inferred": true
+    },
+    {
+      "subject": "SoftBank",
+      "subject_type": "ORGANIZATION",
+      "relation": "deal with",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "boss of",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "AI bubble",
+      "subject_type": "CONCEPT",
+      "relation": "related to",
+      "object": "dotcom bubble",
+      "object_type": "EVENT",
+      "inferred": true
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "fell during",
+      "object": "dotcom bubble",
+      "object_type": "EVENT",
+      "inferred": true
+    },
+    {
+      "subject": "Nvidia chips",
+      "subject_type": "PRODUCT",
+      "relation": "by",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "CoreWeave",
+      "subject_type": "ORGANIZATION",
+      "relation": "backed by",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "linked to",
+      "object": "Singapore",
+      "object_type": "LOCATION",
+      "inferred": true
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "linked to",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": true
+    },
+    {
+      "subject": "Jeff Boudier",
+      "subject_type": "PERSON",
+      "relation": "linked to",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": true
+    },
+    {
+      "subject": "Stanford Graduate School of Business",
+      "subject_type": "ORGANIZATION",
+      "relation": "in",
+      "object": "Silicon Valley",
+      "object_type": "LOCATION",
+      "inferred": true
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "linked to",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT",
+      "inferred": true
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "ORGANIZATION",
+      "relation": "linked to",
+      "object": "data centres",
+      "object_type": "FACILITY",
+      "inferred": true
+    },
+    {
+      "subject": "Hugging Face",
+      "subject_type": "ORGANIZATION",
+      "relation": "related to",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    },
+    {
+      "subject": "Rihard Jarc",
+      "subject_type": "PERSON",
+      "relation": "author of",
+      "object": "UncoverAlpha",
+      "object_type": "PUBLICATION",
+      "inferred": true
+    },
+    {
+      "subject": "Google",
+      "subject_type": "ORGANIZATION",
+      "relation": "owned by",
+      "object": "Alphabet",
+      "object_type": "ORGANIZATION",
+      "inferred": true
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "ORGANIZATION",
+    "ORG_TYPE",
+    "PODCAST",
+    "PRODUCT",
+    "AMOUNT",
+    "DATE",
+    "ACTIVITY",
+    "TECHNOLOGY",
+    "PRODUCT_TYPE",
+    "OPERATING_SYSTEM",
+    "INDEX",
+    "EVENT",
+    "DATE_RANGE",
+    "PERCENT",
+    "CONCEPT",
+    "COMPANY",
+    "TITLE",
+    "PUBLICATION",
+    "LOCATION",
+    "DEAL",
+    "FACILITY",
+    "PROJECT",
+    "TIME",
+    "METRIC",
+    "ORGANIZATION_TYPE"
+  ]
+}

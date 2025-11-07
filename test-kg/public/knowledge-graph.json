@@ -1,359 +1,180 @@
 {
   "triplets": [
     {
-      "subject": "Sam Altman",
+      "subject": "Magnus Grimeland",
       "subject_type": "PERSON",
-      "relation": "CEO of",
-      "object": "OpenAI",
-      "object_type": "COMPANY",
+      "relation": "founder of",
+      "object": "Antler",
+      "object_type": "ORGANIZATION",
       "inferred": false
     },
     {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "believes",
-      "object": "AI bubble",
-      "object_type": "CONCEPT",
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "based in",
+      "object": "Singapore",
+      "object_type": "COUNTRY",
       "inferred": false
     },
     {
-      "subject": "AI bubble",
-      "subject_type": "CONCEPT",
-      "relation": "in",
-      "object": "AI market",
-      "object_type": "INDUSTRY",
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "not in a bubble",
+      "object_type": "QUOTE",
       "inferred": false
     },
     {
-      "subject": "Sam Altman",
+      "subject": "Ray Dalio",
       "subject_type": "PERSON",
-      "relation": "compared to",
-      "object": "dot-com bubble",
-      "object_type": "CONCEPT",
+      "relation": "said",
+      "object": "bubble indicator high",
+      "object_type": "QUOTE",
+      "inferred": false
+    },
+    {
+      "subject": "Jerome Powell",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI boom different",
+      "object_type": "QUOTE",
+      "inferred": false
+    },
+    {
+      "subject": "Jerome Powell",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "Federal Reserve Chair",
+      "object_type": "POSITION",
       "inferred": false
     },
     {
       "subject": "Nasdaq",
       "subject_type": "INDEX",
       "relation": "lost",
-      "object": "nearly 80%",
+      "object": "almost 80%",
       "object_type": "PERCENTAGE",
       "inferred": false
     },
     {
-      "subject": "Joe Tsai",
-      "subject_type": "PERSON",
-      "relation": "co-founder of",
-      "object": "Alibaba",
-      "object_type": "COMPANY",
-      "inferred": false
-    },
-    {
-      "subject": "Joe Tsai",
-      "subject_type": "PERSON",
-      "relation": "warned about",
-      "object": "AI bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Dalio",
-      "subject_type": "PERSON",
-      "relation": "at",
-      "object": "Bridgewater Associates",
-      "object_type": "COMPANY",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Dalio",
-      "subject_type": "PERSON",
-      "relation": "warned about",
-      "object": "AI bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "title",
-      "object": "chief economist",
-      "object_type": "TITLE",
-      "inferred": false
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "at",
-      "object": "Apollo Global Management",
-      "object_type": "COMPANY",
-      "inferred": false
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "warned about",
-      "object": "AI bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Torsten Slok",
-      "subject_type": "PERSON",
-      "relation": "believed",
-      "object": "AI bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "AI bubble",
-      "subject_type": "CONCEPT",
-      "relation": "bigger than",
-      "object": "internet bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "S&P 500 top 10",
-      "subject_type": "GROUP",
-      "relation": "part of",
-      "object": "S&P 500",
-      "object_type": "INDEX",
-      "inferred": false
-    },
-    {
-      "subject": "S&P 500 top 10",
-      "subject_type": "GROUP",
-      "relation": "more overvalued than",
-      "object": "1990s",
-      "object_type": "TIME",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "title",
-      "object": "research director",
-      "object_type": "TITLE",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "at",
-      "object": "Futurum Group",
-      "object_type": "COMPANY",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "director for",
-      "object": "semiconductors",
-      "object_type": "FIELD",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "director for",
-      "object": "supply chain",
-      "object_type": "FIELD",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "director for",
-      "object": "emerging technology",
-      "object_type": "FIELD",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "not a bubble",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "risks company-dependent",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Ray Wang",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "increasing speculative capital",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "speculative capital",
-      "subject_type": "CONCEPT",
-      "relation": "could create",
-      "object": "overvaluation pockets",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "DeepSeek",
+      "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "country",
-      "object": "China",
-      "object_type": "COUNTRY",
-      "inferred": false
-    },
-    {
-      "subject": "DeepSeek",
-      "subject_type": "COMPANY",
-      "relation": "released",
-      "object": "reasoning model",
-      "object_type": "MODEL",
-      "inferred": false
-    },
-    {
-      "subject": "DeepSeek",
-      "subject_type": "COMPANY",
-      "relation": "claimed",
-      "object": "training under $6M",
-      "object_type": "AMOUNT",
-      "inferred": false
-    },
-    {
-      "subject": "DeepSeek claim",
-      "subject_type": "CONCEPT",
-      "relation": "met with",
-      "object": "skepticism",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "OpenAI ARR",
-      "subject_type": "CONCEPT",
-      "relation": "to pass",
-      "object": "$20B",
-      "object_type": "AMOUNT",
+      "relation": "behind",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT",
       "inferred": false
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "remains",
-      "object": "unprofitable",
-      "object_type": "STATE",
+      "relation": "reached",
+      "object": "$10B ARR",
+      "object_type": "REVENUE",
       "inferred": false
     },
     {
-      "subject": "GPT-5",
-      "subject_type": "MODEL",
-      "relation": "by",
-      "object": "OpenAI",
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "Lovable",
       "object_type": "COMPANY",
       "inferred": false
     },
     {
-      "subject": "GPT-5",
-      "subject_type": "MODEL",
-      "relation": "had",
-      "object": "rocky release",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "critics",
-      "subject_type": "GROUP",
-      "relation": "complained",
-      "object": "less intuitive feel",
-      "object_type": "CONCEPT",
+      "subject": "Lovable",
+      "subject_type": "COMPANY",
+      "relation": "reached",
+      "object": "$100M ARR",
+      "object_type": "REVENUE",
       "inferred": false
     },
     {
       "subject": "OpenAI",
       "subject_type": "COMPANY",
-      "relation": "restored",
-      "object": "legacy GPT-4",
-      "object_type": "MODEL",
+      "relation": "launched",
+      "object": "ChatGPT Atlas",
+      "object_type": "PRODUCT",
       "inferred": false
     },
     {
-      "subject": "legacy GPT-4",
-      "subject_type": "MODEL",
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
       "relation": "for",
-      "object": "paying customers",
-      "object_type": "GROUP",
+      "object": "Mac OS",
+      "object_type": "OPERATING_SYSTEM",
       "inferred": false
     },
     {
-      "subject": "Sam Altman",
+      "subject": "Alphabet",
+      "subject_type": "COMPANY",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "COMPANY",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "COMPANY",
+      "relation": "produced",
+      "object": "AI models",
+      "object_type": "MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "DeepSeek AI models",
+      "subject_type": "MODEL",
+      "relation": "comparable to",
+      "object": "OpenAI AI models",
+      "object_type": "MODEL",
+      "inferred": false
+    },
+    {
+      "subject": "Tencent",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "Baidu",
+      "subject_type": "COMPANY",
+      "relation": "builds",
+      "object": "AI",
+      "object_type": "TECHNOLOGY",
+      "inferred": false
+    },
+    {
+      "subject": "Magnus Grimeland",
       "subject_type": "PERSON",
-      "relation": "signaled",
-      "object": "caution",
-      "object_type": "CONCEPT",
+      "relation": "appeared on",
+      "object": "Beyond the Valley",
+      "object_type": "PODCAST",
       "inferred": false
     },
     {
-      "subject": "caution",
-      "subject_type": "CONCEPT",
-      "relation": "about",
-      "object": "bullish predictions",
-      "object_type": "CONCEPT",
-      "inferred": false
-    },
-    {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "spoke to",
+      "subject": "Beyond the Valley",
+      "subject_type": "PODCAST",
+      "relation": "by",
       "object": "CNBC",
-      "object_type": "MEDIA",
-      "inferred": false
-    },
-    {
-      "subject": "The Verge",
-      "subject_type": "MEDIA",
-      "relation": "published",
-      "object": "report",
-      "object_type": "PUBLICATION",
-      "inferred": false
-    },
-    {
-      "subject": "report",
-      "subject_type": "PUBLICATION",
-      "relation": "on",
-      "object": "Friday",
-      "object_type": "TIME",
-      "inferred": false
-    },
-    {
-      "subject": "Sam Altman",
-      "subject_type": "PERSON",
-      "relation": "said",
-      "object": "AI important",
-      "object_type": "CONCEPT",
+      "object_type": "ORGANIZATION",
       "inferred": false
     }
   ],
   "entity_types": [
     "PERSON",
+    "ORGANIZATION",
     "COMPANY",
-    "INDUSTRY",
-    "CONCEPT",
+    "COUNTRY",
+    "QUOTE",
     "INDEX",
     "PERCENTAGE",
-    "TITLE",
-    "GROUP",
-    "INDEX",
-    "TIME",
-    "FIELD",
-    "COUNTRY",
+    "PRODUCT",
+    "REVENUE",
+    "OPERATING_SYSTEM",
     "MODEL",
-    "AMOUNT",
-    "STATE",
-    "MEDIA",
-    "PUBLICATION"
+    "TECHNOLOGY",
+    "PODCAST",
+    "POSITION"
   ]
 }

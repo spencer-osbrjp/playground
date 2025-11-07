@@ -1,0 +1,1100 @@
+{
+  "triplets": [
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "plans to invest",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "invest up to",
+      "object": "$100 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "funding purpose",
+      "object": "Data centers",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "will purchase",
+      "object": "Nvidia chips",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Consumers",
+      "subject_type": "GROUP",
+      "relation": "adopted",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "ChatGPT",
+      "subject_type": "PRODUCT",
+      "relation": "reached",
+      "object": "100 million users",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "Stanford AI Index",
+      "subject_type": "REPORT",
+      "relation": "reported",
+      "object": "AI business adoption",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "AI business adoption",
+      "subject_type": "METRIC",
+      "relation": "2024",
+      "object": "78%",
+      "object_type": "PERCENT"
+    },
+    {
+      "subject": "AI business adoption",
+      "subject_type": "METRIC",
+      "relation": "previous year",
+      "object": "55%",
+      "object_type": "PERCENT"
+    },
+    {
+      "subject": "Enterprises",
+      "subject_type": "GROUP",
+      "relation": "hesitant due to",
+      "object": "privacy",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Enterprises",
+      "subject_type": "GROUP",
+      "relation": "hesitant due to",
+      "object": "reliability",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Enterprises",
+      "subject_type": "GROUP",
+      "relation": "hesitant due to",
+      "object": "compliance",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Enterprises",
+      "subject_type": "GROUP",
+      "relation": "hesitant due to",
+      "object": "security",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Enterprises",
+      "subject_type": "GROUP",
+      "relation": "hesitant due to",
+      "object": "financial risk",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "US government",
+      "subject_type": "GOVERNMENT",
+      "relation": "privatized",
+      "object": "network infrastructure",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "US government",
+      "subject_type": "GOVERNMENT",
+      "relation": "passed",
+      "object": "Telecommunications Act of 1996",
+      "object_type": "LAW"
+    },
+    {
+      "subject": "US government",
+      "subject_type": "GOVERNMENT",
+      "relation": "enacted",
+      "object": "Section 230",
+      "object_type": "LAW"
+    },
+    {
+      "subject": "Trump administration",
+      "subject_type": "GOVERNMENT",
+      "relation": "emphasized",
+      "object": "industrial policy",
+      "object_type": "POLICY"
+    },
+    {
+      "subject": "Biden administration",
+      "subject_type": "GOVERNMENT",
+      "relation": "emphasized",
+      "object": "industrial policy",
+      "object_type": "POLICY"
+    },
+    {
+      "subject": "Trump administration",
+      "subject_type": "GOVERNMENT",
+      "relation": "framed",
+      "object": "AI as national security",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "Biden administration",
+      "subject_type": "GOVERNMENT",
+      "relation": "framed",
+      "object": "AI as national security",
+      "object_type": "CONCEPT"
+    },
+    {
+      "subject": "China",
+      "subject_type": "COUNTRY",
+      "relation": "channels capital to",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "China",
+      "subject_type": "COUNTRY",
+      "relation": "aims to build",
+      "object": "domestic champions",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "China",
+      "subject_type": "COUNTRY",
+      "relation": "aims to reduce",
+      "object": "U.S. tech reliance",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "European Union",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "AI Continent Action Plan",
+      "object_type": "POLICY"
+    },
+    {
+      "subject": "European Union",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "Apply AI",
+      "object_type": "INITIATIVE"
+    },
+    {
+      "subject": "Apply AI",
+      "subject_type": "INITIATIVE",
+      "relation": "budget",
+      "object": "€1 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "AI Continent Action Plan",
+      "subject_type": "POLICY",
+      "relation": "goal",
+      "object": "accelerate adoption",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "AI Continent Action Plan",
+      "subject_type": "POLICY",
+      "relation": "goal",
+      "object": "lower compliance costs",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "AI Continent Action Plan",
+      "subject_type": "POLICY",
+      "relation": "goal",
+      "object": "global AI leadership",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "Apply AI",
+      "subject_type": "INITIATIVE",
+      "relation": "goal",
+      "object": "accelerate adoption",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "Apply AI",
+      "subject_type": "INITIATIVE",
+      "relation": "goal",
+      "object": "global AI leadership",
+      "object_type": "GOAL"
+    },
+    {
+      "subject": "Sovereign wealth funds",
+      "subject_type": "ORGANIZATION",
+      "relation": "invest in",
+      "object": "AI startups",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Amazon",
+      "subject_type": "COMPANY",
+      "relation": "survived",
+      "object": "dot-com collapse",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Amazon",
+      "subject_type": "COMPANY",
+      "relation": "built",
+      "object": "e-commerce infrastructure",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "eBay",
+      "subject_type": "COMPANY",
+      "relation": "endured",
+      "object": "dot-com collapse",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Netflix",
+      "subject_type": "COMPANY",
+      "relation": "endured",
+      "object": "dot-com collapse",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Data centers",
+      "subject_type": "INFRASTRUCTURE",
+      "relation": "require",
+      "object": "land",
+      "object_type": "RESOURCE"
+    },
+    {
+      "subject": "Data centers",
+      "subject_type": "INFRASTRUCTURE",
+      "relation": "require",
+      "object": "energy",
+      "object_type": "RESOURCE"
+    },
+    {
+      "subject": "Data centers",
+      "subject_type": "INFRASTRUCTURE",
+      "relation": "require",
+      "object": "water",
+      "object_type": "RESOURCE"
+    },
+    {
+      "subject": "Communities",
+      "subject_type": "GROUP",
+      "relation": "resist",
+      "object": "Data centers",
+      "object_type": "INFRASTRUCTURE"
+    },
+    {
+      "subject": "Labor shortages",
+      "subject_type": "ISSUE",
+      "relation": "affect",
+      "object": "engineers",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Labor shortages",
+      "subject_type": "ISSUE",
+      "relation": "affect",
+      "object": "electricians",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Labor shortages",
+      "subject_type": "ISSUE",
+      "relation": "affect",
+      "object": "construction workers",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Labor shortages",
+      "subject_type": "ISSUE",
+      "relation": "affect",
+      "object": "technicians",
+      "object_type": "OCCUPATION"
+    },
+    {
+      "subject": "Goldman Sachs",
+      "subject_type": "COMPANY",
+      "relation": "projected",
+      "object": "US data center power",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "US data center power",
+      "subject_type": "METRIC",
+      "relation": "will double by",
+      "object": "2030",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "CEO of",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "argued",
+      "object": "AI demand structural",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "compared to",
+      "object": "new industrial revolution",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "dismissed",
+      "object": "unsustainable AI investments",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "interviewed by",
+      "object": "Ben Thompson",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "interviewed at",
+      "object": "Stratechery",
+      "object_type": "MEDIA"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "strategy",
+      "object": "agentic AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "strategy",
+      "object": "infrastructure-applications platform",
+      "object_type": "PLATFORM"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "noted",
+      "object": "infrastructure shortage",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Ethan Mollick",
+      "subject_type": "PERSON",
+      "relation": "wrote",
+      "object": "Co-Intelligence",
+      "object_type": "BOOK"
+    },
+    {
+      "subject": "Co-Intelligence",
+      "subject_type": "BOOK",
+      "relation": "published",
+      "object": "2024",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "Co-Intelligence",
+      "subject_type": "BOOK",
+      "relation": "argues",
+      "object": "stepwise improvements",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Co-Intelligence",
+      "subject_type": "BOOK",
+      "relation": "argues",
+      "object": "human augmentation",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Walmart",
+      "subject_type": "COMPANY",
+      "relation": "uses",
+      "object": "AI inventory bots",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "AI inventory bots",
+      "subject_type": "TECHNOLOGY",
+      "relation": "reduced",
+      "object": "excess stock 35%",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "AI inventory bots",
+      "subject_type": "TECHNOLOGY",
+      "relation": "improved",
+      "object": "accuracy 15%",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "Walmart",
+      "subject_type": "COMPANY",
+      "relation": "signed deal with",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Walmart",
+      "subject_type": "COMPANY",
+      "relation": "sells via",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Europe",
+      "subject_type": "LOCATION",
+      "relation": "focused on",
+      "object": "risk management",
+      "object_type": "POLICY"
+    },
+    {
+      "subject": "AI venture funding",
+      "subject_type": "METRIC",
+      "relation": "exceeds",
+      "object": "crypto cycle",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "AI venture funding",
+      "subject_type": "METRIC",
+      "relation": "exceeds",
+      "object": "mobility tech cycle",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "moving beyond",
+      "object": "chatbots",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Europe",
+      "subject_type": "LOCATION",
+      "relation": "fears",
+      "object": "overregulation",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "CEOs",
+      "subject_type": "GROUP",
+      "relation": "warned of",
+      "object": "lost competitiveness",
+      "object_type": "ISSUE"
+    },
+    {
+      "subject": "Jerome Powell",
+      "subject_type": "PERSON",
+      "relation": "role",
+      "object": "Federal Reserve Chair",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Jerome Powell",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "AI boom different from dotcom bubble",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "is",
+      "object": "billionaire investor",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Ray Dalio",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "bubble indicator relatively high",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "owner",
+      "object": "Ray Dalio",
+      "object_type": "PERSON"
+    },
+    {
+      "subject": "Ray Dalio bubble indicator",
+      "subject_type": "METRIC",
+      "relation": "level",
+      "object": "relatively high",
+      "object_type": "VALUE"
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "founded",
+      "object": "Antler",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "based in",
+      "object": "Singapore",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "venture capital firm",
+      "object_type": "ORG_TYPE"
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "appeared on",
+      "object": "Beyond the Valley",
+      "object_type": "PODCAST"
+    },
+    {
+      "subject": "Beyond the Valley",
+      "subject_type": "PODCAST",
+      "relation": "by",
+      "object": "CNBC",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Magnus Grimeland",
+      "subject_type": "PERSON",
+      "relation": "said",
+      "object": "not in a bubble",
+      "object_type": "STATEMENT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "developed",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "ChatGPT",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "launched",
+      "object": "ChatGPT Atlas",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "type",
+      "object": "browser",
+      "object_type": "PRODUCT_TYPE"
+    },
+    {
+      "subject": "ChatGPT Atlas",
+      "subject_type": "PRODUCT",
+      "relation": "platform",
+      "object": "macOS",
+      "object_type": "OPERATING_SYSTEM"
+    },
+    {
+      "subject": "ChatGPT",
+      "subject_type": "PRODUCT",
+      "relation": "release year",
+      "object": "2022",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "Alphabet",
+      "subject_type": "ORGANIZATION",
+      "relation": "parent of",
+      "object": "Google",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "lost",
+      "object": "80% value",
+      "object_type": "VALUE"
+    },
+    {
+      "subject": "Nasdaq",
+      "subject_type": "INDEX",
+      "relation": "period",
+      "object": "Mar 2000-Oct 2002",
+      "object_type": "PERIOD"
+    },
+    {
+      "subject": "dotcom bubble",
+      "subject_type": "EVENT",
+      "relation": "period",
+      "object": "late 1990s-early 2000s",
+      "object_type": "PERIOD"
+    },
+    {
+      "subject": "ARR",
+      "subject_type": "METRIC",
+      "relation": "stands for",
+      "object": "Annual Recurring Revenue",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "ARR",
+      "subject_type": "METRIC",
+      "relation": "measures",
+      "object": "12-month revenue",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "ARR",
+      "object": "10 billion USD",
+      "object_type": "VALUE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "ARR month",
+      "object": "June",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "Antler",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "Lovable",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "uses",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "enables",
+      "object": "apps and websites",
+      "object_type": "PRODUCT_TYPE"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "ARR",
+      "object": "100 million USD",
+      "object_type": "VALUE"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "ARR period",
+      "object": "eight months",
+      "object_type": "DURATION"
+    },
+    {
+      "subject": "Lovable",
+      "subject_type": "ORGANIZATION",
+      "relation": "ARR month",
+      "object": "July",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "ORGANIZATION",
+      "relation": "country",
+      "object": "China",
+      "object_type": "COUNTRY"
+    },
+    {
+      "subject": "DeepSeek",
+      "subject_type": "ORGANIZATION",
+      "relation": "produced",
+      "object": "AI models",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "DeepSeek AI models",
+      "subject_type": "PRODUCT",
+      "relation": "comparable to",
+      "object": "OpenAI AI models",
+      "object_type": "PRODUCT"
+    },
+    {
+      "subject": "Tencent",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Baidu",
+      "subject_type": "ORGANIZATION",
+      "relation": "building",
+      "object": "AI",
+      "object_type": "TECHNOLOGY"
+    },
+    {
+      "subject": "Sam Altman",
+      "subject_type": "PERSON",
+      "relation": "leads",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Lily Jamali",
+      "subject_type": "PERSON",
+      "relation": "occupation",
+      "object": "Technology correspondent",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Lily Jamali",
+      "subject_type": "PERSON",
+      "relation": "located in",
+      "object": "San Francisco",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Computer History Museum",
+      "subject_type": "ORGANIZATION",
+      "relation": "located in",
+      "object": "Silicon Valley",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Anat Admati",
+      "subject_type": "PERSON",
+      "relation": "affiliated with",
+      "object": "Stanford GSB",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Anat Admati",
+      "subject_type": "PERSON",
+      "relation": "title",
+      "object": "Professor",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "Bank of England",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "TOPIC"
+    },
+    {
+      "subject": "International Monetary Fund",
+      "subject_type": "ORGANIZATION",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "TOPIC"
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "warned of",
+      "object": "AI bubble",
+      "object_type": "TOPIC"
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "leads",
+      "object": "JPMorgan",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Jamie Dimon",
+      "subject_type": "PERSON",
+      "relation": "told",
+      "object": "BBC",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Gartner",
+      "subject_type": "ORGANIZATION",
+      "relation": "estimated",
+      "object": "AI spending",
+      "object_type": "METRIC"
+    },
+    {
+      "subject": "AI spending",
+      "subject_type": "METRIC",
+      "relation": "value",
+      "object": "$1.5 trillion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "AI spending",
+      "subject_type": "METRIC",
+      "relation": "by",
+      "object": "2025",
+      "object_type": "DATE"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "held",
+      "object": "OpenAI DevDay",
+      "object_type": "EVENT"
+    },
+    {
+      "subject": "OpenAI-Nvidia deal",
+      "subject_type": "AGREEMENT",
+      "relation": "value",
+      "object": "$100 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "most valuable public company",
+      "object_type": "RANK"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "plans purchase from",
+      "object": "AMD",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "OpenAI-AMD deal",
+      "subject_type": "AGREEMENT",
+      "relation": "value",
+      "object": "billions USD",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "Microsoft",
+      "subject_type": "ORGANIZATION",
+      "relation": "invested in",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Oracle-OpenAI deal",
+      "subject_type": "AGREEMENT",
+      "relation": "value",
+      "object": "$300 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "project",
+      "object": "Stargate project",
+      "object_type": "PROJECT"
+    },
+    {
+      "subject": "Stargate project",
+      "subject_type": "PROJECT",
+      "relation": "location",
+      "object": "Abilene, Texas",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Stargate project",
+      "subject_type": "PROJECT",
+      "relation": "funded by",
+      "object": "Oracle",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Stargate project",
+      "subject_type": "PROJECT",
+      "relation": "funded by",
+      "object": "SoftBank",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "SoftBank",
+      "subject_type": "ORGANIZATION",
+      "relation": "is",
+      "object": "Japanese conglomerate",
+      "object_type": "ORG_TYPE"
+    },
+    {
+      "subject": "Stargate project",
+      "subject_type": "PROJECT",
+      "relation": "announced at",
+      "object": "White House",
+      "object_type": "LOCATION"
+    },
+    {
+      "subject": "Nvidia",
+      "subject_type": "ORGANIZATION",
+      "relation": "stake in",
+      "object": "CoreWeave",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "CoreWeave",
+      "subject_type": "ORGANIZATION",
+      "relation": "supplies",
+      "object": "OpenAI",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "defended",
+      "object": "OpenAI-Nvidia deal",
+      "object_type": "AGREEMENT"
+    },
+    {
+      "subject": "Hugging Face",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "AI community hub",
+      "object_type": "ORG_TYPE"
+    },
+    {
+      "subject": "Jeff Boudier",
+      "subject_type": "PERSON",
+      "relation": "works at",
+      "object": "Hugging Face",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "Rihard Jarc",
+      "subject_type": "PERSON",
+      "relation": "founded",
+      "object": "UncoverAlpha",
+      "object_type": "PUBLICATION"
+    },
+    {
+      "subject": "Nortel",
+      "subject_type": "ORGANIZATION",
+      "relation": "financed",
+      "object": "customer deals",
+      "object_type": "DEAL"
+    },
+    {
+      "subject": "Oracle",
+      "subject_type": "ORGANIZATION",
+      "relation": "sector",
+      "object": "cloud computing",
+      "object_type": "SECTOR"
+    },
+    {
+      "subject": "Donald Trump",
+      "subject_type": "PERSON",
+      "relation": "title",
+      "object": "President",
+      "object_type": "ROLE"
+    },
+    {
+      "subject": "AMD",
+      "subject_type": "ORGANIZATION",
+      "relation": "rival of",
+      "object": "Nvidia",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "valued at",
+      "object": "$500 billion",
+      "object_type": "AMOUNT"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "type",
+      "object": "private company",
+      "object_type": "ORG_TYPE"
+    },
+    {
+      "subject": "Jensen Huang",
+      "subject_type": "PERSON",
+      "relation": "spoke on",
+      "object": "CNBC",
+      "object_type": "ORGANIZATION"
+    },
+    {
+      "subject": "OpenAI",
+      "subject_type": "ORGANIZATION",
+      "relation": "never turned",
+      "object": "profit",
+      "object_type": "METRIC"
+    }
+  ],
+  "entity_types": [
+    "COMPANY",
+    "PERSON",
+    "GROUP",
+    "PRODUCT",
+    "METRIC",
+    "REPORT",
+    "PERCENT",
+    "ISSUE",
+    "GOVERNMENT",
+    "INFRASTRUCTURE",
+    "LAW",
+    "POLICY",
+    "CONCEPT",
+    "COUNTRY",
+    "ORGANIZATION",
+    "INITIATIVE",
+    "AMOUNT",
+    "GOAL",
+    "SECTOR",
+    "EVENT",
+    "RESOURCE",
+    "OCCUPATION",
+    "DATE",
+    "PLATFORM",
+    "BOOK",
+    "MEDIA",
+    "ROLE",
+    "STATEMENT",
+    "VALUE",
+    "LOCATION",
+    "PODCAST",
+    "PRODUCT_TYPE",
+    "OPERATING_SYSTEM",
+    "INDEX",
+    "PERIOD",
+    "DURATION",
+    "TECHNOLOGY",
+    "TOPIC",
+    "AGREEMENT",
+    "PROJECT",
+    "ORG_TYPE",
+    "PUBLICATION",
+    "DEAL",
+    "RANK"
+  ]
+}

@@ -530,3 +530,113 @@ select.query-input {
 .empty-state-text {
   font-size: 0.9rem;
 }
+
+/* Deep Research Styles */
+.deep-research-btn {
+  width: 100%;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 0.9rem;
+  padding: 12px;
+}
+
+.research-results {
+  margin-top: 15px;
+}
+
+.research-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.research-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.research-content h1,
+.research-content h2,
+.research-content h3 {
+  color: #667eea;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.research-content h1 {
+  font-size: 1.2rem;
+}
+
+.research-content h2 {
+  font-size: 1rem;
+}
+
+.research-content h3 {
+  font-size: 0.9rem;
+}
+
+.research-content p {
+  margin-bottom: 10px;
+}
+
+.research-content ul,
+.research-content ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.research-content li {
+  margin-bottom: 5px;
+}
+
+.research-content strong {
+  color: #2C3E50;
+  font-weight: 600;
+}
+
+.research-content code {
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+}
+
+.research-content pre {
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.research-content blockquote {
+  border-left: 3px solid #667eea;
+  padding-left: 15px;
+  margin: 10px 0;
+  color: #666;
+  font-style: italic;
+}

@@ -20,8 +20,9 @@
         <li>Run extraction: <code>npm run extract &lt;source-file&gt;</code> to create knowledge-graph.json</li>
         <li>(Optional) Merge graphs: <code>npm run merge &lt;path&gt;</code></li>
         <li>(Optional) Add inferences: <code>npm run infer &lt;path&gt;</code> - inferred relationships shown with purple color</li>
+        <li>Start API server: <code>npm run api</code> (for deep research feature)</li>
         <li>Click a button below to load and visualize the graph</li>
-        <li>Interact with the graph: drag nodes, zoom, click nodes for details</li>
+        <li>Interact with the graph: drag nodes, zoom, click nodes for details and AI-powered research</li>
       </ol>
     </div>
 
@@ -42,8 +43,12 @@
         <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;file&gt;</code> - merges with knowledge-graph.json<br/>
         <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run merge &lt;file1&gt; &lt;file2&gt;</code> - merges two files
       </p>
-      <p style="color: #666; margin-bottom: 0px;">
+      <p style="color: #666; margin-bottom: 10px;">
         <strong>Add inferences:</strong> <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run infer &lt;path-to-file&gt;</code> (creates *-inferred.json with purple-colored inferred relationships)
+      </p>
+      <p style="color: #666; margin-bottom: 0px;">
+        <strong>Deep Research:</strong> <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run api</code> - starts AI research API server (Gemini 2.5) for comprehensive entity research
+        <br/><small style="margin-left: 20px;">Research outputs are saved to <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">public/sourceTexts/</code> directory and can be extracted again with <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">npm run extract</code></small>
       </p>
     </div>
 
@@ -124,6 +129,21 @@
     </div>
     <div class="node-info-content">
       <div class="node-stats" id="nodeStats"></div>
+
+      <!-- Deep Research Section -->
+      <div class="node-info-section">
+        <button id="deepResearchBtn" class="btn deep-research-btn">
+          🔍 Deep Research with AI
+        </button>
+        <div id="researchResults" class="research-results" style="display: none;">
+          <div class="research-loading" id="researchLoading">
+            <div class="loading-spinner"></div>
+            <div>Researching with Gemini AI...</div>
+          </div>
+          <div class="research-content" id="researchContent"></div>
+        </div>
+      </div>
+
       <div class="node-info-section">
         <div class="node-info-section-title">Outgoing Relationships</div>
         <div id="outgoingRelationships"></div>
