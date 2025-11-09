@@ -1,0 +1,39 @@
+# AI is not in a bubble, says VC founder. Why he says it’s different to the dotcom boom
+
+Whether or not markets are getting ahead of themselves over artificial intelligence is a hot topic for investors right now.
+
+Last week, billionaire investor Ray Dalio said his personal “bubble indicator” was relatively high, while Federal Reserve Chair Jerome Powell described the AI boom as “different” from the dotcom bubble.
+
+For Magnus Grimeland, founder of Singapore-based venture capital firm Antler, it’s clear the market is not overheating. “I definitely don’t think we’re in a bubble,” he told CNBC’s “Beyond the Valley” podcast, listing several reasons.
+
+The speed at which AI is being adopted by businesses is notable compared to other tech shifts, Grimeland said, such as the move from physical servers to cloud computing, which he said took a decade. Added to this, AI is “top of the agenda” for leaders today, he said, whether they’re running a healthcare provider in India or a U.S. Fortune 500 company.
+
+“There’s a willingness to invest into using that technology … and that’s happened immediately,” Grimeland said.
+
+He described the rapid shift to AI as being substantially different from the dotcom bubble of the late 1990s and early 2000s, when unprofitable internet startups eventually collapsed and the tech-heavy Nasdaq
+ lost almost 80% of its value between March 2000 and October 2002.
+
+“What makes this a little bit different from a bubble and makes it very different from dotcom is that there’s really real revenues behind a lot of this growth,” Grimeland said.
+
+OpenAI, the company behind ChatGPT, said it reached $10 billion in annual recurring revenue in June. Annual recurring revenue (ARR) is the amount of money a company expects to make from customers over 12 months.
+
+Antler is an investor in Lovable, a company that enables people to build apps and websites using AI. In July, Lovable said it had passed $100 million ARR in eight months.
+
+Another reason that the rapid adoption of AI is different from the dotcom boom is the speed at which consumers are taking to the technology, Grimeland said. “Think about how quickly our behavior online has changed, right? ... 100% of my searches a year ago [were on] Google. Now it’s probably 20%,” he said.
+
+Earlier this month, OpenAI launched its ChatGPT Atlas browser for Mac OS, with shares of Google’s parent company Alphabet
+ falling on the news.
+
+## Smaller AI players
+
+While Grimeland said there was a “tremendous” amount of money going to AI-related companies at the “wrong” valuation, these trends happen at the beginning of an investment cycle, he said. “But in the end … The opportunity in this space is so much bigger than the investments being put there,” Grimeland added.
+
+Asked whether there are opportunities for AI startups when large U.S. and Chinese companies currently dominate the sector, Grimeland said the big firms were “being challenged in the way they haven’t for a very long time.” He gave the example of DeepSeek, the Chinese startup that has produced AI models comparable to those from OpenAI.
+
+“Tencent
+ is building great AI, Baidu
+ is building great AI, but that’s not where DeepSeek came from, right?” Grimeland said. “The AI winners of this current platform shift [are] not necessarily those big incumbents.”
+
+As such, there are significant opportunities for smaller AI companies to become big businesses, Grimeland said, flagging firms that have “positive signals,” such as a good founding team, growth in the lifetime value of a customer and a reduction in the cost of delivering a product.
+
+- CNBC’s Dylan Butts, Ashley Capoot, Alex Harring and Jaures Yip contributed to this report.

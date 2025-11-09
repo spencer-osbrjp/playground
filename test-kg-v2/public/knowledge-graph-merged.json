@@ -1,0 +1,538 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Magnus Grimeland",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "founder"
+          },
+          {
+            "key": "company",
+            "value": "Antler"
+          },
+          {
+            "key": "location",
+            "value": "Singapore"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "said"
+      },
+      "object": {
+        "id": 2,
+        "name": "market is not a bubble",
+        "entity_type": "OPINION",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "AI market"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 3,
+        "name": "Ray Dalio",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "billionaire investor"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "said"
+      },
+      "object": {
+        "id": 4,
+        "name": "bubble indicator high",
+        "entity_type": "OPINION",
+        "attributes": []
+      }
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 5,
+        "name": "Jerome Powell",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Federal Reserve Chair"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "described"
+      },
+      "object": {
+        "id": 5,
+        "name": "AI boom different from dotcom",
+        "entity_type": "OPINION",
+        "attributes": []
+      }
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 6,
+        "name": "AI adoption",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 4,
+        "name": "is faster than"
+      },
+      "object": {
+        "id": 7,
+        "name": "cloud computing",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 8,
+        "name": "AI",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "is invested in by"
+      },
+      "object": {
+        "id": 9,
+        "name": "Fortune 500 companies",
+        "entity_type": "COMPANY",
+        "attributes": []
+      }
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 10,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "product",
+            "value": "ChatGPT"
+          },
+          {
+            "key": "revenue",
+            "value": "$10 billion ARR"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "achieved"
+      },
+      "object": {
+        "id": 11,
+        "name": "$10 billion ARR",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "June"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 12,
+        "name": "Antler",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 7,
+        "name": "invested in"
+      },
+      "object": {
+        "id": 13,
+        "name": "Lovable",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "revenue",
+            "value": "$100 million ARR"
+          },
+          {
+            "key": "timeframe",
+            "value": "eight months"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 14,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 8,
+        "name": "launched"
+      },
+      "object": {
+        "id": 15,
+        "name": "ChatGPT Atlas",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "platform",
+            "value": "Mac OS"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 16,
+        "name": "Alphabet",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 9,
+        "name": "had shares falling"
+      },
+      "object": {
+        "id": 14,
+        "name": "OpenAI launch",
+        "entity_type": "EVENT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 17,
+        "name": "DeepSeek",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 10,
+        "name": "produced"
+      },
+      "object": {
+        "id": 18,
+        "name": "AI models comparable to OpenAI",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 19,
+        "name": "Tencent",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "is building"
+      },
+      "object": {
+        "id": 8,
+        "name": "AI",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 20,
+        "name": "Baidu",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "is building"
+      },
+      "object": {
+        "id": 8,
+        "name": "AI",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 1,
+        "name": "Sam Altman",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "OpenAI boss"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "answered"
+      },
+      "object": {
+        "id": 2,
+        "name": "reporters",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 3,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "founded",
+            "value": "2022"
+          },
+          {
+            "key": "private",
+            "value": "true"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "entered_deal"
+      },
+      "object": {
+        "id": 4,
+        "name": "Nvidia",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "deal_value",
+            "value": "$100bn"
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 3,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 3,
+        "name": "plans_to_buy"
+      },
+      "object": {
+        "id": 5,
+        "name": "AMD equipment",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Developing AI"
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 3,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 4,
+        "name": "invested_by"
+      },
+      "object": {
+        "id": 6,
+        "name": "Microsoft",
+        "entity_type": "COMPANY",
+        "attributes": []
+      }
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 3,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "project_with"
+      },
+      "object": {
+        "id": 7,
+        "name": "Oracle",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "project",
+            "value": "Stargate"
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 4,
+        "name": "Nvidia",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 6,
+        "name": "stake_in"
+      },
+      "object": {
+        "id": 8,
+        "name": "CoreWeave",
+        "entity_type": "COMPANY",
+        "attributes": []
+      }
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 9,
+        "name": "Jerry Kaplan",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "AI entrepreneur"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "concerned_about"
+      },
+      "object": {
+        "id": 10,
+        "name": "AI bubble",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 11,
+        "name": "Anat Admati",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Professor"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "says"
+      },
+      "object": {
+        "id": 10,
+        "name": "AI bubble",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "hard to time"
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 3,
+        "name": "OpenAI",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 9,
+        "name": "announced"
+      },
+      "object": {
+        "id": 12,
+        "name": "White House project",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "Trump administration"
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 13,
+        "name": "Jamie Dimon",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "JP Morgan boss"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "warned"
+      },
+      "object": {
+        "id": 10,
+        "name": "AI bubble",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      }
+    }
+  ],
+  "entity_types": [
+    "PERSON",
+    "COMPANY",
+    "CONCEPT",
+    "OPINION"
+  ]
+}
