@@ -1,6 +1,6 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-import { extract, mergeGraphs } from './features/extract';
+import { extract, mergeGraphs, infer } from './features/extract';
 import fs from 'fs';
 import path from 'path';
 
@@ -19,7 +19,7 @@ app.post('/api/extract', async (c) => {
   try {
     console.log('Starting knowledge graph extraction...');
     const body = await c.req.json();
-    const sourceText = body.sourceText;
+    const { sourceText, config } = body;
 
     if (!sourceText) {
       return c.json({
@@ -28,7 +28,7 @@ app.post('/api/extract', async (c) => {
       }, 400);
     }
 
-    const knowledgeGraph = await extract(sourceText);
+    const knowledgeGraph = await extract(sourceText, config);
     return c.json({ success: true, data: knowledgeGraph });
   } catch (error) {
     console.error('Extraction error:', error);
@@ -71,8 +71,8 @@ app.post('/api/merge', async (c) => {
       }, 400);
     }
 
-    // Use reusable merge function
-    const mergedGraph = mergeGraphs(graph1, graph2);
+    // Use reusable merge function with disambiguation
+    const mergedGraph = await mergeGraphs(graph1, graph2);
 
     // Save merged graph
     const outputDir = 'public';
@@ -80,13 +80,40 @@ app.post('/api/merge', async (c) => {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    const filePath = path.join(outputDir, 'knowledge-graph.json');
+    const filePath = path.join(outputDir, 'knowledge-graph-merged.json');
     fs.writeFileSync(filePath, JSON.stringify(mergedGraph, null, 2));
-    console.log('✓ Merged graph saved');
+    console.log('✓ Merged graph saved to:', filePath);
 
     return c.json({ success: true, data: mergedGraph });
   } catch (error) {
     console.error('Merge error:', error);
+    return c.json({
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
+    }, 500);
+  }
+});
+
+// Infer hidden relationships in knowledge graph
+app.post('/api/infer', async (c) => {
+  try {
+    console.log('Inference request received');
+    const body = await c.req.json();
+    const { graph } = body;
+
+    if (!graph) {
+      return c.json({
+        success: false,
+        error: 'Knowledge graph is required'
+      }, 400);
+    }
+
+    // Perform inference
+    const inferredGraph = await infer(graph);
+
+    return c.json({ success: true, data: inferredGraph });
+  } catch (error) {
+    console.error('Inference error:', error);
     return c.json({
       success: false,
       error: error instanceof Error ? error.message : 'Unknown error'

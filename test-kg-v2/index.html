@@ -262,6 +262,26 @@
     #mergeBtn:hover {
       background: #28a745;
     }
+
+    #inferBtn {
+      background: #ff9500;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    #inferBtn:hover {
+      background: #e68600;
+    }
+
+    #inferBtn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
   </style>
 </head>
 
@@ -274,6 +294,45 @@
       <input type="file" id="loadGraphInput" accept=".json" style="display: none;" />
       <button id="loadBtn" type="button">Load Graph</button>
       <button id="mergeBtn" type="button">Merge Graphs</button>
+      <button id="inferBtn" type="button">Infer Relationships</button>
+    </div>
+  </div>
+
+  <!-- Extraction Config Modal -->
+  <div id="configModal" class="modal">
+    <div class="modal-content" style="max-width: 600px;">
+      <h2>Configure Extraction</h2>
+      <div class="modal-body">
+        <div class="file-upload-group">
+          <label for="configDomain">Domain / Context:</label>
+          <input type="text" id="configDomain" placeholder="e.g., International relations" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" />
+        </div>
+        <div class="file-upload-group">
+          <label for="configFocusAreas">Focus Areas (comma-separated):</label>
+          <textarea id="configFocusAreas" rows="3" placeholder="e.g., Country relationships, Political alliances, Trade agreements" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+        </div>
+        <div class="file-upload-group">
+          <label for="configIncludeTypes">Relationship Types to Include (comma-separated, optional):</label>
+          <input type="text" id="configIncludeTypes" placeholder="e.g., supports, opposes, allies_with" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" />
+        </div>
+        <div class="file-upload-group">
+          <label for="configExcludeTypes">Topics to Exclude (comma-separated, optional):</label>
+          <input type="text" id="configExcludeTypes" placeholder="e.g., Sports, Entertainment" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" />
+        </div>
+        <div class="file-upload-group">
+          <label for="configThreshold">Relevance Threshold:</label>
+          <select id="configThreshold" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+            <option value="high">High - Quality over quantity</option>
+            <option value="medium" selected>Medium - Balanced</option>
+            <option value="low">Low - Comprehensive coverage</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelConfig">Cancel</button>
+        <button class="btn btn-secondary" id="useDefaults">Use Defaults</button>
+        <button class="btn btn-primary" id="confirmConfig">Extract</button>
+      </div>
     </div>
   </div>
 

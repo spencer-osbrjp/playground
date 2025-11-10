@@ -120,6 +120,9 @@ const visualizeGraph = (knowledgeGraph: KnowledgeGraph) => {
   const container = document.getElementById('graph-container');
   if (!container) return;
 
+  // Store current graph for inference
+  currentGraph = knowledgeGraph;
+
   // Show JSON output
   showJsonOutput(knowledgeGraph);
 
@@ -162,12 +165,16 @@ const visualizeGraph = (knowledgeGraph: KnowledgeGraph) => {
       addedNodes.add(objectKey);
     }
 
-    // Add edge
+    // Add edge - use different styling for inferred relationships
+    const tripletAny = triplet as any;
+    const isInferred = tripletAny.inferred === true;
+
     try {
       graph.addEdge(subjectKey, objectKey, {
         label: triplet.predicate.name,
-        size: 2,
-        color: '#999',
+        size: isInferred ? 1.5 : 2,
+        color: isInferred ? '#ff9500' : '#999',
+        type: isInferred ? 'line' : 'arrow',
       });
     } catch (e) {
       // Edge might already exist, ignore
@@ -206,7 +213,7 @@ const visualizeGraph = (knowledgeGraph: KnowledgeGraph) => {
   setTimeout(hideStatus, 3000);
 };
 
-const extractKnowledgeGraph = async () => {
+const performExtraction = async (config?: any) => {
   const button = document.querySelector('#extract') as HTMLButtonElement;
   const fileInput = document.querySelector('#fileInput') as HTMLInputElement;
 
@@ -242,7 +249,7 @@ const extractKnowledgeGraph = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ sourceText }),
+      body: JSON.stringify({ sourceText, config }),
     });
 
     const result = await response.json();
@@ -264,6 +271,20 @@ const extractKnowledgeGraph = async () => {
     button.disabled = false;
     button.textContent = 'Extract Knowledge Graph';
   }
+};
+
+const extractKnowledgeGraph = async () => {
+  const fileInput = document.querySelector('#fileInput') as HTMLInputElement;
+  const configModal = document.querySelector('#configModal');
+
+  // Check if a file is selected
+  if (!fileInput.files || fileInput.files.length === 0) {
+    showStatus('Please select a file first', 'error');
+    return;
+  }
+
+  // Show configuration modal
+  configModal?.classList.add('show');
 };
 
 const loadExistingGraph = async () => {
@@ -369,14 +390,72 @@ const loadGraphFromFile = async () => {
   }
 };
 
+// Store current graph globally for inference
+let currentGraph: KnowledgeGraph | null = null;
+
+const inferRelationships = async () => {
+  if (!currentGraph) {
+    showStatus('Please load or extract a knowledge graph first', 'error');
+    return;
+  }
+
+  const inferBtn = document.querySelector('#inferBtn') as HTMLButtonElement;
+  if (!inferBtn) return;
+
+  inferBtn.disabled = true;
+  inferBtn.textContent = 'Inferring...';
+  showStatus('Analyzing graph and inferring hidden relationships... This may take a minute.', 'info');
+
+  try {
+    const response = await fetch(`${API_URL}/api/infer`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ graph: currentGraph }),
+    });
+
+    const result = await response.json();
+
+    if (result.success && result.data) {
+      showStatus('Inference complete! Visualizing inferred relationships...', 'success');
+
+      // Update current graph with inferred version
+      currentGraph = result.data;
+      visualizeGraph(result.data);
+
+      // Count inferred relationships
+      const inferredCount = result.data.triplets.filter((t: any) => t.inferred).length;
+      setTimeout(() => {
+        showStatus(`Added ${inferredCount} inferred relationships!`, 'success');
+      }, 1000);
+    } else {
+      const errorMsg = result.error || 'Inference failed';
+      console.error('Inference failed:', errorMsg);
+      showStatus(`Error: ${errorMsg}`, 'error');
+    }
+  } catch (error) {
+    console.error('Inference request failed:', error);
+    showStatus(`Error: ${error instanceof Error ? error.message : 'Network error'}`, 'error');
+  } finally {
+    inferBtn.disabled = false;
+    inferBtn.textContent = 'Infer Relationships';
+  }
+};
+
 const main = () => {
   const extractButton = document.querySelector("button#extract");
   const loadBtn = document.querySelector("#loadBtn");
   const loadGraphInput = document.querySelector("#loadGraphInput") as HTMLInputElement;
   const mergeBtn = document.querySelector("#mergeBtn");
+  const inferBtn = document.querySelector("#inferBtn");
   const mergeModal = document.querySelector("#mergeModal");
   const cancelMerge = document.querySelector("#cancelMerge");
   const confirmMerge = document.querySelector("#confirmMerge");
+  const configModal = document.querySelector("#configModal");
+  const cancelConfig = document.querySelector("#cancelConfig");
+  const useDefaults = document.querySelector("#useDefaults");
+  const confirmConfig = document.querySelector("#confirmConfig");
 
   extractButton?.addEventListener("click", extractKnowledgeGraph);
 
@@ -398,10 +477,60 @@ const main = () => {
 
   confirmMerge?.addEventListener("click", mergeKnowledgeGraphs);
 
-  // Close modal when clicking outside
+  // Infer button handler
+  inferBtn?.addEventListener("click", inferRelationships);
+
+  // Config modal handlers
+  cancelConfig?.addEventListener("click", () => {
+    configModal?.classList.remove('show');
+  });
+
+  useDefaults?.addEventListener("click", () => {
+    configModal?.classList.remove('show');
+    performExtraction(); // Extract with default config
+  });
+
+  confirmConfig?.addEventListener("click", () => {
+    const domain = (document.querySelector("#configDomain") as HTMLInputElement).value;
+    const focusAreasText = (document.querySelector("#configFocusAreas") as HTMLTextAreaElement).value;
+    const includeTypesText = (document.querySelector("#configIncludeTypes") as HTMLInputElement).value;
+    const excludeTypesText = (document.querySelector("#configExcludeTypes") as HTMLInputElement).value;
+    const threshold = (document.querySelector("#configThreshold") as HTMLSelectElement).value;
+
+    const config: any = {};
+
+    if (domain.trim()) {
+      config.domain = domain.trim();
+    }
+
+    if (focusAreasText.trim()) {
+      config.focusAreas = focusAreasText.split(',').map(s => s.trim()).filter(s => s.length > 0);
+    }
+
+    if (includeTypesText.trim()) {
+      config.includeTypes = includeTypesText.split(',').map(s => s.trim()).filter(s => s.length > 0);
+    }
+
+    if (excludeTypesText.trim()) {
+      config.excludeTypes = excludeTypesText.split(',').map(s => s.trim()).filter(s => s.length > 0);
+    }
+
+    config.relevanceThreshold = threshold;
+
+    configModal?.classList.remove('show');
+    performExtraction(config);
+  });
+
+  // Close modals when clicking outside
   mergeModal?.addEventListener("click", (e) => {
     if (e.target === mergeModal) {
       mergeModal.classList.remove('show');
+    }
+  });
+
+  configModal?.addEventListener("click", (e) => {
+    if (e.target === configModal) {
+      configModal.classList.remove('show');
     }
   });
 

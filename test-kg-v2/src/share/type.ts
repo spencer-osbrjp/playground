@@ -38,6 +38,7 @@ export const tripletSchema = z.object({
   subject: nodeSchema.describe("The subject entity of the relationship"),
   predicate: edgeSchema.describe("The relationship type"),
   object: nodeSchema.describe("The object entity of the relationship"),
+  inferred: z.boolean().default(false).describe("Whether this triplet was inferred (true) or is original (false). Defaults to false for original triplets."),
 });
 
 export type Triplet = z.infer<typeof tripletSchema>;
