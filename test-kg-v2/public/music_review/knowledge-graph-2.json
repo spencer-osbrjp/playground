@@ -1,0 +1,287 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "6:16 in LA",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "date",
+            "value": "Friday, May 3"
+          },
+          {
+            "key": "description",
+            "value": "Diss track aimed at Drake"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "references"
+      },
+      "object": {
+        "id": 2,
+        "name": "Drake timestamp tracks",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Signature X time in X place songs by Drake"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "6:16 in LA",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "date",
+            "value": "Friday, May 3"
+          },
+          {
+            "key": "description",
+            "value": "Diss track aimed at Drake"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "mentions"
+      },
+      "object": {
+        "id": 3,
+        "name": "DJ Akademiks",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "media personality"
+          },
+          {
+            "key": "description",
+            "value": "Drake supporter referenced as 'Ak'"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 1,
+        "name": "6:16 in LA",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "date",
+            "value": "Friday, May 3"
+          },
+          {
+            "key": "description",
+            "value": "Diss track aimed at Drake"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "hints"
+      },
+      "object": {
+        "id": 4,
+        "name": "OVO mole",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Alleged insider within Drake’s camp"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 5,
+        "name": "Family Matters",
+        "entity_type": "VIDEO",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Drake"
+          },
+          {
+            "key": "type",
+            "value": "diss track video"
+          },
+          {
+            "key": "description",
+            "value": "Visuals include destroying a van likeness"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "references"
+      },
+      "object": {
+        "id": 6,
+        "name": "good kid, m.A.A.d city van",
+        "entity_type": "OBJECT",
+        "attributes": [
+          {
+            "key": "full_name",
+            "value": "good kid, m.A.A.d city van"
+          },
+          {
+            "key": "description",
+            "value": "Van from Kendrick Lamar’s album cover"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 7,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Victory-lap diss track with DJ Mustard"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "references"
+      },
+      "object": {
+        "id": 8,
+        "name": "Certified Lover Boy",
+        "entity_type": "ALBUM",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Drake"
+          },
+          {
+            "key": "description",
+            "value": "Referenced in lyric 'Certified Lover Boy? Certified pedophile'"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 9,
+        "name": "The Heart Part Six",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Drake"
+          },
+          {
+            "key": "description",
+            "value": "Rebuttal track title echoes Kendrick’s series"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "references"
+      },
+      "object": {
+        "id": 10,
+        "name": "The Heart",
+        "entity_type": "SERIES",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Kendrick’s recurring song series"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 9,
+        "name": "The Heart Part Six",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Drake"
+          },
+          {
+            "key": "description",
+            "value": "Rebuttal track title echoes Kendrick’s series"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "references"
+      },
+      "object": {
+        "id": 11,
+        "name": "Mother I Sober",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Lyrics cited by Drake with a false claim, per review"
+          }
+        ]
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "SONG",
+    "CONCEPT",
+    "PERSON",
+    "VIDEO",
+    "OBJECT",
+    "ALBUM",
+    "SERIES"
+  ]
+}

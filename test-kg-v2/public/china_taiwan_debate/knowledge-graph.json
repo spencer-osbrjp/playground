@@ -1,0 +1,970 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "claims"
+      },
+      "object": {
+        "id": 17,
+        "name": "Breakaway province",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "China sees Taiwan as a breakaway province"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "threatens force"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "China has not ruled out using force to take the island"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "constitution",
+            "value": "Yes"
+          },
+          {
+            "key": "political_system",
+            "value": "Democratically elected leaders"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "distinct from"
+      },
+      "object": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Taiwan sees itself as distinct from the Chinese mainland"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "constitution",
+            "value": "Yes"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "has constitution"
+      },
+      "object": {
+        "id": 15,
+        "name": "Constitution of Taiwan",
+        "entity_type": "DOCUMENT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Governing document of Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "political_system",
+            "value": "Democratically elected leaders"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "has leaders"
+      },
+      "object": {
+        "id": 16,
+        "name": "Elected leaders",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Leaders are chosen through democratic elections"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trade_role",
+            "value": "Biggest trading partner of Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "trades with"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "trade_link",
+            "value": "Strong links to China"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1895"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "colonized by"
+      },
+      "object": {
+        "id": 4,
+        "name": "Japan",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "After Qing lost First Sino-Japanese War"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 5,
+        "name": "Qing Empire",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1895"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "lost"
+      },
+      "object": {
+        "id": 6,
+        "name": "First Sino-Japanese War",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "War between Qing Empire and Japan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1945"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 9,
+        "name": "took"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "After Japan lost World War Two"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 7,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "ORG",
+        "attributes": [
+          {
+            "key": "leader",
+            "value": "Chiang Kai-shek"
+          },
+          {
+            "key": "ideology",
+            "value": "Nationalist"
+          },
+          {
+            "key": "year",
+            "value": "1949"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "fled to"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "After communists won in 1949"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "also known as"
+      },
+      "object": {
+        "id": 11,
+        "name": "Republic of China",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Name retained by Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 12,
+        "name": "Vatican",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Holy See"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "recognizes"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "diplomatic_status",
+            "value": "Few official recognitions"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "recognized"
+      },
+      "object": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Switched diplomatic recognition from Taipei to Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "ended recognition"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "US switch from Taipei to Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "ally_status",
+            "value": "Strongest ally of Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 15,
+        "name": "ally of"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "security",
+            "value": "Relies on US support"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Arms sales under US law"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "sells arms to"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "defence",
+            "value": "Receives US arms"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "condition",
+            "value": "In case of Chinese attack"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "vowed to help"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "security",
+            "value": "US has pledged help"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Peaceful reunification stated goal"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "seeks reunification"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Through soft power and messaging"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 23,
+        "name": "Xi Jinping",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "President of China"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "demands"
+      },
+      "object": {
+        "id": 18,
+        "name": "Taiwan reunification",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "quote",
+            "value": "Reunification must be fulfilled"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "military_balance",
+            "value": "Forces would dwarf Taiwan's"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 20,
+        "name": "outmatches"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "military_balance",
+            "value": "Weaker than China"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "defence_spending_rank",
+            "value": "Second"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "trails"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "defence_spending_rank",
+            "value": "First"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Strategic ambiguity"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "unclear on"
+      },
+      "object": {
+        "id": 24,
+        "name": "Taiwan defence",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Deliberately unclear whether or how it would defend Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trend",
+            "value": "Ties soured in recent years"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "ties soured"
+      },
+      "object": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trend",
+            "value": "Ties soured in recent years"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "claim",
+            "value": "US reneging on One-China policy"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "accuses"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "response",
+            "value": "Denies change"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "position",
+            "value": "Status quo unchanged"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "denies"
+      },
+      "object": {
+        "id": 13,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "issue",
+            "value": "Reneging accusation denied by US"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 13,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "definition",
+            "value": "Recognizes only one Chinese government"
+          },
+          {
+            "key": "location",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 26,
+        "name": "recognizes"
+      },
+      "object": {
+        "id": 22,
+        "name": "China government",
+        "entity_type": "GOVERNMENT",
+        "attributes": [
+          {
+            "key": "seat",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "region",
+            "value": "Western Pacific"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 27,
+        "name": "located in"
+      },
+      "object": {
+        "id": 14,
+        "name": "First Island Chain",
+        "entity_type": "REGION",
+        "attributes": [
+          {
+            "key": "alignment",
+            "value": "US-friendly territories"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 20,
+        "name": "TSMC",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "industry",
+            "value": "Semiconductors"
+          },
+          {
+            "key": "market_share",
+            "value": "Over half of world market"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 28,
+        "name": "leads"
+      },
+      "object": {
+        "id": 19,
+        "name": "Chip market",
+        "entity_type": "MARKET",
+        "attributes": [
+          {
+            "key": "scope",
+            "value": "Global"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan",
+        "entity_type": "TERRITORY",
+        "attributes": [
+          {
+            "key": "economy",
+            "value": "Major semiconductor producer"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 29,
+        "name": "produces"
+      },
+      "object": {
+        "id": 21,
+        "name": "Semiconductors",
+        "entity_type": "INDUSTRY",
+        "attributes": [
+          {
+            "key": "impact",
+            "value": "Power phones, electric cars, electronics"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 30,
+      "subject": {
+        "id": 1,
+        "name": "China",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "claim",
+            "value": "US encircling with bases from Australia to Japan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 30,
+        "name": "accuses"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "accusation",
+            "value": "Encirclement with military bases"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    }
+  ],
+  "entity_types": [
+    "COUNTRY",
+    "TERRITORY",
+    "DOCUMENT",
+    "CONCEPT",
+    "STATE",
+    "EVENT",
+    "ORG",
+    "PERSON",
+    "POLICY",
+    "REGION",
+    "MARKET",
+    "COMPANY",
+    "INDUSTRY",
+    "GOVERNMENT"
+  ]
+}

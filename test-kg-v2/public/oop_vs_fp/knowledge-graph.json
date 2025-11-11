@@ -1,0 +1,905 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          },
+          {
+            "key": "alias",
+            "value": "Functional programming"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "provides"
+      },
+      "object": {
+        "id": 2,
+        "name": "Predictability",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "frontend, React/Redux examples"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          },
+          {
+            "key": "alias",
+            "value": "Object-oriented programming"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "hinders"
+      },
+      "object": {
+        "id": 2,
+        "name": "Predictability",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "traditional constructs"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 4,
+        "name": "React",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "library"
+          },
+          {
+            "key": "ecosystem",
+            "value": "frontend"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "exemplifies"
+      },
+      "object": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "predictable behavior"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 5,
+        "name": "Redux",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "state management"
+          },
+          {
+            "key": "ecosystem",
+            "value": "frontend"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "exemplifies"
+      },
+      "object": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "predictable behavior"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "favors"
+      },
+      "object": {
+        "id": 6,
+        "name": "Single inheritance",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "class inherits from only one class"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "has_issue"
+      },
+      "object": {
+        "id": 7,
+        "name": "Multiple inheritance",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "issue",
+            "value": "ambiguity when parent members collide"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 8,
+        "name": "Prototype inheritance",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "OOP"
+          },
+          {
+            "key": "language",
+            "value": "JavaScript"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "offers"
+      },
+      "object": {
+        "id": 9,
+        "name": "Flexibility",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "less declarative than classical inheritance"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 10,
+        "name": "Encapsulation abuse",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "OOP"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "leads_to"
+      },
+      "object": {
+        "id": 11,
+        "name": "Opaque code",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "issue",
+            "value": "harder transparency"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 12,
+        "name": "Shared mutable state",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "OOP-heavy codebases"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "increases"
+      },
+      "object": {
+        "id": 13,
+        "name": "Unpredictable state",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "many references to one datum"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 14,
+        "name": "Big codebases",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "scale",
+            "value": "hundreds of classes"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 9,
+        "name": "cause"
+      },
+      "object": {
+        "id": 15,
+        "name": "Side effects",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "many middle-man classes"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 16,
+        "name": "OOP ecosystem",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "domain",
+            "value": "communities and practices"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "increases"
+      },
+      "object": {
+        "id": 17,
+        "name": "Learning curve",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "boilerplate and jargon"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 18,
+        "name": "Resource management",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "files, connections, UI inputs"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "matches"
+      },
+      "object": {
+        "id": 19,
+        "name": "Lifecycle alignment",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "creation/availability/removal fit objects"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "controls"
+      },
+      "object": {
+        "id": 20,
+        "name": "Instance count",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "mechanism",
+            "value": "private constructors, static props"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "scales_for"
+      },
+      "object": {
+        "id": 21,
+        "name": "Parallelism",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "natural scalability"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 15,
+        "name": "maximizes"
+      },
+      "object": {
+        "id": 22,
+        "name": "Data processing",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "through many functions"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 23,
+        "name": "Resource awareness",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "functions managing resources"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "causes"
+      },
+      "object": {
+        "id": 24,
+        "name": "Impurity",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "FP"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 25,
+        "name": "Higher-order functions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "FP"
+          },
+          {
+            "key": "note",
+            "value": "uncategorized HO functions"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "can_cause"
+      },
+      "object": {
+        "id": 26,
+        "name": "Coupling",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "related_issues",
+            "value": "unclear behavior, long params"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "organizes"
+      },
+      "object": {
+        "id": 27,
+        "name": "Mid-size components",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "autonomy and associations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 28,
+        "name": "Class diagrams",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigm",
+            "value": "OOP"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "aid"
+      },
+      "object": {
+        "id": 29,
+        "name": "Domain communication",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "uses",
+            "value": "architecture, big-picture modeling"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 20,
+        "name": "reduces"
+      },
+      "object": {
+        "id": 30,
+        "name": "Unnecessary classes",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "prefer pure functions"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 31,
+        "name": "OOP-FP symbiosis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "combining both paradigms"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "better_than"
+      },
+      "object": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 31,
+        "name": "OOP-FP symbiosis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "combining both paradigms"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "better_than"
+      },
+      "object": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 32,
+        "name": "Reactive programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "asynchronous, maintainable code"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "combines"
+      },
+      "object": {
+        "id": 33,
+        "name": "OOP and FP",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "maintainable async code"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 34,
+        "name": "RxJS",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "library"
+          },
+          {
+            "key": "feature",
+            "value": "Observables with functor operators"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "combines"
+      },
+      "object": {
+        "id": 33,
+        "name": "OOP and FP",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "object lifecycle + pure operators"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 35,
+        "name": "Luxon",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "date-time library"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "uses"
+      },
+      "object": {
+        "id": 36,
+        "name": "Immutable objects",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigms",
+            "value": "FP style in objects"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 37,
+        "name": "MobX",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "state management"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "uses"
+      },
+      "object": {
+        "id": 38,
+        "name": "Observables",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "paradigms",
+            "value": "reactive OOP+FP"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 39,
+        "name": "Frontend",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "ecosystem",
+            "value": "web UI"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "prefers"
+      },
+      "object": {
+        "id": 40,
+        "name": "Pure functions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "with",
+            "value": "immutable objects"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 3,
+        "name": "Object-oriented programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "paradigm"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "more_popular_than"
+      },
+      "object": {
+        "id": 1,
+        "name": "Functional programming",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "evidence",
+            "value": "described as most popular academic tools"
+          }
+        ]
+      },
+      "inferred": true
+    }
+  ],
+  "entity_types": [
+    "CONCEPT"
+  ]
+}

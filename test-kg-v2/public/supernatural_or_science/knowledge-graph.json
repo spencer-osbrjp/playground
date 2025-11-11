@@ -1,0 +1,989 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Science",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "System of inquiry using empirical, contradictable tests"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "can test"
+      },
+      "object": {
+        "id": 2,
+        "name": "some supernatural claims",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Claims that can be made empirically testable and falsifiable"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "Science",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "System of inquiry using empirical, contradictable tests"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "cannot test"
+      },
+      "object": {
+        "id": 3,
+        "name": "untestable claims",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Claims lacking specific, empirical detectability or not falsifiable"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 4,
+        "name": "Scientific hypothesis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "criteria",
+            "value": "testable and contradictable"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "requires"
+      },
+      "object": {
+        "id": 5,
+        "name": "empirical testing",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Predictions stated and checked in principle"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 6,
+        "name": "Non-scientific hypothesis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "criteria",
+            "value": "untestable or not falsifiable"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "includes"
+      },
+      "object": {
+        "id": 7,
+        "name": "overly broad claims",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Predict all outcomes; not refutable"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 8,
+        "name": "Angel hypothesis",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "scenario",
+            "value": "plants sprouted over weekend at school"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "can be"
+      },
+      "object": {
+        "id": 4,
+        "name": "Scientific hypothesis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "criteria",
+            "value": "testable and contradictable"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 8,
+        "name": "Angel hypothesis",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "scenario",
+            "value": "plants sprouted over weekend at school"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "can be"
+      },
+      "object": {
+        "id": 6,
+        "name": "Non-scientific hypothesis",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "criteria",
+            "value": "untestable or not falsifiable"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 8,
+        "name": "Angel hypothesis",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "scenario",
+            "value": "plants sprouted over weekend at school"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "is testable by"
+      },
+      "object": {
+        "id": 9,
+        "name": "observable predictions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "visibility, sounds, residue ('angel dust'), detectors"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 10,
+        "name": "Supernatural claims",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "initial_probability",
+            "value": "often low"
+          },
+          {
+            "key": "reason",
+            "value": "history of failure vs natural explanations"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "often have"
+      },
+      "object": {
+        "id": 11,
+        "name": "low prior probability",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "framework",
+            "value": "Bayesian evaluation"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 12,
+        "name": "Science",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "method",
+            "value": "hypothetico-deductive"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 9,
+        "name": "evaluates via"
+      },
+      "object": {
+        "id": 13,
+        "name": "priors, evidence, alternatives",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "components",
+            "value": "prior probability; empirical evidence; alternative explanations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 14,
+        "name": "Creationism",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "supernatural-linked"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "has been"
+      },
+      "object": {
+        "id": 15,
+        "name": "empirically tested",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "outcome",
+            "value": "contradicted by evidence"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 16,
+        "name": "Intelligent design",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "supernatural-linked"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "has been"
+      },
+      "object": {
+        "id": 15,
+        "name": "empirically tested",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "outcome",
+            "value": "contradicted by evidence"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 17,
+        "name": "Evolution by natural selection",
+        "entity_type": "THEORY",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "supported by evidence"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "contradicts"
+      },
+      "object": {
+        "id": 18,
+        "name": "special creation",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "not supported"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 19,
+        "name": "Astrology",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "pseudoscientific"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "fails at"
+      },
+      "object": {
+        "id": 20,
+        "name": "accurate predictions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "not consistently demonstrated"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 21,
+        "name": "Extrasensory perception",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "abbr",
+            "value": "ESP"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "not supported by"
+      },
+      "object": {
+        "id": 22,
+        "name": "lottery outcomes",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "observation",
+            "value": "psychics do not consistently win"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 23,
+        "name": "Intercessory prayer",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "medical outcomes"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 15,
+        "name": "shows no"
+      },
+      "object": {
+        "id": 24,
+        "name": "outcome improvement",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "finding",
+            "value": "no improvement in controlled trials"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 25,
+        "name": "Young Earth claim",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "content",
+            "value": "Earth <10,000 years old"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "is"
+      },
+      "object": {
+        "id": 26,
+        "name": "contradicted",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "basis",
+            "value": "multiple scientific lines"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 27,
+        "name": "Germ theory",
+        "entity_type": "THEORY",
+        "attributes": [
+          {
+            "key": "century",
+            "value": "19th"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "replaced"
+      },
+      "object": {
+        "id": 28,
+        "name": "supernatural disease causes",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "former_view",
+            "value": "illness as punishment or spirits"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 29,
+        "name": "Lightning divine punishment",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "former_belief",
+            "value": "tool of gods"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "is"
+      },
+      "object": {
+        "id": 26,
+        "name": "contradicted",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "observation",
+            "value": "no moral discrimination in strikes"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 30,
+        "name": "Science education",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "goal",
+            "value": "teach claim evaluation"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "should teach"
+      },
+      "object": {
+        "id": 31,
+        "name": "testable vs non-testable",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "focus",
+            "value": "distinguish scientific from non-scientific"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 32,
+        "name": "Beliefs Questionnaire activity",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "setting",
+            "value": "school classroom"
+          },
+          {
+            "key": "aim",
+            "value": "promote critical thinking"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 20,
+        "name": "tests"
+      },
+      "object": {
+        "id": 33,
+        "name": "superstitious beliefs",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "astrology, telepathy, clairvoyance, telekinesis"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 34,
+        "name": "Telepathy class demo",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "design",
+            "value": "controlled tests expose fraud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "shows"
+      },
+      "object": {
+        "id": 35,
+        "name": "scientific evaluation",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "purpose",
+            "value": "how to test claims"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 36,
+        "name": "History case studies",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "heliocentrism, germ theory, phlogiston"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "illustrate"
+      },
+      "object": {
+        "id": 37,
+        "name": "concept replacement",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "process",
+            "value": "better theories supersede old ones"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 38,
+        "name": "Science and religion",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "domains",
+            "value": "natural vs spiritual"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "need not"
+      },
+      "object": {
+        "id": 39,
+        "name": "conflict",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "condition",
+            "value": "each avoids other’s domain"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 40,
+        "name": "Religious claims on nature",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "risk",
+            "value": "empirically contradicted"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "can be"
+      },
+      "object": {
+        "id": 26,
+        "name": "contradicted",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "subject to empirical testing"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 41,
+        "name": "SER survey 2011",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "sample",
+            "value": "8000 mailing list"
+          },
+          {
+            "key": "responses",
+            "value": "16"
+          },
+          {
+            "key": "topic",
+            "value": "testing angel hypothesis in class"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "found"
+      },
+      "object": {
+        "id": 42,
+        "name": "split views",
+        "entity_type": "EVIDENCE",
+        "attributes": [
+          {
+            "key": "distribution",
+            "value": "roughly even yes/no; confusion noted"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 43,
+        "name": "Option C",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "content",
+            "value": "science can test some supernatural claims but not others"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 26,
+        "name": "is best"
+      },
+      "object": {
+        "id": 44,
+        "name": "answer",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "question",
+            "value": "Can science test supernatural?"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 45,
+        "name": "Supernatural worldview",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "possible but evidence required"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 27,
+        "name": "bears"
+      },
+      "object": {
+        "id": 46,
+        "name": "high burden",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "low priors demand strong evidence"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 47,
+        "name": "Humans",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "tendency",
+            "value": "religious/spiritual inclination"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 28,
+        "name": "often hold"
+      },
+      "object": {
+        "id": 48,
+        "name": "supernatural beliefs",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "possible_causes",
+            "value": "attachment needs, anxiety relief, ritual control, cognitive by-products"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 49,
+        "name": "NAS scientists",
+        "entity_type": "GROUP",
+        "attributes": [
+          {
+            "key": "organization",
+            "value": "National Academy of Sciences"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 29,
+        "name": "are mostly"
+      },
+      "object": {
+        "id": 50,
+        "name": "atheists",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "correlation mentioned; not causal claim"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 30,
+      "subject": {
+        "id": 51,
+        "name": "Pierre-Simon Laplace",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "mathematician"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 30,
+        "name": "omitted"
+      },
+      "object": {
+        "id": 52,
+        "name": "Creator hypothesis",
+        "entity_type": "CLAIM",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "celestial mechanics; no need for hypothesis"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 31,
+      "subject": {
+        "id": 53,
+        "name": "Galileo affair",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "theme",
+            "value": "pressure from Church on heliocentrism"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 31,
+        "name": "illustrates"
+      },
+      "object": {
+        "id": 39,
+        "name": "conflict",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "condition",
+            "value": "when religion asserts natural claims"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 32,
+      "subject": {
+        "id": 54,
+        "name": "Teacher guidance",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "science classes"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 32,
+        "name": "should allow"
+      },
+      "object": {
+        "id": 55,
+        "name": "testing proposals",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "constraint",
+            "value": "only if testable and falsifiable"
+          }
+        ]
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "CONCEPT",
+    "CLAIM",
+    "THEORY",
+    "EVIDENCE",
+    "EVENT",
+    "GROUP",
+    "PERSON"
+  ]
+}

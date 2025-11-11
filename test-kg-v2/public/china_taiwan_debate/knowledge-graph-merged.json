@@ -1,0 +1,2689 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "government",
+            "value": "ruled by CCP"
+          },
+          {
+            "key": "position",
+            "value": "Taiwan is part of China"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "claims"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "self-governed island"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "unification_goal",
+            "value": "peaceful preferred, force possible"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "seeks"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "issue",
+            "value": "eventual unification"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 3,
+        "name": "Chinese Communist Party (CCP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "PRC"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "rules"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "view",
+            "value": "Taiwan as renegade province"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "views"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "activity",
+            "value": "ramped up military operations near Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "pressures"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "area",
+            "value": "Taiwan Strait"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 10,
+        "name": "Democratic Progressive Party (DPP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          },
+          {
+            "key": "position",
+            "value": "ROC is sovereign, independent; no need to declare independence"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "opposes"
+      },
+      "object": {
+        "id": 8,
+        "name": "1992 Consensus",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "topic",
+            "value": "One China framework disagreement"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 9,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          },
+          {
+            "key": "position",
+            "value": "one China, different interpretations"
+          },
+          {
+            "key": "stance",
+            "value": "opposes Taiwan independence; favors closer ties with Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "supports"
+      },
+      "object": {
+        "id": 8,
+        "name": "1992 Consensus",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "PRC_view",
+            "value": "one China; seek reunification"
+          },
+          {
+            "key": "KMT_view",
+            "value": "one China, different interpretations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 11,
+        "name": "Xi Jinping",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "PRC President"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "endorses"
+      },
+      "object": {
+        "id": 8,
+        "name": "1992 Consensus",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "Xi_statement",
+            "value": "two sides belong to one China; seek reunification"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 11,
+        "name": "Xi Jinping",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "PRC President"
+          },
+          {
+            "key": "date",
+            "value": "2019"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 9,
+        "name": "proposed"
+      },
+      "object": {
+        "id": 23,
+        "name": "One country, two systems",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "application",
+            "value": "Taiwan under PRC"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 10,
+        "name": "Democratic Progressive Party (DPP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 10,
+        "name": "rejects"
+      },
+      "object": {
+        "id": 23,
+        "name": "One country, two systems",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Hong Kong crackdown reduced trust"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 9,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "rejects"
+      },
+      "object": {
+        "id": 23,
+        "name": "One country, two systems",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 12,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2016-2024)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "rejected"
+      },
+      "object": {
+        "id": 8,
+        "name": "1992 Consensus",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 12,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2016 inaugural address"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "cited"
+      },
+      "object": {
+        "id": 6,
+        "name": "One China principle",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "ROC Constitution and related laws contain One China framework"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "cut off official contacts"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "cut contacts"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2016"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 13,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2024-)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 15,
+        "name": "supports"
+      },
+      "object": {
+        "id": 61,
+        "name": "Cross-Strait contacts",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2024"
+          },
+          {
+            "key": "goal",
+            "value": "replace confrontation; maintain status quo"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 13,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2024 National Day"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "stated"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "quote",
+            "value": "PRC has no right to represent Taiwan"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 49,
+        "name": "Taiwan Affairs Office of the State Council (PRC)",
+        "entity_type": "GOVERNMENT_BODY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 17,
+        "name": "accused"
+      },
+      "object": {
+        "id": 13,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "allegation",
+            "value": "seeking independence; causing instability"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "UN_status",
+            "value": "not a member"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "participates"
+      },
+      "object": {
+        "id": 32,
+        "name": "World Trade Organization (WTO)",
+        "entity_type": "ORG",
+        "attributes": [
+          {
+            "key": "membership",
+            "value": "member"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 19,
+        "name": "participates"
+      },
+      "object": {
+        "id": 31,
+        "name": "Asia-Pacific Economic Cooperation (APEC)",
+        "entity_type": "ORG",
+        "attributes": [
+          {
+            "key": "membership",
+            "value": "member"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 20,
+        "name": "participates"
+      },
+      "object": {
+        "id": 30,
+        "name": "Asian Development Bank",
+        "entity_type": "ORG",
+        "attributes": [
+          {
+            "key": "membership",
+            "value": "member"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 52,
+        "name": "Taiwan diplomatic allies",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "count",
+            "value": "11 states + Holy See"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "recognize"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 26,
+        "name": "Honduras",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "March 2023"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "cut ties"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "established ties with PRC"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 27,
+        "name": "Nauru",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "January 2024"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "cut ties"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "established ties with PRC"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "treaty",
+            "value": "Mutual Defense Treaty with ROC 1954–1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "allied_with"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "period",
+            "value": "1954–1979"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "recognized"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "severed ties with ROC"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "law",
+            "value": "Taiwan Relations Act"
+          },
+          {
+            "key": "date",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 26,
+        "name": "passed"
+      },
+      "object": {
+        "id": 17,
+        "name": "Taiwan Relations Act (1979)",
+        "entity_type": "LAW",
+        "attributes": [
+          {
+            "key": "effect",
+            "value": "governs unofficial ties; arms sales for self-defense"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 27,
+        "name": "maintains"
+      },
+      "object": {
+        "id": 7,
+        "name": "One China policy (US)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "basis",
+            "value": "three communiqués, TRA, Six Assurances"
+          },
+          {
+            "key": "stance",
+            "value": "acknowledges PRC claim; opposes force; strategic ambiguity"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "mechanism",
+            "value": "American Institute in Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 28,
+        "name": "maintains"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "relationship",
+            "value": "robust unofficial ties"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 29,
+        "name": "sells arms"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "purpose",
+            "value": "self-defense"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 30,
+      "subject": {
+        "id": 18,
+        "name": "Six Assurances (1982)",
+        "entity_type": "DOCUMENT",
+        "attributes": [
+          {
+            "key": "author",
+            "value": "President Ronald Reagan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 30,
+        "name": "assures"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "topic",
+            "value": "US commitments incl. arms sales"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 31,
+      "subject": {
+        "id": 20,
+        "name": "Mutual Defense Treaty (US-ROC)",
+        "entity_type": "TREATY",
+        "attributes": [
+          {
+            "key": "period",
+            "value": "1954–1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 31,
+        "name": "ended"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "by",
+            "value": "US in 1979"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 32,
+      "subject": {
+        "id": 46,
+        "name": "Donald Trump",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "US President (2017–2021)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 32,
+        "name": "expanded"
+      },
+      "object": {
+        "id": 58,
+        "name": "US arms sales to Taiwan",
+        "entity_type": "PROGRAM",
+        "attributes": [
+          {
+            "key": "value",
+            "value": ">$18 billion"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 33,
+      "subject": {
+        "id": 46,
+        "name": "Donald Trump",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "pre-2017 inauguration"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 33,
+        "name": "called"
+      },
+      "object": {
+        "id": 12,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "event",
+            "value": "highest contact since 1979"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 34,
+      "subject": {
+        "id": 46,
+        "name": "Donald Trump",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "lifted meeting restrictions"
+          },
+          {
+            "key": "date",
+            "value": "2021 (end of term)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 34,
+        "name": "eased"
+      },
+      "object": {
+        "id": 63,
+        "name": "US-Taiwan official contacts",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "scope",
+            "value": "where/how officials meet"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 35,
+      "subject": {
+        "id": 45,
+        "name": "Joe Biden",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "US President (2021-)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 35,
+        "name": "continued"
+      },
+      "object": {
+        "id": 58,
+        "name": "US arms sales to Taiwan",
+        "entity_type": "PROGRAM",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "ongoing"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 36,
+      "subject": {
+        "id": 45,
+        "name": "Joe Biden",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "invited Taiwan reps to inauguration"
+          },
+          {
+            "key": "date",
+            "value": "2021"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 36,
+        "name": "invited"
+      },
+      "object": {
+        "id": 63,
+        "name": "Taiwan de facto embassy in Washington",
+        "entity_type": "ORG",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "first time for a US inauguration"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 37,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "strategic ambiguity"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 37,
+        "name": "maintains"
+      },
+      "object": {
+        "id": 47,
+        "name": "Strategic ambiguity",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "meaning",
+            "value": "uncertain commitment to defend Taiwan"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 38,
+      "subject": {
+        "id": 24,
+        "name": "Nancy Pelosi",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "US House Speaker (D-CA)"
+          },
+          {
+            "key": "date",
+            "value": "Aug 2022"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 38,
+        "name": "visited"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "city",
+            "value": "Taipei"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 39,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "response",
+            "value": "condemned; large-scale drills; trade bans"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 39,
+        "name": "retaliated"
+      },
+      "object": {
+        "id": 55,
+        "name": "Pelosi 2022 visit",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "aim",
+            "value": "signal blockade capability"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 40,
+      "subject": {
+        "id": 25,
+        "name": "Kevin McCarthy",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "US House Speaker (R-CA)"
+          },
+          {
+            "key": "date",
+            "value": "Mar 2023"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 40,
+        "name": "met"
+      },
+      "object": {
+        "id": 12,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "location",
+            "value": "California, USA"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 41,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "response",
+            "value": "condemnation; sanctions; show of force"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 41,
+        "name": "retaliated"
+      },
+      "object": {
+        "id": 56,
+        "name": "McCarthy-Tsai meeting 2023",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "US soil meeting"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 42,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "Oct 2024"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 42,
+        "name": "launched"
+      },
+      "object": {
+        "id": 57,
+        "name": "Naval drills near Taiwan",
+        "entity_type": "MILITARY_ACTION",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "warning against separatism"
+          },
+          {
+            "key": "trigger",
+            "value": "Lai National Day speech"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 43,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2021"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 44,
+        "name": "cut trade"
+      },
+      "object": {
+        "id": 29,
+        "name": "Lithuania",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Taiwanese office in Vilnius"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 44,
+      "subject": {
+        "id": 21,
+        "name": "People's Liberation Army (PLA)",
+        "entity_type": "MILITARY",
+        "attributes": [
+          {
+            "key": "affiliation",
+            "value": "CCP/PRC"
+          },
+          {
+            "key": "priority",
+            "value": "Taiwan contingency"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 45,
+        "name": "warned"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "2019_white_paper",
+            "value": "defeat separatism"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 45,
+      "subject": {
+        "id": 43,
+        "name": "PRC defense budget 2025",
+        "entity_type": "BUDGET",
+        "attributes": [
+          {
+            "key": "amount",
+            "value": "$245 billion"
+          },
+          {
+            "key": "increase",
+            "value": "7.2%"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 46,
+        "name": "announced"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "event",
+            "value": "2025 NPC meeting"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 46,
+      "subject": {
+        "id": 15,
+        "name": "Chiang Kai-shek",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "ROC leader"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 47,
+        "name": "retreated"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1949"
+          },
+          {
+            "key": "context",
+            "value": "after Chinese Civil War"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 47,
+      "subject": {
+        "id": 14,
+        "name": "Mao Zedong",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "PRC founder"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 48,
+        "name": "defeated"
+      },
+      "object": {
+        "id": 15,
+        "name": "Chiang Kai-shek",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "conflict",
+            "value": "Chinese Civil War"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 48,
+      "subject": {
+        "id": 22,
+        "name": "Hong Kong",
+        "entity_type": "REGION",
+        "attributes": [
+          {
+            "key": "handover",
+            "value": "1997 from UK to PRC"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 49,
+        "name": "granted"
+      },
+      "object": {
+        "id": 23,
+        "name": "One country, two systems",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "promise",
+            "value": "high degree of autonomy"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 49,
+      "subject": {
+        "id": 36,
+        "name": "Ma Ying-jeou",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2008–2016)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 50,
+        "name": "signed"
+      },
+      "object": {
+        "id": 35,
+        "name": "Cross-Strait Economic Cooperation Framework Agreement (ECFA) (2010)",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "full_name",
+            "value": "Cross-Straits Economic Cooperation Framework Agreement"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 50,
+      "subject": {
+        "id": 35,
+        "name": "Cross-Strait Economic Cooperation Framework Agreement (ECFA) (2010)",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "effect",
+            "value": "lifted trade barriers; resumed links"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 51,
+        "name": "between"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 51,
+      "subject": {
+        "id": 35,
+        "name": "Cross-Strait Economic Cooperation Framework Agreement (ECFA) (2010)",
+        "entity_type": "AGREEMENT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 52,
+        "name": "and"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 52,
+      "subject": {
+        "id": 37,
+        "name": "New Southbound Policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "initiator",
+            "value": "Tsai Ing-wen"
+          },
+          {
+            "key": "period",
+            "value": "2016–2022"
+          },
+          {
+            "key": "effect",
+            "value": "trade nearly doubled with 18 countries"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 53,
+        "name": "diversified"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "focus",
+            "value": "Southeast Asia and Indo-Pacific"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 53,
+      "subject": {
+        "id": 38,
+        "name": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "sector",
+            "value": "semiconductors"
+          },
+          {
+            "key": "role",
+            "value": "major supplier to US firms"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 54,
+        "name": "invests in"
+      },
+      "object": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "projects",
+            "value": "Phoenix, AZ fabs; expanded US facilities"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 54,
+      "subject": {
+        "id": 39,
+        "name": "CHIPS and Science Act (2022)",
+        "entity_type": "LAW",
+        "attributes": [
+          {
+            "key": "aim",
+            "value": "revitalize US chips"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 55,
+        "name": "supports"
+      },
+      "object": {
+        "id": 38,
+        "name": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "benefit",
+            "value": "US subsidies for fabs"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 55,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2023"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 56,
+        "name": "passed"
+      },
+      "object": {
+        "id": 40,
+        "name": "21st Century Trade Agreement",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "with",
+            "value": "Taiwan"
+          },
+          {
+            "key": "scope",
+            "value": "regulatory collaboration"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 56,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "military",
+            "value": "transits Taiwan Strait; training/dialogues"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 57,
+        "name": "supports"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "goal",
+            "value": "peace and stability in strait"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 57,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "demand",
+            "value": "stop US arms sales; cease contacts with Taipei"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 58,
+        "name": "pressures"
+      },
+      "object": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 58,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "aim",
+            "value": "exclude Taiwan from FTAs and blocs"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 59,
+        "name": "blocks"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "targets",
+            "value": "CPTPP, RCEP"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 59,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "recognition",
+            "value": "few formal ties"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 60,
+        "name": "recognized_by"
+      },
+      "object": {
+        "id": 28,
+        "name": "Holy See",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "formal diplomatic ties"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 60,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "suspended liaison channel"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 61,
+        "name": "suspended"
+      },
+      "object": {
+        "id": 61,
+        "name": "Cross-Strait contacts",
+        "entity_type": "DIPLOMACY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2016"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 61,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "goal",
+            "value": "maintain status quo; oppose independence"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 62,
+        "name": "states"
+      },
+      "object": {
+        "id": 7,
+        "name": "One China policy (US)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "element",
+            "value": "does not support Taiwan independence"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 62,
+      "subject": {
+        "id": 4,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "delegation",
+            "value": "former officials"
+          },
+          {
+            "key": "date",
+            "value": "2024"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 63,
+        "name": "congratulated"
+      },
+      "object": {
+        "id": 48,
+        "name": "Taiwan presidential election 2024",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "winners",
+            "value": "DPP; Lai Ching-te"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 63,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "focus",
+            "value": "Taiwan central to military modernization"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 64,
+        "name": "threatens"
+      },
+      "object": {
+        "id": 50,
+        "name": "Taiwan independence",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "stance",
+            "value": "will use force if necessary"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 64,
+      "subject": {
+        "id": 51,
+        "name": "Gray zone coercion",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "objective",
+            "value": "wear down Taiwan without war"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 65,
+        "name": "used_by"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 65,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "alias",
+            "value": "People's Republic of China"
+          },
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "claims sovereignty"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China"
+          },
+          {
+            "key": "system",
+            "value": "democratic"
+          },
+          {
+            "key": "constitution",
+            "value": "own constitution"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 66,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 2,
+        "name": "may use force"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 67,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 3,
+        "name": "asserts distinctness"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 68,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 4,
+        "name": "top partner"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trade_role",
+            "value": "Taiwan's biggest trading partner"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 69,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "strategic ambiguity noted"
+          },
+          {
+            "key": "position",
+            "value": "status quo unchanged"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "ally of"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "described as strongest ally"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 70,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 6,
+        "name": "sells arms to"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 71,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "switched recognition to"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "from Taipei to Beijing"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 72,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "ended recognition of"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 73,
+      "subject": {
+        "id": 4,
+        "name": "Vatican City",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 9,
+        "name": "recognises"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 74,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "tactic",
+            "value": "diplomatic pressure"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "pressures to derecognise"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 75,
+      "subject": {
+        "id": 5,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "recognises only one Chinese government in Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "followed by"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 76,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 12,
+        "name": "denies reneging"
+      },
+      "object": {
+        "id": 5,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 77,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "leader",
+            "value": "Xi Jinping"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "promotes reunification"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "method",
+            "value": "soft power messaging"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 78,
+      "subject": {
+        "id": 6,
+        "name": "Xi Jinping",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "President of China"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "demands reunification"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "said reunification must be fulfilled"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 79,
+      "subject": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 15,
+        "name": "part of"
+      },
+      "object": {
+        "id": 7,
+        "name": "First Island Chain",
+        "entity_type": "REGION",
+        "attributes": [
+          {
+            "key": "alignment",
+            "value": "US-friendly territories"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 80,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 16,
+        "name": "asserts in"
+      },
+      "object": {
+        "id": 8,
+        "name": "South China Sea",
+        "entity_type": "REGION",
+        "attributes": [
+          {
+            "key": "behavior",
+            "value": "increasingly aggressive"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 81,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "claim",
+            "value": "US reneging on One-China policy"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "accuses"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 82,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "statement",
+            "value": "intentions are peaceful"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "accuses of"
+      },
+      "object": {
+        "id": 9,
+        "name": "US military bases",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "network from Australia to Japan"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 83,
+      "subject": {
+        "id": 10,
+        "name": "Japan",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1895"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "colonised"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "after First Sino-Japanese War"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 84,
+      "subject": {
+        "id": 11,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1945"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 20,
+        "name": "took control of"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "after Japan lost WWII"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 85,
+      "subject": {
+        "id": 12,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "alias",
+            "value": "Nationalist Party"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "fled to"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1949"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 86,
+      "subject": {
+        "id": 12,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "PARTY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 22,
+        "name": "ruled"
+      },
+      "object": {
+        "id": 2,
+        "name": "Republic of China (Taiwan)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "duration",
+            "value": "several decades"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 87,
+      "subject": {
+        "id": 13,
+        "name": "Chinese Communist Party (CCP)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "alias",
+            "value": "CCP"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "opposed"
+      },
+      "object": {
+        "id": 12,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Chinese Civil War"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 88,
+      "subject": {
+        "id": 13,
+        "name": "Chinese Communist Party (CCP)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "leader",
+            "value": "Mao Zedong"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "established"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1949"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 89,
+      "subject": {
+        "id": 14,
+        "name": "Mao Zedong",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "CCP leader"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "defeated"
+      },
+      "object": {
+        "id": 12,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1949"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 90,
+      "subject": {
+        "id": 15,
+        "name": "Chiang Kai-shek",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "KMT leader"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 26,
+        "name": "led"
+      },
+      "object": {
+        "id": 12,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "PARTY",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "fled to Taiwan in 1949"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 91,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 27,
+        "name": "ties soured"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "period",
+            "value": "recent years"
+          }
+        ]
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "COUNTRY",
+    "POLITICAL_PARTY",
+    "CONCEPT",
+    "PERSON",
+    "GOVERNMENT_BODY",
+    "ORG",
+    "LAW",
+    "DOCUMENT",
+    "TREATY",
+    "COMPANY",
+    "AGREEMENT",
+    "POLICY",
+    "PROGRAM",
+    "EVENT",
+    "MILITARY_ACTION",
+    "MILITARY",
+    "REGION",
+    "STATE",
+    "BUDGET",
+    "DIPLOMACY",
+    "PARTY"
+  ]
+}

@@ -1,0 +1,192 @@
+# Object-oriented or functional? Two ways to see the world
+
+The difference between functional and object-oriented
+When I ask developers what object-oriented programming (OOP) is, I often hear about inheritance, encapsulation, and polymorphism. When I ask about functional programming (FP), I often hear about immutability, lazy initialization, and recursion. I find both explanations missing the point. This is especially confusing now, as most modern languages support object-oriented and functional styles, and we use the fruits of both schools of thought. But they are much more than a set of features. They are primarily ways of looking at the world, ways of thinking, and the difference reveals itself in many places, especially in program design.
+
+Disclaimer: There are many formal definitions of OOP and FP, and the point of view presented here is not fully consistent with some of them. I received a formal education in this manner, and both observed and used many different OOP and FP interpretations in real life. I am not writing about formal definitions here but rather trying to explain the deep sense I see behind how people use and understand those terms. This article is about my observations and reflections. Yours might be different.
+
+A set of objects or a set of actions?
+Think about a bedroom. From one perspective, you can think about it as a set of objects like a bed, bedside table, light, or window. Each object has some properties (bed can be small or big, soft or hard) and functions (we can use a bed to sleep on it). On the other hand, we can think about a bedroom as a set of actions. A bedroom is essentially a place we use to sleep. It can also be used as a place for leisure or intimate intercourses. It might have some more generic functions like being a place where we hang our laundry, or we can open a window. The first way of looking at the bedroom seems more intuitive at first, but the second one is in many ways more true and useful for us, users. In the end, a bedroom might not have a window (it was a common problem when we were traveling in the far east). Many bedrooms do not have a bedside table or light. Some do not even have any bed at all (it is popular in some cultures to sleep on a floor). It doesn't matter. As long as it is a place for sleeping, it is a bedroom for us.
+
+I believe those two ways of thinking are directly associated with OOP and FP. In the object-oriented approach, we see the world as a set of objects, and every action is a function of one of those objects. The functional approach sees the world as a set of possible actions, and objects only hold information.
+
+OOP concentrates on modeling reality: the entities and the relationships between them. If you ask me about a piece of code that best represents OOP, I will show you a class representing an entity important to our application.
+
+\`\`\`
+class Paybill(
+   //...
+) {
+   fun pay(): PayedPaybill = …
+   
+   //...
+}
+\`\`\`
+
+FP is more concentrated on modeling actions and transformations and the relationships between them. All those monads, co-monads, etc. are just different concepts describing objects from the perspective of how they can be transformed. If you ask me to show you a piece of code that best represents FP, I will give you a complex transformation with many steps.
+
+\`\`\`
+fun bestStudents(semester: String) = repo
+    .findStudentsInSemester(semester)
+    .map(Student::id)
+    .map(repo::findUser)
+    .filter(::isPassing)
+    .sortedByDescending(Student::result)
+\`\`\`
+
+Interfaces
+When I was learning programming, object orientation dominated. Most books showed something like a Animal or Car (abstract class or interface) and explained that supertype should have all the common characteristics among all the objects. How does the interface Comparable relate to that? Not at all. It describes what we can do with an object, not its characteristics.
+
+\`\`\`
+interface Comparable<in T> {
+   operator fun compareTo(other: T): Int
+}
+\`\`\`
+
+It is very OOP to think of a supertype as a set of characteristics. TimeUnit is a good example. It is very FP to think of an object as a set of capabilities. Comparable is a great example. Think of the mug you have in front of you. What is more important? That is a dish, or that it is grabbable and drinkable. What is it, or how can you use it? A set of traits or a set of capabilities?
+
+Now you might argue, that this is what distinguish classes from interfaces. Superclass tells you what a class is, and interfaces tell you what a class can do. That is a good rule of thumb, but it seems far from the reality or projects. I see OOP enthusiasts looking for “is” whenever possible, and using interfaces for that as well. I also see FP enthusiasts seeing only “can do” and avoiding class inheritance whenever possible.
+
+Most interfaces we use nowadays are shadowing objects like services or repositories. Take a look at the below UserRepository example.
+
+\`\`\`
+interface UserRepository {
+   fun findUser(userId: Int): User
+   fun addUser(user: User)
+   fun deleteUser(userId: Int)
+}
+\`\`\`
+
+The first thought might be that UserRepository represents a kind of object. But what does that mean? Is there anything common between InMemoryUserRepository, NetworkUserRepository, MongoUserRepository, and FileUserRepository? For me, the only thing is that they need to have the same methods defined in the interface and that those methods should fulfill their contracts. UserRepository to me only represents a set of actions, which is very functional.
+
+Where does OOP shine?
+OOP is perfect for modeling a world of objects. Consider defining what a computer looks like. It is an object, so it is easiest to describe it in terms of objects. "It is a box, with two buttons in front, a shining light..." So OOP is perfect for describing objects that we see, but also the characteristics of real-life objects.
+
+Defining views
+When we describe views in our program, it seems most intuitive to describe them in an OOP way. "There is a window with a title and two buttons..." No wonder view definitions are a great example of OOP, no matter if they are defined in code, DSL, HTML, or XML. All those definitions seem OOP-like.
+
+\`\`\`
+Column(Modifier.fillMaxSize(), Arrangement.spacedBy(5.dp)) {
+	Text("Choose the pill")
+	Button(modifier = Modifier.align(Alignment.CenterHorizontally),
+		onClick = { onRedChosen() }) {
+		Text("Red")
+	}
+	Button(modifier = Modifier.align(Alignment.CenterHorizontally),
+		onClick = { onBlueChosen() }) {
+		Text("Blue")
+	}
+}
+\`\`\`
+
+Storing data
+Our interactions with databases are primarily object-oriented. Yes, there are operations on data, but it is data itself that are of the highest importance. Databases are OOP in their nature because they describe objects they store. Could they be FP? It would mean storing actions. I heard of such experiments, but is it still a database when we store actions instead of data?
+
+\`\`\`
+@Entity(tableName = "users")  
+data class User (
+    @PrimaryKey val id: Int,
+    @ColumnInfo(name = "first_name") val firstName: String?,    
+    @ColumnInfo(name = "last_name") val lastName: String?  
+)
+\`\`\`
+
+Network comminication
+REST is the most popular standard for communication between services, primarily concentrating on objects and the relations between them.
+
+There are standards that I consider FP rooted: RPC (Remote procedure call) and its successors. It is used in some companies but seems to be far behind REST in terms of popularity. Why? My intuition is that the fact that thinking in terms of objects for inter-application communication is just easier has something to do with that. Objects are more universal, less platform-dependent, and our object representations change less often than the actions we perform.
+
+Where does FP shine?
+FP is perfect for describing actions. It makes sense to describe actions in terms of other actions.
+
+What does it mean to go to a shop? Wear shoes, set off your house, walk... What does it mean to wear shoes? Get them out of the shelf, untie them, put the first one on your foot... Objects are there, but it is actions that are of primary importance.
+
+\`\`\`
+fun goToShop() {
+    wearShoes()
+    setOff()
+    // ...
+}
+
+fun wearShoes() {
+    getShoesOutOfShelf()
+    untieShoes()
+    // ...
+}
+\`\`\`
+
+That is why the FP approach seems better suited for situations where we need to describe complex actions, both on a lower level, like defining complex transformations, and on a higher level, like defining business logic in general.
+
+Defining complex transformations
+Functional Programming developed tools and patterns that let us easily express complex transformations, like functional collection processing.
+
+\`\`\`
+Language.values()
+    .flatMap { articleRepository.getArticles(it) }  
+    .filter { predicate(it) && canSeeOnList(null, it) }  
+    .sortedWith(ArticleSortOrder.PUBLICATION.comparator)  
+    .map(::toArticleJson)
+    .let(::respond)
+\`\`\`
+
+OOP stays far behind in this area, mainly because such transformations need function literals. They require thinking in terms of actions, not objects. Functional programming developed much more powerful tools and practices for extracting common patterns, and thanks to that, you can find a lot of functional programming style even in applications whose creators prefer OOP in general.
+
+Defining business logic
+For writing business logic, both for backend and frontend, there used to be an absolute dominance of OOP. It still is popular in many applications, especially in backend development. There are even some modern approaches, like Domain-Driven Design (DDD), that is (in my opinion) deeply OOP rooted. However, it seems to me that the discovery of the last decade is that FP is generally better for defining business logic. I do not mean concepts it introduced - like immutability or lazy evaluation. They got popular too. I mean higher-level thinking in terms of actions, not in terms of objects.
+
+Here is a class that I would consider a typical representant of the business logic layer:
+
+\`\`\`
+class CommentsService(  
+    private val commentsRepository: CommentsRepository,  
+    private val userService: UserService,  
+    private val commentFactory: CommentFactory  
+) {  
+    fun getCommentsWithUsers(collectionKey: String): CommentsCollection {  
+        return commentsRepository.getCommentsWithUsers(collectionKey)  
+            .toCommentsCollection(collectionKey)  
+    }  
+  
+    fun addComment(token: String, collectionKey: String, body: AddComment) {  
+        val userId = userService.getUserIdFromToken(token) ?: throw UserNotFoundException  
+        val commentDocument = commentFactory.toCommentDocument(userId, collectionKey, body)  
+        commentsRepository.addComment(commentDocument)  
+    }
+
+	// ...
+}
+\`\`\`
+
+"What?" you might ask "how is this FP? It is based on classes and interfaces!" You are right, but I will argue that those classes only serve as modules for functions. Think of it this way: The same functionalities could be implemented as functions on files in languages like Python or JavaScript.
+
+\`\`\`
+import db/comment as comments_db
+import user_service
+import comment_factory
+
+def get_comments_with_users(collection_key: str): -> CommentsCollection
+    comments_with_users = comments_db.get_comments_with_users(collection_key)
+    return to_comments_collection(comments_with_users)
+
+def add_comment(token: str, collection_key: str, body: AddComment):
+    user_id = user_service.get_user_id_from_token(token)
+    comment_document = comment_factory.to_comment_document(user_id, collection_key, body)
+    comments_db.add_comment(comment_document)
+\`\`\`
+
+So why are they classes on platforms like JVM? Except for style preferences, I see two reasons:
+
+To support replacing injected dependencies (like CommentsRepository or UserService) with mocks or fakes in tests. This does not need a class in languages like Python or JavaScript, that support import overriding.
+To define a module for a set of functions (getUser has a different meaning when it is a method in UserService and in UserRepository), which again, can be solved by a more flexible importing system.
+Classes are there, and I like to keep them there (I actually like this style), but it does not mean it is OOP. Classes in such cases are a lot like modules for keeping objects, and dependency injection libraries act as a substitution for limited importing capabilities. I see classes like CommentsService as more functional than object-oriented.
+
+Final thoughts
+It was not an easy article to write. I've been writing it for years, retreating so many times, because nothing is for sure in the area of reflections. I finally decided to publish it in this shortened form, but I left with many notes with thoughts so vague that I could not support them with strong enough arguments. Nevertheless, I would like to present some of them briefly as my intuitions.
+
+My first intuition is that it is easier to talk about objects. We see them, we can describe them, and they are the same for each of us. On the other hand, our actual life is doing actions, so actions are more important. But talking about them is hard. Can you explain what a bike is? Easy. You can also show it, and it is clear. Can you explain riding a bike? It seems impossible. You can show it, but it is nothing compared to the actual experience of riding a bike. Objects are much more universal and easy to describe. Actions are much more individual.
+
+I also have an intuition that this distinction is very important in our culture as well. Science, by nature, is concentrated on objects. It predicts with stunning precision how two substances will react one to another, or what is the history of the earth or the universe. What science will not tell you is how to act in a difficult situation. History or psychology might give some suggestions, but it is far from a complete picture. Science by nature is interested in things provable and well repeatable. Individual experiences are never like that. I believe that the lessons on how to act, or what a certain kind of behavior leads to, are mainly expressed by stories and art. There is a solid argument that myths served our ancestors as lessons on how one should act and how one should not. Nowadays, movies and literature might serve a similar role.
+
+I also see classic mathematics rather as concentrating on objects, even though those are abstract beings like numbers, shapes, or groups. We have objects, and then we look for their traits, relations, transformations, etc. However, the category theory (that stands behind FP) primarily concentrates on relations. I wonder how science would be different now if it were based on category theory.
+
+Closing this discussion, what way of seeing the world seems more intuitive to you? A set of objects or a set of actions?
+

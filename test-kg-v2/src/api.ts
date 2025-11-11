@@ -1,8 +1,11 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-import { extract, mergeGraphs, infer } from './features/extract';
+import { extract } from './features/extract';
+import { mergeGraphs } from './features/merge';
+import { infer } from './features/inference';
 import fs from 'fs';
 import path from 'path';
+import { PDFParse } from 'pdf-parse';
 
 const app = new Hono();
 
@@ -12,6 +15,47 @@ app.use('/*', cors());
 // Health check endpoint
 app.get('/health', (c) => {
   return c.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+// Parse PDF endpoint
+app.post('/api/parse-pdf', async (c) => {
+  try {
+    console.log('PDF parse request received');
+    const body = await c.req.json();
+    const { pdfData } = body;
+
+    if (!pdfData) {
+      return c.json({
+        success: false,
+        error: 'No PDF data provided'
+      }, 400);
+    }
+
+    // Convert base64 to buffer
+    const buffer = Buffer.from(pdfData, 'base64');
+
+    // Parse PDF using PDFParse
+    const parser = new PDFParse({ data: buffer });
+    const result = await parser.getText();
+    const info = await parser.getInfo();
+
+    // Clean up resources
+    await parser.destroy();
+
+    console.log(`PDF parsed: ${result.text.length} characters`);
+
+    return c.json({
+      success: true,
+      text: result.text,
+      info: info
+    });
+  } catch (error) {
+    console.error('PDF parsing error:', error);
+    return c.json({
+      success: false,
+      error: error instanceof Error ? error.message : 'Failed to parse PDF'
+    }, 500);
+  }
 });
 
 // Extract knowledge graph endpoint

@@ -4,535 +4,3392 @@
       "id": 1,
       "subject": {
         "id": 1,
-        "name": "Magnus Grimeland",
-        "entity_type": "PERSON",
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "role",
-            "value": "founder"
-          },
-          {
-            "key": "company",
-            "value": "Antler"
-          },
-          {
-            "key": "location",
-            "value": "Singapore"
+            "key": "capital",
+            "value": "Beijing"
           }
         ]
       },
       "predicate": {
         "id": 1,
-        "name": "said"
+        "name": "claims"
       },
       "object": {
-        "id": 2,
-        "name": "market is not a bubble",
-        "entity_type": "OPINION",
+        "id": 17,
+        "name": "Breakaway province",
+        "entity_type": "CONCEPT",
         "attributes": [
           {
-            "key": "context",
-            "value": "AI market"
+            "key": "description",
+            "value": "China sees Taiwan as a breakaway province"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 2,
       "subject": {
-        "id": 3,
-        "name": "Ray Dalio",
-        "entity_type": "PERSON",
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "role",
-            "value": "billionaire investor"
+            "key": "capital",
+            "value": "Beijing"
           }
         ]
       },
       "predicate": {
         "id": 2,
-        "name": "said"
+        "name": "threatens force"
       },
       "object": {
-        "id": 4,
-        "name": "bubble indicator high",
-        "entity_type": "OPINION",
-        "attributes": []
-      }
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "China has not ruled out using force to take the island"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 3,
       "subject": {
-        "id": 5,
-        "name": "Jerome Powell",
-        "entity_type": "PERSON",
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "role",
-            "value": "Federal Reserve Chair"
+            "key": "constitution",
+            "value": "Yes"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
           }
         ]
       },
       "predicate": {
         "id": 3,
-        "name": "described"
+        "name": "distinct from"
       },
       "object": {
-        "id": 5,
-        "name": "AI boom different from dotcom",
-        "entity_type": "OPINION",
-        "attributes": []
-      }
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Taiwan sees itself as distinct from the Chinese mainland"
+          },
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 4,
       "subject": {
-        "id": 6,
-        "name": "AI adoption",
-        "entity_type": "CONCEPT",
-        "attributes": []
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "constitution",
+            "value": "Yes"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
       },
       "predicate": {
         "id": 4,
-        "name": "is faster than"
+        "name": "has constitution"
       },
       "object": {
-        "id": 7,
-        "name": "cloud computing",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
+        "id": 15,
+        "name": "Constitution of Taiwan",
+        "entity_type": "DOCUMENT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Governing document of Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 5,
       "subject": {
-        "id": 8,
-        "name": "AI",
-        "entity_type": "CONCEPT",
-        "attributes": []
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "political_system",
+            "value": "Democratically elected leaders"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
       },
       "predicate": {
         "id": 5,
-        "name": "is invested in by"
+        "name": "has leaders"
       },
       "object": {
-        "id": 9,
-        "name": "Fortune 500 companies",
-        "entity_type": "COMPANY",
-        "attributes": []
-      }
+        "id": 16,
+        "name": "Elected leaders",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Leaders are chosen through democratic elections"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 6,
       "subject": {
-        "id": 10,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "product",
-            "value": "ChatGPT"
-          },
-          {
-            "key": "revenue",
-            "value": "$10 billion ARR"
+            "key": "trade_role",
+            "value": "Biggest trading partner of Taiwan"
           }
         ]
       },
       "predicate": {
         "id": 6,
-        "name": "achieved"
+        "name": "trades with"
       },
       "object": {
-        "id": 11,
-        "name": "$10 billion ARR",
-        "entity_type": "CONCEPT",
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "date",
-            "value": "June"
+            "key": "trade_link",
+            "value": "Strong links to China"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 7,
       "subject": {
-        "id": 12,
-        "name": "Antler",
-        "entity_type": "COMPANY",
-        "attributes": []
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1895"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
       },
       "predicate": {
         "id": 7,
-        "name": "invested in"
+        "name": "colonized by"
       },
       "object": {
-        "id": 13,
-        "name": "Lovable",
-        "entity_type": "COMPANY",
+        "id": 4,
+        "name": "Japan",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "revenue",
-            "value": "$100 million ARR"
-          },
-          {
-            "key": "timeframe",
-            "value": "eight months"
+            "key": "context",
+            "value": "After Qing lost First Sino-Japanese War"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 8,
       "subject": {
-        "id": 14,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
-        "attributes": []
+        "id": 5,
+        "name": "Qing Empire",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1895"
+          }
+        ]
       },
       "predicate": {
         "id": 8,
-        "name": "launched"
+        "name": "lost"
       },
       "object": {
-        "id": 15,
-        "name": "ChatGPT Atlas",
-        "entity_type": "CONCEPT",
+        "id": 6,
+        "name": "First Sino-Japanese War",
+        "entity_type": "EVENT",
         "attributes": [
           {
-            "key": "platform",
-            "value": "Mac OS"
+            "key": "description",
+            "value": "War between Qing Empire and Japan"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 9,
       "subject": {
-        "id": 16,
-        "name": "Alphabet",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 9,
-        "name": "had shares falling"
-      },
-      "object": {
-        "id": 14,
-        "name": "OpenAI launch",
-        "entity_type": "EVENT",
-        "attributes": []
-      }
-    },
-    {
-      "id": 10,
-      "subject": {
-        "id": 17,
-        "name": "DeepSeek",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 10,
-        "name": "produced"
-      },
-      "object": {
-        "id": 18,
-        "name": "AI models comparable to OpenAI",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
-    },
-    {
-      "id": 11,
-      "subject": {
-        "id": 19,
-        "name": "Tencent",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 11,
-        "name": "is building"
-      },
-      "object": {
-        "id": 8,
-        "name": "AI",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
-    },
-    {
-      "id": 12,
-      "subject": {
-        "id": 20,
-        "name": "Baidu",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 11,
-        "name": "is building"
-      },
-      "object": {
-        "id": 8,
-        "name": "AI",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
-    },
-    {
-      "id": 13,
-      "subject": {
         "id": 1,
-        "name": "Sam Altman",
-        "entity_type": "PERSON",
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "role",
-            "value": "OpenAI boss"
+            "key": "year",
+            "value": "1945"
           }
         ]
       },
       "predicate": {
-        "id": 1,
-        "name": "answered"
+        "id": 9,
+        "name": "took"
       },
       "object": {
         "id": 2,
-        "name": "reporters",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "After Japan lost World War Two"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 7,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "leader",
+            "value": "Chiang Kai-shek"
+          },
+          {
+            "key": "ideology",
+            "value": "Nationalist"
+          },
+          {
+            "key": "year",
+            "value": "1949"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "fled to"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "After communists won in 1949"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "also known as"
+      },
+      "object": {
+        "id": 11,
+        "name": "Republic of China",
+        "entity_type": "STATE",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Name retained by Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 12,
+        "name": "Holy See",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Holy See"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "recognizes"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "diplomatic_status",
+            "value": "Few official recognitions"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "1979"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "recognized"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Switched diplomatic recognition from Taipei to Beijing"
+          },
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 14,
       "subject": {
         "id": 3,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
+        "name": "United States",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "founded",
-            "value": "2022"
-          },
-          {
-            "key": "private",
-            "value": "true"
+            "key": "year",
+            "value": "1979"
           }
         ]
       },
       "predicate": {
-        "id": 2,
-        "name": "entered_deal"
+        "id": 14,
+        "name": "ended recognition"
       },
       "object": {
-        "id": 4,
-        "name": "Nvidia",
-        "entity_type": "COMPANY",
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "deal_value",
-            "value": "$100bn"
+            "key": "context",
+            "value": "US switch from Taipei to Beijing"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 15,
       "subject": {
         "id": 3,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 3,
-        "name": "plans_to_buy"
-      },
-      "object": {
-        "id": 5,
-        "name": "AMD equipment",
-        "entity_type": "CONCEPT",
+        "name": "United States",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "description",
-            "value": "Developing AI"
+            "key": "ally_status",
+            "value": "Strongest ally of Taiwan"
           }
         ]
-      }
+      },
+      "predicate": {
+        "id": 15,
+        "name": "ally of"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "security",
+            "value": "Relies on US support"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 16,
       "subject": {
         "id": 3,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
-        "attributes": []
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Arms sales under US law"
+          }
+        ]
       },
       "predicate": {
-        "id": 4,
-        "name": "invested_by"
+        "id": 16,
+        "name": "sells arms to"
       },
       "object": {
-        "id": 6,
-        "name": "Microsoft",
-        "entity_type": "COMPANY",
-        "attributes": []
-      }
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "defence",
+            "value": "Receives US arms"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 17,
       "subject": {
         "id": 3,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
-        "attributes": []
-      },
-      "predicate": {
-        "id": 5,
-        "name": "project_with"
-      },
-      "object": {
-        "id": 7,
-        "name": "Oracle",
-        "entity_type": "COMPANY",
+        "name": "United States",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "project",
-            "value": "Stargate"
+            "key": "condition",
+            "value": "In case of Chinese attack"
           }
         ]
-      }
+      },
+      "predicate": {
+        "id": 17,
+        "name": "vowed to help"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "security",
+            "value": "US has pledged help"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 18,
       "subject": {
-        "id": 4,
-        "name": "Nvidia",
-        "entity_type": "COMPANY",
-        "attributes": []
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Peaceful reunification stated goal"
+          }
+        ]
       },
       "predicate": {
-        "id": 6,
-        "name": "stake_in"
+        "id": 18,
+        "name": "seeks reunification"
       },
       "object": {
-        "id": 8,
-        "name": "CoreWeave",
-        "entity_type": "COMPANY",
-        "attributes": []
-      }
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Through soft power and messaging"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
     },
     {
       "id": 19,
       "subject": {
-        "id": 9,
-        "name": "Jerry Kaplan",
+        "id": 23,
+        "name": "Xi Jinping",
         "entity_type": "PERSON",
         "attributes": [
           {
             "key": "role",
-            "value": "AI entrepreneur"
+            "value": "President of China"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "demands"
+      },
+      "object": {
+        "id": 18,
+        "name": "Taiwan reunification",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "quote",
+            "value": "Reunification must be fulfilled"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "military_balance",
+            "value": "Forces would dwarf Taiwan's"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 20,
+        "name": "outmatches"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "military_balance",
+            "value": "Weaker than China"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "defence_spending_rank",
+            "value": "Second"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 21,
+        "name": "trails"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "defence_spending_rank",
+            "value": "First"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "Strategic ambiguity"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 22,
+        "name": "unclear on"
+      },
+      "object": {
+        "id": 24,
+        "name": "Taiwan defence",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Deliberately unclear whether or how it would defend Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trend",
+            "value": "Ties soured in recent years"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 23,
+        "name": "ties soured"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "trend",
+            "value": "Ties soured in recent years"
+          },
+          {
+            "key": "capital",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "claim",
+            "value": "US reneging on One-China policy"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 24,
+        "name": "accuses"
+      },
+      "object": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "response",
+            "value": "Denies change"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 3,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "position",
+            "value": "Status quo unchanged"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "denies"
+      },
+      "object": {
+        "id": 13,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "issue",
+            "value": "Reneging accusation denied by US"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 13,
+        "name": "One-China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "definition",
+            "value": "Recognizes only one Chinese government"
+          },
+          {
+            "key": "location",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 26,
+        "name": "recognizes"
+      },
+      "object": {
+        "id": 22,
+        "name": "China government",
+        "entity_type": "GOVERNMENT",
+        "attributes": [
+          {
+            "key": "seat",
+            "value": "Beijing"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "region",
+            "value": "Western Pacific"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 27,
+        "name": "located in"
+      },
+      "object": {
+        "id": 14,
+        "name": "First Island Chain",
+        "entity_type": "REGION",
+        "attributes": [
+          {
+            "key": "alignment",
+            "value": "US-friendly territories"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 20,
+        "name": "TSMC",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "industry",
+            "value": "Semiconductors"
+          },
+          {
+            "key": "market_share",
+            "value": "Over half of world market"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 28,
+        "name": "leads"
+      },
+      "object": {
+        "id": 19,
+        "name": "Chip market",
+        "entity_type": "MARKET",
+        "attributes": [
+          {
+            "key": "scope",
+            "value": "Global"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "economy",
+            "value": "Major semiconductor producer"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 29,
+        "name": "produces"
+      },
+      "object": {
+        "id": 21,
+        "name": "Semiconductors",
+        "entity_type": "INDUSTRY",
+        "attributes": [
+          {
+            "key": "impact",
+            "value": "Power phones, electric cars, electronics"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": ""
+    },
+    {
+      "id": 30,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Beijing"
+          },
+          {
+            "key": "government",
+            "value": "CCP rule"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "claims"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 31,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Beijing"
+          },
+          {
+            "key": "government",
+            "value": "CCP rule"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "seeks unification"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:Z"
+    },
+    {
+      "id": 32,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Beijing"
+          },
+          {
+            "key": "government",
+            "value": "CCP rule"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "may use force"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 33,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "government",
+            "value": "CCP rule"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "reached"
+      },
+      "object": {
+        "id": 5,
+        "name": "1992 Consensus",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "cross-strait understanding"
+          },
+          {
+            "key": "year",
+            "value": "1992"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 34,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "reached"
+      },
+      "object": {
+        "id": 5,
+        "name": "1992 Consensus",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "cross-strait understanding"
+          },
+          {
+            "key": "year",
+            "value": "1992"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 35,
+      "subject": {
+        "id": 4,
+        "name": "Xi Jinping",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "PRC President"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "stated"
+      },
+      "object": {
+        "id": 5,
+        "name": "1992 Consensus",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "PRC_view",
+            "value": "one China; work toward reunification"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 36,
+      "subject": {
+        "id": 6,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
           }
         ]
       },
       "predicate": {
         "id": 7,
-        "name": "concerned_about"
+        "name": "interprets"
       },
       "object": {
-        "id": 10,
-        "name": "AI bubble",
-        "entity_type": "CONCEPT",
-        "attributes": []
-      }
-    },
-    {
-      "id": 20,
-      "subject": {
-        "id": 11,
-        "name": "Anat Admati",
-        "entity_type": "PERSON",
+        "id": 5,
+        "name": "1992 Consensus",
+        "entity_type": "AGREEMENT",
         "attributes": [
           {
-            "key": "role",
-            "value": "Professor"
+            "key": "KMT_view",
+            "value": "one China, different interpretations"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 37,
+      "subject": {
+        "id": 6,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
           }
         ]
       },
       "predicate": {
         "id": 8,
-        "name": "says"
+        "name": "opposes"
       },
       "object": {
-        "id": 10,
-        "name": "AI bubble",
+        "id": 9,
+        "name": "Taiwan independence",
         "entity_type": "CONCEPT",
         "attributes": [
           {
-            "key": "description",
-            "value": "hard to time"
+            "key": "domain",
+            "value": "status"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
     },
     {
-      "id": 21,
+      "id": 38,
       "subject": {
-        "id": 3,
-        "name": "OpenAI",
-        "entity_type": "COMPANY",
-        "attributes": []
+        "id": 6,
+        "name": "Kuomintang (KMT)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          }
+        ]
       },
       "predicate": {
         "id": 9,
-        "name": "announced"
+        "name": "seeks"
       },
       "object": {
-        "id": 12,
-        "name": "White House project",
-        "entity_type": "CONCEPT",
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": [
           {
-            "key": "date",
-            "value": "Trump administration"
+            "key": "government",
+            "value": "CCP rule"
           }
         ]
-      }
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
     },
     {
-      "id": 22,
+      "id": 39,
       "subject": {
-        "id": 13,
-        "name": "Jamie Dimon",
+        "id": 7,
+        "name": "Democratic Progressive Party (DPP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "claims"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "sovereign, independent (as ROC)"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          },
+          {
+            "key": "population",
+            "value": "23 million"
+          },
+          {
+            "key": "government",
+            "value": "democratically elected"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 40,
+      "subject": {
+        "id": 7,
+        "name": "Democratic Progressive Party (DPP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "rejected"
+      },
+      "object": {
+        "id": 5,
+        "name": "1992 Consensus",
+        "entity_type": "AGREEMENT",
+        "attributes": []
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 41,
+      "subject": {
+        "id": 8,
+        "name": "Tsai Ing-wen",
         "entity_type": "PERSON",
         "attributes": [
           {
             "key": "role",
-            "value": "JP Morgan boss"
+            "value": "Taiwan President (2016–2024)"
           }
         ]
       },
       "predicate": {
-        "id": 10,
-        "name": "warned"
+        "id": 12,
+        "name": "proposed"
       },
       "object": {
         "id": 10,
-        "name": "AI bubble",
+        "name": "alternative formulation",
         "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "cross-strait framework per ROC Constitution and laws"
+          },
+          {
+            "key": "year",
+            "value": "2016"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 42,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
         "attributes": []
-      }
+      },
+      "predicate": {
+        "id": 13,
+        "name": "cut contacts"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "2016"
+          },
+          {
+            "key": "reason",
+            "value": "rejected Tsai formulation"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 43,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 14,
+        "name": "proposed"
+      },
+      "object": {
+        "id": 9,
+        "name": "One country, two systems",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "target",
+            "value": "Taiwan"
+          },
+          {
+            "key": "year",
+            "value": "2019"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 44,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 15,
+        "name": "rejected"
+      },
+      "object": {
+        "id": 9,
+        "name": "One country, two systems",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Hong Kong crackdown made it unpopular"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 45,
+      "subject": {
+        "id": 10,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2024– )"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "called for"
+      },
+      "object": {
+        "id": 11,
+        "name": "cross-strait dialogue",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2024 presidential victory speech"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 46,
+      "subject": {
+        "id": 10,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2024– )"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "pledged"
+      },
+      "object": {
+        "id": 12,
+        "name": "status quo",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "cross-strait status quo"
+          },
+          {
+            "key": "date",
+            "value": "2024"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 47,
+      "subject": {
+        "id": 10,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Taiwan President (2024– )"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "asserted"
+      },
+      "object": {
+        "id": 13,
+        "name": "PRC no right to represent Taiwan",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2024 National Day"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 48,
+      "subject": {
+        "id": 11,
+        "name": "PRC Taiwan Affairs Office",
+        "entity_type": "OFFICE",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "PRC"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 19,
+        "name": "accused"
+      },
+      "object": {
+        "id": 10,
+        "name": "Lai Ching-te",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "accusation",
+            "value": "seeking independence"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 49,
+      "subject": {
+        "id": 23,
+        "name": "Honduras",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 20,
+        "name": "severed ties"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "March 2023"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 50,
+      "subject": {
+        "id": 23,
+        "name": "Honduras",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 21,
+        "name": "recognized"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "March 2023"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 51,
+      "subject": {
+        "id": 24,
+        "name": "Nauru",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 22,
+        "name": "severed ties"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "January 2024"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 52,
+      "subject": {
+        "id": 24,
+        "name": "Nauru",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 23,
+        "name": "recognized"
+      },
+      "object": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "January 2024"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 53,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "capital",
+            "value": "Washington, DC"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 25,
+        "name": "had treaty"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "treaty",
+            "value": "Mutual Defense Treaty"
+          },
+          {
+            "key": "years",
+            "value": "1954–1979"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 54,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 27,
+        "name": "severed ties"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          },
+          {
+            "key": "action",
+            "value": "ended diplomatic relations and treaty"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 55,
+      "subject": {
+        "id": 42,
+        "name": "United States Congress",
+        "entity_type": "ORGANIZATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 28,
+        "name": "passed"
+      },
+      "object": {
+        "id": 13,
+        "name": "Taiwan Relations Act",
+        "entity_type": "LAW",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          },
+          {
+            "key": "purpose",
+            "value": "govern unofficial U.S.-Taiwan relations; arms sales"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 56,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 29,
+        "name": "maintains"
+      },
+      "object": {
+        "id": 14,
+        "name": "American Institute in Taiwan (AIT)",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "de facto embassy"
+          },
+          {
+            "key": "function",
+            "value": "manages unofficial ties"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 57,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 30,
+        "name": "sells arms"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "purpose",
+            "value": "self-defense"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 58,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 31,
+        "name": "follows"
+      },
+      "object": {
+        "id": 15,
+        "name": "One China policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "basis",
+            "value": "1972/1978/1982 communiqués; 1979 TRA; 1982 Six Assurances"
+          },
+          {
+            "key": "stance",
+            "value": "acknowledges PRC position; opposes force; strategic ambiguity"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 59,
+      "subject": {
+        "id": 15,
+        "name": "One China policy",
+        "entity_type": "POLICY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 32,
+        "name": "based on"
+      },
+      "object": {
+        "id": 16,
+        "name": "Three U.S.-China Communiqués",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "years",
+            "value": "1972, 1978, 1982"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 60,
+      "subject": {
+        "id": 15,
+        "name": "One China policy",
+        "entity_type": "POLICY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 33,
+        "name": "based on"
+      },
+      "object": {
+        "id": 13,
+        "name": "Taiwan Relations Act",
+        "entity_type": "LAW",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1979"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 61,
+      "subject": {
+        "id": 15,
+        "name": "One China policy",
+        "entity_type": "POLICY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 34,
+        "name": "based on"
+      },
+      "object": {
+        "id": 17,
+        "name": "Six Assurances",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "1982"
+          },
+          {
+            "key": "issuer",
+            "value": "President Ronald Reagan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 62,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 35,
+        "name": "practices"
+      },
+      "object": {
+        "id": 18,
+        "name": "strategic ambiguity",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "defense of Taiwan not precommitted"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 63,
+      "subject": {
+        "id": 18,
+        "name": "Donald Trump",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "U.S. President (2017–2021)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 36,
+        "name": "spoke with"
+      },
+      "object": {
+        "id": 8,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "pre-2017 inauguration"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 64,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "administration",
+            "value": "Trump"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 37,
+        "name": "sold arms"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "value",
+            "value": ">$18 billion"
+          },
+          {
+            "key": "period",
+            "value": "2017–2021"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 65,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "administration",
+            "value": "Trump"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 38,
+        "name": "eased contacts"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "January 2021"
+          },
+          {
+            "key": "action",
+            "value": "lifted meeting restrictions"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 66,
+      "subject": {
+        "id": 43,
+        "name": "Joe Biden",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "U.S. President (2021– )"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 39,
+        "name": "invited"
+      },
+      "object": {
+        "id": 19,
+        "name": "Taiwan representatives",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "event",
+            "value": "U.S. presidential inauguration"
+          },
+          {
+            "key": "year",
+            "value": "2021"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 67,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "administration",
+            "value": "Biden"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 40,
+        "name": "continued"
+      },
+      "object": {
+        "id": 30,
+        "name": "arms sales to Taiwan",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "policy",
+            "value": "authorized loans, grants, $1B annual drawdown"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 68,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "military",
+            "value": "U.S. Navy transits"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 41,
+        "name": "transits"
+      },
+      "object": {
+        "id": 22,
+        "name": "Taiwan Strait",
+        "entity_type": "WATERWAY",
+        "attributes": [
+          {
+            "key": "purpose",
+            "value": "demonstrate presence"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 69,
+      "subject": {
+        "id": 20,
+        "name": "Nancy Pelosi",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "U.S. House Speaker (D-CA)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 42,
+        "name": "visited"
+      },
+      "object": {
+        "id": 21,
+        "name": "Taipei",
+        "entity_type": "CITY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "August 2022"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 70,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 43,
+        "name": "launched drills"
+      },
+      "object": {
+        "id": 22,
+        "name": "Taiwan Strait",
+        "entity_type": "WATERWAY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "August 2022"
+          },
+          {
+            "key": "purpose",
+            "value": "blockade demonstration"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 71,
+      "subject": {
+        "id": 21,
+        "name": "Kevin McCarthy",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "U.S. House Speaker (R-CA)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 44,
+        "name": "met"
+      },
+      "object": {
+        "id": 8,
+        "name": "Tsai Ing-wen",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "March 2023"
+          },
+          {
+            "key": "location",
+            "value": "California, USA"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 72,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 45,
+        "name": "sanctioned"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "after 2023 McCarthy-Tsai meeting"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 73,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 46,
+        "name": "sent delegation"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "January 2024"
+          },
+          {
+            "key": "purpose",
+            "value": "congratulate President Lai; support democracy"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 74,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 47,
+        "name": "conducts"
+      },
+      "object": {
+        "id": 24,
+        "name": "gray zone coercion",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "actions",
+            "value": "air/naval ops near Taiwan; cyber; economic pressure"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 75,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 48,
+        "name": "suspended"
+      },
+      "object": {
+        "id": 25,
+        "name": "cross-strait channel",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2016"
+          },
+          {
+            "key": "action",
+            "value": "cut authoritative communication"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 76,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 49,
+        "name": "restricted"
+      },
+      "object": {
+        "id": 26,
+        "name": "tourism to Taiwan",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2016"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 77,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 50,
+        "name": "pressured"
+      },
+      "object": {
+        "id": 27,
+        "name": "global travel firms",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "action",
+            "value": "list Taiwan as Chinese province"
+          },
+          {
+            "key": "date",
+            "value": "2016"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 78,
+      "subject": {
+        "id": 50,
+        "name": "Mainland Chinese hackers",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "affiliation",
+            "value": "PRC-based"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 51,
+        "name": "targeted"
+      },
+      "object": {
+        "id": 28,
+        "name": "Taiwan government agencies",
+        "entity_type": "ORGANIZATION",
+        "attributes": [
+          {
+            "key": "frequency",
+            "value": "thousands daily (reported)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 79,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 52,
+        "name": "cut trade"
+      },
+      "object": {
+        "id": 29,
+        "name": "Lithuania",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "2021"
+          },
+          {
+            "key": "reason",
+            "value": "Taiwanese office in Vilnius"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 80,
+      "subject": {
+        "id": 27,
+        "name": "People's Liberation Army (PLA)",
+        "entity_type": "MILITARY",
+        "attributes": [
+          {
+            "key": "affiliation",
+            "value": "CCP/PRC"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 54,
+        "name": "prioritizes"
+      },
+      "object": {
+        "id": 31,
+        "name": "Taiwan contingency",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "military modernization driver"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 81,
+      "subject": {
+        "id": 27,
+        "name": "People's Liberation Army (PLA)",
+        "entity_type": "MILITARY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 55,
+        "name": "warned"
+      },
+      "object": {
+        "id": 32,
+        "name": "defeat separatists",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "document",
+            "value": "2019 defense white paper"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 82,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 56,
+        "name": "increased"
+      },
+      "object": {
+        "id": 33,
+        "name": "defense spending",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "pledge",
+            "value": "~$20 billion in 2025"
+          },
+          {
+            "key": "by",
+            "value": "Lai Ching-te"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 83,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 57,
+        "name": "raised budget"
+      },
+      "object": {
+        "id": 34,
+        "name": "defense spending",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "increase",
+            "value": "7.2% in 2025"
+          },
+          {
+            "key": "total",
+            "value": "$245 billion"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 84,
+      "subject": {
+        "id": 41,
+        "name": "Taiwan public",
+        "entity_type": "GROUP",
+        "attributes": [
+          {
+            "key": "location",
+            "value": "Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 58,
+        "name": "supports"
+      },
+      "object": {
+        "id": 12,
+        "name": "status quo",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "poll_source",
+            "value": "NCCU Election Study Center"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 85,
+      "subject": {
+        "id": 41,
+        "name": "Taiwan public",
+        "entity_type": "GROUP",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 59,
+        "name": "rejects"
+      },
+      "object": {
+        "id": 9,
+        "name": "One country, two systems",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Hong Kong crackdown"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 86,
+      "subject": {
+        "id": 41,
+        "name": "Taiwan public",
+        "entity_type": "GROUP",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 60,
+        "name": "identified as"
+      },
+      "object": {
+        "id": 35,
+        "name": "Taiwanese",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "share",
+            "value": "~63% (June 2023)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 87,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 61,
+        "name": "relies on"
+      },
+      "object": {
+        "id": 36,
+        "name": "trade with China",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "partner",
+            "value": "PRC (largest)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 88,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "leader",
+            "value": "Ma Ying-jeou (2008–2016)"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 62,
+        "name": "signed"
+      },
+      "object": {
+        "id": 37,
+        "name": "ECFA",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "full_name",
+            "value": "2010 Cross-Straits Economic Cooperation Framework Agreement"
+          },
+          {
+            "key": "date",
+            "value": "2010"
+          },
+          {
+            "key": "purpose",
+            "value": "lift trade barriers"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 89,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 63,
+        "name": "resumed"
+      },
+      "object": {
+        "id": 38,
+        "name": "direct links",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "types",
+            "value": "sea, air, mail"
+          },
+          {
+            "key": "with",
+            "value": "Taiwan"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 90,
+      "subject": {
+        "id": 7,
+        "name": "Democratic Progressive Party (DPP)",
+        "entity_type": "POLITICAL_PARTY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 64,
+        "name": "diversified"
+      },
+      "object": {
+        "id": 39,
+        "name": "trade partners",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "focus",
+            "value": "Southeast Asia and Indo-Pacific"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 91,
+      "subject": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 65,
+        "name": "leads"
+      },
+      "object": {
+        "id": 40,
+        "name": "semiconductor manufacturing",
+        "entity_type": "SECTOR",
+        "attributes": [
+          {
+            "key": "share",
+            "value": ">90% of most advanced chips"
+          },
+          {
+            "key": "global_rank",
+            "value": "top manufacturer"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 92,
+      "subject": {
+        "id": 29,
+        "name": "TSMC",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "Taiwan"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 66,
+        "name": "supplies"
+      },
+      "object": {
+        "id": 30,
+        "name": "Apple",
+        "entity_type": "COMPANY",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "major customer"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 93,
+      "subject": {
+        "id": 42,
+        "name": "United States Congress",
+        "entity_type": "ORGANIZATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 67,
+        "name": "passed"
+      },
+      "object": {
+        "id": 31,
+        "name": "CHIPS and Science Act",
+        "entity_type": "LAW",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "August 2022"
+          },
+          {
+            "key": "aim",
+            "value": "revitalize U.S. chip industry"
+          },
+          {
+            "key": "support",
+            "value": "subsidies for TSMC Phoenix plant"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 94,
+      "subject": {
+        "id": 29,
+        "name": "TSMC",
+        "entity_type": "COMPANY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 68,
+        "name": "building"
+      },
+      "object": {
+        "id": 32,
+        "name": "Phoenix, Arizona plant",
+        "entity_type": "FACILITY",
+        "attributes": [
+          {
+            "key": "country",
+            "value": "United States"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 95,
+      "subject": {
+        "id": 18,
+        "name": "Donald Trump",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "U.S. President (2025– )"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 69,
+        "name": "announced"
+      },
+      "object": {
+        "id": 41,
+        "name": "$100B TSMC US investment",
+        "entity_type": "EVENT",
+        "attributes": [
+          {
+            "key": "date",
+            "value": "March 2025"
+          },
+          {
+            "key": "context",
+            "value": "new U.S. chipmaking facilities"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 96,
+      "subject": {
+        "id": 12,
+        "name": "United States",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "administration",
+            "value": "Biden"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 70,
+        "name": "signed"
+      },
+      "object": {
+        "id": 48,
+        "name": "21st Century Trade Agreement",
+        "entity_type": "AGREEMENT",
+        "attributes": [
+          {
+            "key": "parties",
+            "value": "U.S.-Taiwan"
+          },
+          {
+            "key": "scope",
+            "value": "regulatory collaboration"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 97,
+      "subject": {
+        "id": 33,
+        "name": "New Southbound Policy",
+        "entity_type": "POLICY",
+        "attributes": [
+          {
+            "key": "launched",
+            "value": "2016"
+          },
+          {
+            "key": "by",
+            "value": "Tsai Ing-wen"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 71,
+        "name": "boosted"
+      },
+      "object": {
+        "id": 39,
+        "name": "trade partners",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "result",
+            "value": "trade nearly doubled with 18 targets by 2022"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 98,
+      "subject": {
+        "id": 1,
+        "name": "People's Republic of China (PRC)",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 72,
+        "name": "pressured"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "effect",
+            "value": "FTA partners limited"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 99,
+      "subject": {
+        "id": 34,
+        "name": "New Zealand",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 73,
+        "name": "signed FTA"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "developed economy partner"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
+    },
+    {
+      "id": 100,
+      "subject": {
+        "id": 35,
+        "name": "Singapore",
+        "entity_type": "COUNTRY",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 74,
+        "name": "signed FTA"
+      },
+      "object": {
+        "id": 2,
+        "name": "Taiwan (Republic of China)",
+        "entity_type": "COUNTRY",
+        "attributes": [
+          {
+            "key": "status",
+            "value": "developed economy partner"
+          },
+          {
+            "key": "official_name",
+            "value": "Republic of China (ROC)"
+          }
+        ]
+      },
+      "inferred": false,
+      "timeStamp": "2025-11-11T00:00:00Z"
     }
   ],
   "entity_types": [
+    "COUNTRY",
     "PERSON",
-    "COMPANY",
     "CONCEPT",
-    "OPINION"
+    "DOCUMENT",
+    "LAW",
+    "POLICY",
+    "INDUSTRY",
+    "CITY",
+    "ORGANIZATION",
+    "GROUP",
+    "EVENT",
+    "SECTOR",
+    "REGION",
+    "GOVERNMENT",
+    "WATERWAY",
+    "OFFICE",
+    "STATE",
+    "AGREEMENT",
+    "MARKET",
+    "FACILITY"
   ]
 }

@@ -1,0 +1,612 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "references"
+      },
+      "object": {
+        "id": 2,
+        "name": "Malibu's Most Wanted",
+        "entity_type": "FILM",
+        "attributes": [
+          {
+            "key": "year",
+            "value": "2003"
+          },
+          {
+            "key": "genre",
+            "value": "Comedy"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "references"
+      },
+      "object": {
+        "id": 3,
+        "name": "Brad Gluckman",
+        "entity_type": "CHARACTER",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Main character"
+          },
+          {
+            "key": "description",
+            "value": "Rich kid emulating Black culture"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 3,
+        "name": "Brad Gluckman",
+        "entity_type": "CHARACTER",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Main character"
+          },
+          {
+            "key": "description",
+            "value": "Rich kid emulating Black culture"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 3,
+        "name": "aka"
+      },
+      "object": {
+        "id": 4,
+        "name": "B-Rad",
+        "entity_type": "ALIAS",
+        "attributes": [
+          {
+            "key": "entity",
+            "value": "Brad Gluckman"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 4,
+        "name": "references"
+      },
+      "object": {
+        "id": 5,
+        "name": "Certified Lover Boy",
+        "entity_type": "ALBUM",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Drake"
+          },
+          {
+            "key": "description",
+            "value": "Title flipped as insult"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 5,
+        "name": "samples"
+      },
+      "object": {
+        "id": 6,
+        "name": "I Believe to My Soul (Monk Higgins)",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Monk Higgins"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 6,
+        "name": "I Believe to My Soul (Monk Higgins)",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Monk Higgins"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "covers"
+      },
+      "object": {
+        "id": 7,
+        "name": "I Believe to My Soul (Ray Charles)",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Ray Charles"
+          },
+          {
+            "key": "role",
+            "value": "Original"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "echoes"
+      },
+      "object": {
+        "id": 8,
+        "name": "Bay Area hip-hop",
+        "entity_type": "GENRE",
+        "attributes": [
+          {
+            "key": "region",
+            "value": "Bay Area"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 9,
+        "name": "Not Like Us cover art",
+        "entity_type": "ARTWORK",
+        "attributes": [
+          {
+            "key": "medium",
+            "value": "Single cover"
+          },
+          {
+            "key": "imagery",
+            "value": "Bird's-eye view of Drake's mansion"
+          },
+          {
+            "key": "art_direction",
+            "value": "Kendrick Lamar"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "uses"
+      },
+      "object": {
+        "id": 10,
+        "name": "Google Maps",
+        "entity_type": "PLATFORM",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Map screenshot"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 9,
+        "name": "Not Like Us cover art",
+        "entity_type": "ARTWORK",
+        "attributes": [
+          {
+            "key": "medium",
+            "value": "Single cover"
+          },
+          {
+            "key": "imagery",
+            "value": "Bird's-eye view of Drake's mansion"
+          },
+          {
+            "key": "art_direction",
+            "value": "Kendrick Lamar"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 9,
+        "name": "features"
+      },
+      "object": {
+        "id": 11,
+        "name": "The Embassy (Drake mansion)",
+        "entity_type": "BUILDING",
+        "attributes": [
+          {
+            "key": "owner",
+            "value": "Drake"
+          },
+          {
+            "key": "city",
+            "value": "Toronto"
+          },
+          {
+            "key": "type",
+            "value": "Mansion"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 9,
+        "name": "Not Like Us cover art",
+        "entity_type": "ARTWORK",
+        "attributes": [
+          {
+            "key": "medium",
+            "value": "Single cover"
+          },
+          {
+            "key": "imagery",
+            "value": "Bird's-eye view of Drake's mansion"
+          },
+          {
+            "key": "art_direction",
+            "value": "Kendrick Lamar"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "displays"
+      },
+      "object": {
+        "id": 12,
+        "name": "sex offender location",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Location of a registered sex offender"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 13,
+        "name": "13 red markers",
+        "entity_type": "SYMBOL",
+        "attributes": [
+          {
+            "key": "count",
+            "value": "13"
+          },
+          {
+            "key": "color",
+            "value": "Red"
+          },
+          {
+            "key": "placement",
+            "value": "On roof"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 11,
+        "name": "mark"
+      },
+      "object": {
+        "id": 14,
+        "name": "Embassy roof",
+        "entity_type": "LOCATION",
+        "attributes": [
+          {
+            "key": "part_of",
+            "value": "The Embassy (Drake mansion)"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 9,
+        "name": "Not Like Us cover art",
+        "entity_type": "ARTWORK",
+        "attributes": [
+          {
+            "key": "medium",
+            "value": "Single cover"
+          },
+          {
+            "key": "imagery",
+            "value": "Bird's-eye view of Drake's mansion"
+          },
+          {
+            "key": "art_direction",
+            "value": "Kendrick Lamar"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 12,
+        "name": "shows"
+      },
+      "object": {
+        "id": 13,
+        "name": "13 red markers",
+        "entity_type": "SYMBOL",
+        "attributes": [
+          {
+            "key": "count",
+            "value": "13"
+          },
+          {
+            "key": "color",
+            "value": "Red"
+          },
+          {
+            "key": "placement",
+            "value": "On roof"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "references"
+      },
+      "object": {
+        "id": 15,
+        "name": "Tupac Shakur",
+        "entity_type": "ARTIST",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Drake's AI simulation attacked by Lamar"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 1,
+        "name": "Not Like Us",
+        "entity_type": "SONG",
+        "attributes": [
+          {
+            "key": "artist",
+            "value": "Kendrick Lamar"
+          },
+          {
+            "key": "description",
+            "value": "Diss track in Drake feud"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 14,
+        "name": "references"
+      },
+      "object": {
+        "id": 16,
+        "name": "Snoop Dogg",
+        "entity_type": "ARTIST",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Drake's AI simulation attacked by Lamar"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 17,
+        "name": "Not Like Us beat",
+        "entity_type": "PRODUCTION",
+        "attributes": [
+          {
+            "key": "producer",
+            "value": "Mustard"
+          },
+          {
+            "key": "name",
+            "value": "Dijon Isaiah McFarlane"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 15,
+        "name": "references"
+      },
+      "object": {
+        "id": 18,
+        "name": "Dr. Dre",
+        "entity_type": "ARTIST",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Stylistic thought experiment"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 17,
+        "name": "Not Like Us beat",
+        "entity_type": "PRODUCTION",
+        "attributes": [
+          {
+            "key": "producer",
+            "value": "Mustard"
+          },
+          {
+            "key": "name",
+            "value": "Dijon Isaiah McFarlane"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 16,
+        "name": "references"
+      },
+      "object": {
+        "id": 19,
+        "name": "Lil Jon",
+        "entity_type": "ARTIST",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Stylistic thought experiment"
+          }
+        ]
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "SONG",
+    "FILM",
+    "CHARACTER",
+    "ALIAS",
+    "ALBUM",
+    "GENRE",
+    "ARTWORK",
+    "PLATFORM",
+    "BUILDING",
+    "CONCEPT",
+    "SYMBOL",
+    "LOCATION",
+    "ARTIST",
+    "PRODUCTION"
+  ]
+}

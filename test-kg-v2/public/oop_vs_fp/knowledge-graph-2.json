@@ -1,0 +1,590 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Object-oriented programming; views world as objects with relations"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "focuses_on"
+      },
+      "object": {
+        "id": 2,
+        "name": "Objects",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Entities with properties and relations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Functional programming; views world as actions/transformations"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 2,
+        "name": "focuses_on"
+      },
+      "object": {
+        "id": 4,
+        "name": "Actions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Capabilities, behaviors, and transformations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 3,
+        "name": "models"
+      },
+      "object": {
+        "id": 5,
+        "name": "Reality",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Entities and relationships important to the application"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 4,
+        "name": "models"
+      },
+      "object": {
+        "id": 6,
+        "name": "Transformations",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Compositions of actions and data transformations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 7,
+        "name": "Views",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "UI/view definitions composed of objects with properties"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 8,
+        "name": "Databases",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Data modeling as stored objects/entities"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 9,
+        "name": "Representational State Transfer (REST)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Object/resource-centric inter-service communication style"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 6,
+        "name": "Transformations",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "example",
+            "value": "Functional collection processing, pipelines"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "excels_at"
+      },
+      "object": {
+        "id": 10,
+        "name": "Business logic",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "High-level application behavior composed of actions"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 6,
+        "name": "weaker_in"
+      },
+      "object": {
+        "id": 6,
+        "name": "Transformations",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Needs function literals; action-centric thinking"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 9,
+        "name": "Representational State Transfer (REST)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 7,
+        "name": "aligns_with"
+      },
+      "object": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "basis",
+            "value": "Objects/resources and relations"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 11,
+        "name": "Remote procedure call (RPC)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Remote procedure call and successors"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "aligns_with"
+      },
+      "object": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "basis",
+            "value": "Action/procedure-centric communication"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 9,
+        "name": "Representational State Transfer (REST)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 8,
+        "name": "more_popular_than"
+      },
+      "object": {
+        "id": 11,
+        "name": "Remote procedure call (RPC)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "scope",
+            "value": "Inter-service communication popularity"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 9,
+        "name": "popular_in"
+      },
+      "object": {
+        "id": 12,
+        "name": "Backend",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "note",
+            "value": "Still popular in many applications"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 10,
+        "name": "dominated"
+      },
+      "object": {
+        "id": 13,
+        "name": "Education",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "When author learned programming"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "better_for"
+      },
+      "object": {
+        "id": 10,
+        "name": "Business logic",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "source",
+            "value": "Author’s observation over last decade"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "better_for"
+      },
+      "object": {
+        "id": 14,
+        "name": "Modeling objects",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "Computers, UI views, persisted entities"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "better_for"
+      },
+      "object": {
+        "id": 15,
+        "name": "Inter-service communication",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Objects easier, more universal, change less often"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 6,
+        "name": "weaker_in"
+      },
+      "object": {
+        "id": 16,
+        "name": "Talking about actions",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Actions harder to describe and share"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 12,
+        "name": "easier_to"
+      },
+      "object": {
+        "id": 17,
+        "name": "Discuss",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "reason",
+            "value": "Objects are universal and visible"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 18,
+        "name": "Comparable",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Interface"
+          },
+          {
+            "key": "example",
+            "value": "Describes what an object can do"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "exemplifies"
+      },
+      "object": {
+        "id": 3,
+        "name": "Functional programming (FP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "angle",
+            "value": "Capability-centric view"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 19,
+        "name": "TimeUnit",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Enum/class"
+          },
+          {
+            "key": "example",
+            "value": "Describes shared characteristics"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 13,
+        "name": "exemplifies"
+      },
+      "object": {
+        "id": 1,
+        "name": "Object-oriented programming (OOP)",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "angle",
+            "value": "Trait/characteristic-centric view"
+          }
+        ]
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "CONCEPT"
+  ]
+}

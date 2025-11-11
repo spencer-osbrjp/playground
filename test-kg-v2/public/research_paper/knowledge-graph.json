@@ -1,0 +1,940 @@
+{
+  "triplets": [
+    {
+      "id": 1,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": [
+          {
+            "key": "title",
+            "value": "Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood"
+          },
+          {
+            "key": "year",
+            "value": "2020"
+          },
+          {
+            "key": "doi",
+            "value": "10.1080/13554794.2020.1841798"
+          },
+          {
+            "key": "claim",
+            "value": "Only reported adult case with dual incidental colpocephaly and porencephaly"
+          },
+          {
+            "key": "published_online",
+            "value": "2020-11-02"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 1,
+        "name": "published_in"
+      },
+      "object": {
+        "id": 2,
+        "name": "Neurocase",
+        "entity_type": "JOURNAL",
+        "attributes": [
+          {
+            "key": "subtitle",
+            "value": "The Neural Basis of Cognition"
+          },
+          {
+            "key": "publisher",
+            "value": "Taylor & Francis Group"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 2,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 2,
+        "name": "has_doi"
+      },
+      "object": {
+        "id": 3,
+        "name": "10.1080/13554794.2020.1841798",
+        "entity_type": "IDENTIFIER",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 3,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 3,
+        "name": "published_on"
+      },
+      "object": {
+        "id": 4,
+        "name": "2020-11-02",
+        "entity_type": "DATE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 4,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 4,
+        "name": "received_on"
+      },
+      "object": {
+        "id": 5,
+        "name": "2020-05-18",
+        "entity_type": "DATE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 5,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 5,
+        "name": "accepted_on"
+      },
+      "object": {
+        "id": 6,
+        "name": "2020-10-18",
+        "entity_type": "DATE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 6,
+      "subject": {
+        "id": 7,
+        "name": "Katherine Reiter",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Author"
+          },
+          {
+            "key": "email",
+            "value": "reiterk@ccf.org"
+          },
+          {
+            "key": "affiliation",
+            "value": "Cleveland Clinic, Department of Neurology"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 6,
+        "name": "author_of"
+      },
+      "object": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 7,
+      "subject": {
+        "id": 8,
+        "name": "Kasia Gustaw Rothenberg",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "role",
+            "value": "Author"
+          },
+          {
+            "key": "affiliation",
+            "value": "Cleveland Clinic, Department of Neurology"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 7,
+        "name": "author_of"
+      },
+      "object": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 8,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": [
+          {
+            "key": "age",
+            "value": "54"
+          },
+          {
+            "key": "sex",
+            "value": "Male"
+          },
+          {
+            "key": "diagnosis_mode",
+            "value": "Incidental in adulthood"
+          },
+          {
+            "key": "setting",
+            "value": "Cleveland Clinic"
+          },
+          {
+            "key": "location",
+            "value": "Cleveland, USA"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 8,
+        "name": "diagnosed_with"
+      },
+      "object": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "type",
+            "value": "Congenital ventriculomegaly"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 9,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 9,
+        "name": "diagnosed_with"
+      },
+      "object": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "description",
+            "value": "Full-thickness brain cortical defect with CSF-filled cavity"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 10,
+      "subject": {
+        "id": 12,
+        "name": "Patient MRI",
+        "entity_type": "TEST",
+        "attributes": [
+          {
+            "key": "modality",
+            "value": "Brain MRI"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 10,
+        "name": "shows"
+      },
+      "object": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "finding",
+            "value": "Marked enlargement of occipital horns of lateral ventricles"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 11,
+      "subject": {
+        "id": 12,
+        "name": "Patient MRI",
+        "entity_type": "TEST",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 11,
+        "name": "shows"
+      },
+      "object": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "finding",
+            "value": "Large cyst in left frontal and parietal lobes communicating with left occipital horn"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 12,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 12,
+        "name": "has_symptom"
+      },
+      "object": {
+        "id": 13,
+        "name": "Executive dysfunction",
+        "entity_type": "SYMPTOM",
+        "attributes": [
+          {
+            "key": "details",
+            "value": "Impaired impulsivity, cognitive flexibility, set-shifting"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 13,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 13,
+        "name": "has_symptom"
+      },
+      "object": {
+        "id": 14,
+        "name": "Slow processing speed",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 14,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 14,
+        "name": "has_symptom"
+      },
+      "object": {
+        "id": 15,
+        "name": "Language weakness",
+        "entity_type": "SYMPTOM",
+        "attributes": [
+          {
+            "key": "details",
+            "value": "Impaired category fluency; weakness in naming"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 15,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 15,
+        "name": "has_symptom"
+      },
+      "object": {
+        "id": 16,
+        "name": "Motor changes",
+        "entity_type": "SYMPTOM",
+        "attributes": [
+          {
+            "key": "details",
+            "value": "Right leg drag; right-hand tremor; stiffness; imbalance"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 16,
+      "subject": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 16,
+        "name": "has_symptom"
+      },
+      "object": {
+        "id": 17,
+        "name": "Impulse control issues",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 17,
+      "subject": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "origin",
+            "value": "Congenital"
+          },
+          {
+            "key": "etio",
+            "value": "Genetic, intrauterine/perinatal injuries, morphogenesis error"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 17,
+        "name": "defined_as"
+      },
+      "object": {
+        "id": 18,
+        "name": "Congenital ventriculomegaly",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "feature",
+            "value": "Occipital horns > anterior horns"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 18,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "origin",
+            "value": "Congenital or acquired"
+          }
+        ]
+      },
+      "predicate": {
+        "id": 18,
+        "name": "defined_as"
+      },
+      "object": {
+        "id": 19,
+        "name": "Brain cortical defect",
+        "entity_type": "CONCEPT",
+        "attributes": [
+          {
+            "key": "feature",
+            "value": "CSF-filled cyst/cavity"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 19,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 19,
+        "name": "divided_into"
+      },
+      "object": {
+        "id": 20,
+        "name": "Type I porencephaly",
+        "entity_type": "SUBTYPE",
+        "attributes": [
+          {
+            "key": "aka",
+            "value": "False/encephaloclastic porencephaly"
+          },
+          {
+            "key": "timing",
+            "value": "Third trimester"
+          },
+          {
+            "key": "mechanism",
+            "value": "Destructive process"
+          },
+          {
+            "key": "examples",
+            "value": "Periventricular hemorrhage; CNS infection"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 20,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 20,
+        "name": "divided_into"
+      },
+      "object": {
+        "id": 21,
+        "name": "Type II porencephaly",
+        "entity_type": "SUBTYPE",
+        "attributes": [
+          {
+            "key": "aka",
+            "value": "True/developmental schizencephaly"
+          },
+          {
+            "key": "timing",
+            "value": "Second trimester"
+          },
+          {
+            "key": "mechanism",
+            "value": "Defect in neuronal migration"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 21,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 21,
+        "name": "genetic_link"
+      },
+      "object": {
+        "id": 22,
+        "name": "COL4A1",
+        "entity_type": "GENE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 22,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 22,
+        "name": "genetic_link"
+      },
+      "object": {
+        "id": 23,
+        "name": "COL4A2",
+        "entity_type": "GENE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 23,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 23,
+        "name": "associated_with"
+      },
+      "object": {
+        "id": 24,
+        "name": "Epilepsy",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "context",
+            "value": "Reported comorbidity; hippocampal sclerosis cases"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 24,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 24,
+        "name": "associated_with"
+      },
+      "object": {
+        "id": 25,
+        "name": "Psychiatric syndromes",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "examples",
+            "value": "Psychosis; anger outbursts"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 25,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 25,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 26,
+        "name": "Seizures",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 26,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 26,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 27,
+        "name": "Developmental delay",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 27,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 27,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 28,
+        "name": "Visual/sensory defects",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 28,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 28,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 29,
+        "name": "Motor deficits",
+        "entity_type": "SYMPTOM",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 29,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 29,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 30,
+        "name": "Hydrocephalus",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 30,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 30,
+        "name": "symptoms"
+      },
+      "object": {
+        "id": 31,
+        "name": "Vascular syndromes",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 31,
+      "subject": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 31,
+        "name": "associated_with"
+      },
+      "object": {
+        "id": 32,
+        "name": "Corpus callosum agenesis",
+        "entity_type": "CONDITION",
+        "attributes": [
+          {
+            "key": "extent",
+            "value": "Partial or complete"
+          }
+        ]
+      },
+      "inferred": false
+    },
+    {
+      "id": 32,
+      "subject": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 32,
+        "name": "misdiagnosed_as"
+      },
+      "object": {
+        "id": 30,
+        "name": "Hydrocephalus",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 33,
+      "subject": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 33,
+        "name": "diagnosed_in"
+      },
+      "object": {
+        "id": 33,
+        "name": "Infancy",
+        "entity_type": "AGE_STAGE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 34,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 34,
+        "name": "diagnosed_in"
+      },
+      "object": {
+        "id": 33,
+        "name": "Infancy",
+        "entity_type": "AGE_STAGE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 35,
+      "subject": {
+        "id": 10,
+        "name": "Colpocephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 35,
+        "name": "rare_in"
+      },
+      "object": {
+        "id": 34,
+        "name": "Adulthood",
+        "entity_type": "AGE_STAGE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 36,
+      "subject": {
+        "id": 11,
+        "name": "Porencephaly",
+        "entity_type": "CONDITION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 36,
+        "name": "rare_in"
+      },
+      "object": {
+        "id": 34,
+        "name": "Adulthood",
+        "entity_type": "AGE_STAGE",
+        "attributes": []
+      },
+      "inferred": false
+    },
+    {
+      "id": 37,
+      "subject": {
+        "id": 1,
+        "name": "Article: Neuropsychological presentation of colpocephaly and porencephaly with symptom onset in adulthood",
+        "entity_type": "PUBLICATION",
+        "attributes": []
+      },
+      "predicate": {
+        "id": 37,
+        "name": "reports_case"
+      },
+      "object": {
+        "id": 9,
+        "name": "Patient (54-year-old male)",
+        "entity_type": "PERSON",
+        "attributes": []
+      },
+      "inferred": false
+    }
+  ],
+  "entity_types": [
+    "PUBLICATION",
+    "JOURNAL",
+    "IDENTIFIER",
+    "DATE",
+    "PERSON",
+    "TEST",
+    "CONDITION",
+    "SYMPTOM",
+    "CONCEPT",
+    "SUBTYPE",
+    "GENE",
+    "AGE_STAGE"
+  ]
+}
