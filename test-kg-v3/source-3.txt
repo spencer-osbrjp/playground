@@ -1,0 +1,160 @@
+The Unnecessary OOP vs Functional Programming Battle.
+
+In the last years, we have seen how functional programming (FP) has taken a big portion of what used to be purely Object Oriented Programming. React and Redux being important FP exponents in the frontend ecosystem have earned the respect of several developers for delivering predictable behavior which was harder to achieve with just traditional OOP constructs.
+
+I find that the “OOP is obsolete” mindset is leaving behind highly valuable knowledge that can help break down intimidating tasks into a scalable and predictable set of pieces.
+
+The purpose of this article is to avoid an attitude I dislike, which is simply tagging these topics as “Everyone chooses what they like” or “It’s just a balance” and abandoning any intention of crafting defined criteria. There will be people joining the programming industry every day, probably they will be looking for answers on these topics and at least we can try to appease some doubts, concerns, and questions which are usually hard to express at the beginning of such a career.
+
+I hope you enjoy it.
+
+OOPsies
+Classical Inheritance
+If you are not that familiar with the theory, OOP “allows” a class to inherit the properties from only 1 different class. The reason: imagine your class tries to extend other 2 Classes, and such parent Classes have at least 1 single equal member, there is no tool in the theory to decide which member should be the one being passed down to the child class.
+
+Several languages have tried to solve this theoretical limitation with their own implementation. Sadly, having some languages implementing their own way of multiple or combinatory inheritance, and others not having it at all adds some sort of stigma to every inheritance mechanism.
+
+In the case of Javascript, which started as a classless language (still Object Oriented), appealed to prototype inheritance which is less declarative than Classical Inheritance, but enables the developer to come up with his/her own way of inheriting behavior from any object.
+
+I appreciate having prototype inheritance every day more as my need to control the technology I manage grows consistently.
+
+Of course, it’s a practice I avoid (and most of the time I don’t even think about), yet probably some new convenient pattern can be conceived over this open mechanism and I will not be facing “theoretical” limitations.
+
+Encapsulation and State in Big Codebases
+In the early years of OOP, encapsulation alongside a limiting resource-wise environment kept the cognitive load of developers in an optimal state. Most developers were able to keep a holistic image of what the code did, as no one expected computers to develop so well and so fast, the paradigm positioned itself quite solidly without too many revisits.
+
+This soon changed, computers were able to do exponentially more every year, and forwarding to our current times we find ourselves, often enough, trying to maintain codebases of hundreds of classes, with an over-abstracted stack of concepts, and every single class from DTOs to OmnipotentOverseerManagerFactory, acts as a “middle man” thus adding an accumulative probability of undesired side effects.
+
+So elaborating in other terms, imagine we have hundreds of black boxes, someday a black box containing magnets will be put beside another one containing needles and there won’t be a way of knowing till that happens.
+
+The abuse of encapsulation had led to opaque transparency a good codebase shouldn’t be afraid of having, likewise state becomes more unpredictable when there’s a lot of code having references to a single piece of data, and consequently, developers end up writing defensive code against their code.
+
+A Glorified Law of Instrument
+“If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail”
+
+Exaggeratedly translated to our case would be like:
+
+“Every single code should be contained in a template and you cannot run it till having an instance of such template. When you have enough templates, you will need to have Factories, Adapters, DTOs because an anonym but significantly big enough group of people say these are the best unquestionable practices ever conceived by humanity. “.
+
+Said probably no one ever but perceived as it by several developers.
+
+However, this point is more of a critique of the ecosystem and communities than the paradigm per se.
+
+The jargon and mechanical mindsets became so present it was more common to see a boilerplate of patterns and unnecessarily long names than a simple anonymous function, making the learning curve gradually steeper and therefore reducing the willingness of newcomer programmers to dig in certain areas.
+
+Where OOP shines
+Reflecting Existences and Managing Resources.
+Another way of looking at the intention in functional programming is achieving predictability by minimizing the information held by a piece of code or state.
+
+Nevertheless, sometimes we DO want to hold a piece of information: usually monitor the state of a resource (when reading and modifying a file programmatically, keeping a network connection) or the state of an entity that can be affected by external inputs (for example, an Input Text Element in the UI)
+
+Not saying we aren’t able to achieve the same with pure functions, but Objects come with a natural life cycle that matches the creation, availability, or removal of something. What’s more, you can control the number of instances of a certain object with private constructors and static properties.
+
+In functional programming, there’s natural scalability for running several functions in different threads, but there’s no limit of calls and trying to make the function aware of the available resources to be executed will render it impure and ergo unpredictable.
+
+In a daring sentence, we can say OOP can help us to minimize resource usage while FP can help us to maximize data processing.
+
+A Function Is a Better Atomic Artifact Than a Class, but a Class Is a Better “Mid-Size” Artifact Than HO Functions.
+I think High Order (HO) function as a concept is very wide. My problem isn’t Functors, Currying, Monads, etc, as they keep the same spirit of a plain pure function.
+
+But when it comes to uncategorized HO Functions that decide the role, order of execution of the functions they receive as params, and also may even trigger some side effects (because in the end, our information flows out of our process) can be problematic.
+
+The lack of “guidelines” on how to glue functions together can lead to several functions having a redundant responsibility, a too long set of parameters, unclear behavior or undesired code coupling.
+
+On the other hand, classes are meant to have autonomy in the sense of “I know where information is and who to ask for” whereas functional programming is more about “spoon feeding” every single param that is necessary for the function to work. Classes have several ways to associate other classes and pieces of code which breaks this accumulative dependency of parameters we can suffer in functional programming when having HO functions inside other HO functions.
+
+Classes “feel” robust enough that we can delegate some autonomy to them.
+
+A Decent Bridge for Business and Technical Mindsets.
+In the same way, a mechanic will repair a car faster when its pieces are easy to identify, a developer will be able to maintain code bases better when a class communicates clearly what is its impact on our product.
+
+This may sound contradictory enough, but in this part, I’m glad FP became more present, as it allows us to avoid making classes that actually have a way smaller impact than the code required to maintain them.
+
+Still, class graphs are very useful for communicating our information domain, finding weird information couplings, presenting architectural designs, and showing big-picture ideas in seconds. Even if the final implementation isn’t exactly the early diagram, the split of a single class into smaller chunks doesn’t break the overall vision.
+
+As our applications and services end up managing hundreds of variables, at some point is easier to conceive them as organisms and one of the most organic tools we have are class diagrams. It’s hard to represent the whole vision with constructs that only perform an atomic action, a pure function will be more predictable in behavior but it’s hard to track the role of hundreds of pieces in a single congruent concept.
+
+“We Should Just Use Real Sciences”
+I’d like to address this strong arguable stigma going around, which is a personal and oversimplified interpretation goes like this:
+
+“OOP is not mathematical while functional programming is, therefore Functional programming has a solid deterministic pillar OOP lacks”
+
+Personally, I answer the previous totally imagined quote in this way:
+
+“Science is not about the truth, it’s about useful models”
+
+We can dislike and criticize OOP as much as we want, but we cannot deny it is a successful model, what’s more, it is a model that allows programmers and engineers to create other useful and potentially successful models.
+
+In comparison, Newtonian physics is nowadays obsolete in several fields, yet, many of its derivated fields (Statics) are still producing predictable outputs. A regular house won’t fall because its calculations were made with Newtonian physics.
+
+The existence of better models does not necessarily render older models useless. There is an advantage one should not underestimate in running models that a wider audience can understand.
+
+Additionally, we can say with good confidence all the code running in a computer is deterministic. Even when our code breaks down, it’s because at a certain point some code was defined to fail. So the paradigm is not taking determinism (one of the most robust properties Math has) out of our plate.
+
+So… what does functional programming bring?
+
+It ensures predictability at a certain level.
+
+If mathematicians make extensive use of them, it’s because they’re theoretically predictable and can be conceptually exploited as it’s easier to make affirmations about simple constructs than complex ones.
+
+However, I do not think that the lack (or unpopularity) of a Mathematical model, one that can sustain the existence of classes and objects, should suggest we generate aversion for OOP. As I criticized OOP for not considering multiple inheritances, I have to criticize the “If it’s not written in Math, we don’t do it” obsession.
+
+Probably the actual problem is renouncing pragmatism in favor of a theory that may have an answer written for all our problems in the pages we haven’t read yet. As Computer Science is a young discipline I would personally bet that’s not true today.
+
+Additionally, why aren’t we widely using Prolog or Haskell which follow the most predictive constructs we can conceive in programming? Web Assembly should allow us to do such things right now. Maybe some people just want Functional Flavored Object Oriented Programming (FFOOP?, sounds funny).
+
+We Risk Losing Valuable Knowledge
+Quite often I find pro FP programmers (mostly in Frontend) missing certain principles that are very present in OOP communities but are not exclusive to the paradigm, and I’m talking about GRASP Design principles and GoF Design Patterns.
+
+These are the main villains in the Law of Instrument pointed out earlier in this article, still what they solve has been translated into several shapes because while they may not enumerate every single challenge we face, they account for several common problems the current state of programming brings and its solution.
+
+The well-known Content Projection pattern in the frontend can be seen as an alternate Visitor Pattern. One part of your implementation is opening the door for a third party to do what pleases providing a limited context.
+
+MutationObserver, IntersectionObserver, and ResizeObserver are clear implementations of the Observer pattern that allow us to write cheaper reactive code instead of spamming throttled while(true) against our DOM elements.
+
+The experimental decorator feature we get with Typescript is a sugar syntax of the Decorator pattern, which is clearly the enhancement or enrichment of a piece of code and kind of addresses the limitations inheritance have.
+
+From my side, just in the frontend, I have made use of Builders, Factories, Strategies, Façade, Adapters, and Singleton patterns which have made my bigger tasks much easier than what could’ve been without knowing those patterns, and additionally I’m enabling other developers who are familiar with them being able to maintain such structures.
+
+I know there are people who overuse these patterns (which is not good), yet we have to acknowledge this high-level jargon communicates entire dynamics by just making use of a single word or suffix.
+
+It requires less effort to teach a person that knows the entire toolbox to not use all the tools every time than teaching a person the whole toolbox from zero.
+
+If you are not familiar with most of these patterns yet, there is no rush. I can recommend trying to map what they solve to a problem you had or trying to re-imagine in one of these patterns how certain library solves specific difficulties helps.
+
+Symbiosis Is Better Than a Rivalry
+As I clarified in the beginning, I’m not the kind of person that likes to summarize everything in the very trite phrase “it’s a balance”. I do believe when 2 ideological poles clash with each other, applying objective criteria allows anyone to choose the most useful parts of one and the most useful parts of the other given a situation.
+
+Personally, I think in most Frontend ecosystems, we want to maximize the number of pure functions and immutable objects as our scripting should only take care of what’s shown on the screen and interact with a server, we have minimal needs for programmatic persistence, null file system management, and the browser takes care of the low-level I/O behavior.
+
+Having said that, we still have good examples of implementations that combine both approaches:
+
+RxJS: Observables are objects, but most of their operators are Functors that allows us to work over the information stream without worry our code can affect the original information. Furthermore, as observables are objects we can manage their creation and destruction at any desired time.
+
+Luxon: Date and Time library. Makes use of immutable objects, and any operation to a given object will create another object.
+
+MobX: State management with Observables.
+
+Combining both approaches seems to bring big advantages. We can see reactive programming exploiting both paradigms for bringing maintainable asynchronous code without much burden.
+
+From the top of my mind, we could also have class-based immutable objects as in:
+
+
+Which could fit scenarios in languages that don’t have literal objects such as Javascript.
+
+Conclusion
+Functional programming has come to stay and for solid reasons, however, that shouldn’t make us blindly go to throw away the vast development OOP communities have provided over the last decades. Probably a good portion of the community has to admit the praxis bias made them go to an extreme, but if the techniques are still bringing robustness and confidence in certain aspects ignoring them can be too costly.
+
+On the other hand, I do believe OOP needs a revision or to be willing to evolve in a useful manner continuously.
+
+The fact several languages and book authors recommend avoiding or “working around” the core flaws of the theory when put into reality should trigger alarms in the Computer Science community, these are our most popular and promoted academic tools.
+
+Still, I guess we will see both paradigms coexisting and empowering each other for the next decade.
+
+Even when different developers get to grow their own defined preferences the potentials of both paradigms building each other can open better, more predictable, and efficient ways of programming, which in the end, benefits us all.
+
+Personally, I’m sure using both makes me a better professional than using just one.
+
+Thanks for making it this far. Have a nice day.
+
+
