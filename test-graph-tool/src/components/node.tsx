@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import {
   CheckCircledIcon,
   CrossCircledIcon,
@@ -12,15 +11,12 @@ import {
   Position,
   useNodeId,
   Handle,
-  addEdge,
-  type Edge,
   useReactFlow,
-  MarkerType,
 } from "@xyflow/react";
-import { useNodeStore, type AppNode } from "../store/nodeStore";
+import { useNodeStore } from "../store/nodeStore";
 import { cn } from "../utils";
-import { d3Hierarchy } from "../features/layouting";
 import { useState, memo } from "react";
+import { addNode } from "../features/add-node";
 
 type DefaultNodeState = {
   label: string;
@@ -33,11 +29,8 @@ type CustomNode = Node<DefaultNodeState, "node-with-toolbar">;
 
 const NodeWithToolbarComp = ({ data, ...options }: NodeProps<CustomNode>) => {
   const currentNodeId = useNodeId();
-  const direction = useNodeStore((state) => state.direction);
   const nodes = useNodeStore((state) => state.nodes);
-  const setNodes = useNodeStore((state) => state.setNodes);
   const edges = useNodeStore((state) => state.edges);
-  const setEdges = useNodeStore((state) => state.setEdges);
   const { updateNode } = useReactFlow();
 
   const [value, setValue] = useState<string>(data.label);
@@ -46,50 +39,7 @@ const NodeWithToolbarComp = ({ data, ...options }: NodeProps<CustomNode>) => {
 
   const onAddNode = () => {
     if (!currentNodeId) return;
-
-    const { getLayoutElements } = d3Hierarchy();
-    const newNodeId = uuidv4();
-    const newEdge: Edge = {
-      id: `${currentNodeId}-${newNodeId}`,
-      source: currentNodeId,
-      target: newNodeId,
-      label: "New Edge",
-      type: "smoothstep",
-      markerEnd: {
-        type: MarkerType.ArrowClosed,
-      },
-    };
-    const newEdges = addEdge(newEdge, edges);
-
-    const newNode: AppNode = {
-      id: newNodeId,
-      position: {
-        x: 0, // default to 0, will update to the actual position after transform
-        y: 0,
-      },
-      type: "node-with-toolbar",
-      data: {
-        label: "New Node",
-        isEditing: true,
-      },
-      selected: true,
-      focusable: true,
-      draggable: false,
-    };
-
-    const newNodes = [...nodes, newNode];
-
-    const layout = getLayoutElements(newNodes, newEdges, {
-      direction,
-    });
-
-    // Update nodes and edges
-    setNodes(
-      layout.nodes.map((n) =>
-        n.id === currentNodeId ? { ...n, selected: false } : n,
-      ),
-    );
-    setEdges(newEdges);
+    addNode(nodes, edges, currentNodeId);
   };
 
   const onSave = () => {
