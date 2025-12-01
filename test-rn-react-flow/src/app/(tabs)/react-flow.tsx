@@ -50,7 +50,7 @@ const ReactFlow = () => {
         <WebView
           ref={webviewRef}
           source={{
-            uri: "http://localhost:5173",
+            uri: "http://10.10.198.74:5173/",
           }}
           onMessage={handleWebViewMessage}
           style={{ flex: 1 }}
